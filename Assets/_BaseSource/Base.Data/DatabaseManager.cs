@@ -1,10 +1,18 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
+#if GAME_FEATURE
+using Feature.Offer;
+#endif
+
 namespace Base.Data
 {
-    public partial class DatabaseManager : MonoBehaviour
+    public class DatabaseManager : MonoBehaviour
     {
+        #region ========== GAME DATABASE ==========
+        public OfferTable Offer = new OfferTable();
+        #endregion
+
         private readonly List<ITableData> database = new List<ITableData>();
 
         public void Init() {
@@ -24,7 +32,8 @@ namespace Base.Data
             //     }
             // }
 
-            GetTables();
+            database.Clear();
+            database.Add(Offer);
 
             // fetch data
             foreach (var table in database) {

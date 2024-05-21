@@ -3,10 +3,20 @@ using BayatGames.SaveGameFree;
 using BayatGames.SaveGameFree.Serializers;
 using UnityEngine;
 
+#if GAME_FEATURE
+using Feature.Offer;
+using Feature.Resource;
+#endif
+
 namespace Base.Data
 {
-    public partial class DatasaveManager : MonoBehaviour
+    public class DatasaveManager : MonoBehaviour
     {
+#if GAME_FEATURE
+        public OfferSave Offer;
+        public ResourceSave Resource;
+#endif
+
         private bool encode = true;
         private string password = "NgTienHung";
         private readonly List<ISaveData> datasave = new List<ISaveData>();
@@ -20,7 +30,16 @@ namespace Base.Data
             SaveGame.Serializer = new SaveGameJsonSerializer();
 
             LoadData();
-            GetData();
+        }
+
+        private void LoadData() {
+#if GAME_FEATURE
+            Offer = SaveGame.Load("Offer", new OfferSave("Save"));
+            Resource = SaveGame.Load("Resource", new ResourceSave("Save"));
+
+            datasave.Add(Offer);
+            datasave.Add(Resource);
+#endif
         }
 
         private void SaveData() {
