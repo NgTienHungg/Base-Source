@@ -6,3 +6,5 @@ E:/UnityPackages
 -Save Game Free
 -Odin Inspector and Serializer v3.1.14.2
 -SRDebugger
+-LeanPool
+-PlayerPrefs Editor
