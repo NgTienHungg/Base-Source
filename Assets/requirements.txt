@@ -1,5 +1,4 @@
 E:/UnityPackages
--Base Source
 -BG Database
 -Spine-Unity v4.1
 -Rainbow Folders 2 v2.4.1

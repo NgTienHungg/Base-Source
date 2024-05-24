@@ -56,8 +56,8 @@ namespace Base.Utils
         /// </summary>
         private void UpdateUISize() {
             screenLongSide = Mathf.Max(Screen.width, Screen.height);
-            var rectLongSide = screenLongSide / 12f;
-            boxRect = new Rect(1f, 1f, rectLongSide, rectLongSide / 3f);
+            var rectLongSide = screenLongSide / 10f;
+            boxRect = new Rect((Screen.width - rectLongSide) / 2f, 0f, rectLongSide, rectLongSide / 4f);
             style.fontSize = screenLongSide / 50;
             style.normal.textColor = Color.green;
             style.alignment = TextAnchor.MiddleCenter;

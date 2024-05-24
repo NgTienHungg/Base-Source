@@ -11,18 +11,19 @@ namespace Base.UI
 {
     public class PanelManager : MonoSingleton<PanelManager>
     {
-        [ShowInInspector]
-        private readonly List<UIPanel> stackPanels = new List<UIPanel>();
+        [ShowInInspector] [ReadOnly]
+        private List<UIPanel> stackPanels;
 
-        public UIPanel CurrentPanel => stackPanels.Count > 0
-            ? stackPanels.Last()
-            : null;
+        protected override void OnAwake() {
+            stackPanels = GetComponentsInChildren<UIPanel>().ToList();
+        }
 
-        public Type CurrentPanelType => stackPanels.Count > 0
-            ? stackPanels.Last().GetType()
-            : null;
-
-        protected override void OnAwake() { }
+        private void Start() {
+            stackPanels.ForEach(p => {
+                p.Init();
+                p.Show().Forget();
+            });
+        }
 
         public async UniTask<TPanel> CreateAsync<TPanel>(string path, Action onLoaded = null) where TPanel : UIPanel {
             var panel = (await Addressables.InstantiateAsync(path, transform)).GetComponent<TPanel>();
@@ -75,15 +76,6 @@ namespace Base.UI
 
 #endif
 
-        public UIPanel GetCurrentPanel() {
-            if (stackPanels.Count == 0) {
-                Debug.LogError("[PANEL] Stack is empty");
-                return null;
-            }
-
-            return stackPanels.Last();
-        }
-
         public UIPanel GetPanel<TPanel>() where TPanel : UIPanel {
             var panel = stackPanels.FindAll(p => p.GetType() == typeof(TPanel)).Last();
 
@@ -94,5 +86,9 @@ namespace Base.UI
 
             return panel;
         }
+
+        public UIPanel LastPanel => stackPanels.Count > 0 ? stackPanels.Last() : null;
+
+        public Type LastPanelType => stackPanels.Count > 0 ? stackPanels.Last().GetType() : null;
     }
 }

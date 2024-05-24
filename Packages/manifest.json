@@ -3,6 +3,8 @@
     "com.coffee.ui-effect": "https://github.com/mob-sakai/UIEffect.git",
     "com.cysharp.unitask": "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask",
     "com.demigiant.dotween": "https://github.com/grashaar/DOTween.git",
+    "com.kyrylokuzyk.primetween": "file:../Assets/Plugins/PrimeTween/internal/com.kyrylokuzyk.primetween.tgz",
+    "com.ogxd.project-curator": "https://github.com/ogxd/project-curator.git",
     "com.unity.addressables": "1.21.20",
     "com.unity.ai.navigation": "1.1.5",
     "com.unity.collab-proxy": "2.3.1",

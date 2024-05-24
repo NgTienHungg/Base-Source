@@ -186,8 +186,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2787214314781831132}
   - component: {fileID: 8737342637788884759}
-  - component: {fileID: 6031777746413406}
   - component: {fileID: 4321953233123747556}
+  - component: {fileID: 6031777746413406}
   m_Layer: 5
   m_Name: UIPlayPanel
   m_TagString: Untagged
@@ -227,6 +227,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b70310c5d8542ec8da1ac0801fd941e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &4321953233123747556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7360061746106044089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff8178e8fdbd428b90bea69ee5c1e470, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &6031777746413406
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -251,18 +263,6 @@ MonoBehaviour:
   delayIn: 0
   delayOut: 0
   canvasGroup: {fileID: 0}
---- !u!114 &4321953233123747556
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7360061746106044089}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff8178e8fdbd428b90bea69ee5c1e470, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &7565824682613224060
 GameObject:
   m_ObjectHideFlags: 0

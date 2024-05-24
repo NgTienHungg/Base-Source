@@ -1,5 +1,6 @@
-﻿using Base.Core;
+﻿using System;
 using Base.Data;
+using Base.Pool;
 using Base.UI;
 using UnityEngine;
 
@@ -27,15 +28,20 @@ namespace Feature.Offer
             var offerTable = DataManager.Database.Offer;
             var gemOffers = offerTable.GetOffersByType(EResourceOffer.Gem);
             foreach (var offer in gemOffers) {
-                var uiGemOffer = Instantiate(uiGemOfferPrefab, gemOfferHolder);
+                var uiGemOffer = PoolManager.Spawn(uiGemOfferPrefab, gemOfferHolder);
                 uiGemOffer.Setup(offer);
             }
 
             var goldOffers = offerTable.GetOffersByType(EResourceOffer.Gold);
             foreach (var offer in goldOffers) {
-                var uiGoldOffer = Instantiate(uiGoldOfferPrefab, goldOfferHolder);
+                var uiGoldOffer = PoolManager.Spawn(uiGoldOfferPrefab, goldOfferHolder);
                 uiGoldOffer.Setup(offer);
             }
+        }
+
+        private void OnDestroy() {
+            PoolManager.DespawnByPrefab(uiGemOfferPrefab);
+            PoolManager.DespawnByPrefab(uiGoldOfferPrefab);
         }
     }
 }

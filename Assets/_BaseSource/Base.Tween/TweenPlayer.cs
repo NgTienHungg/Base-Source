@@ -9,16 +9,16 @@ namespace Base.Tween
 {
     public class TweenPlayer : MonoBehaviour
     {
-        [ShowInInspector]
-        private List<ITween> uiTween = new List<ITween>();
+        [ShowInInspector] [ReadOnly]
+        private List<ITween> uiTweens = new List<ITween>();
 
         public void Init() {
-            uiTween = GetComponentsInChildren<ITween>(includeInactive: true).ToList();
-            uiTween.ForEach(e => e.Init());
+            uiTweens = GetComponentsInChildren<ITween>(includeInactive: true).ToList();
+            uiTweens.ForEach(e => e.Init());
         }
 
         public async UniTask ShowTween(CancellationToken token) {
-            var listTask = uiTween.Where(tween => tween.IsAutoRun)
+            var listTask = uiTweens.Where(tween => tween.IsAutoRun)
                 .Select(tween => tween.Show())
                 .ToList();
 
@@ -26,7 +26,7 @@ namespace Base.Tween
         }
 
         public async UniTask HideTween(CancellationToken token) {
-            var listTask = uiTween.Where(tween => tween.IsAutoRun)
+            var listTask = uiTweens.Where(tween => tween.IsAutoRun)
                 .Select(tween => tween.Hide())
                 .ToList();
 

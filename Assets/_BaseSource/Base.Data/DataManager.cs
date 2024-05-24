@@ -22,11 +22,5 @@ namespace Base.Data
             database.Init();
             datasave.Init();
         }
-
-        public void OnStart() { }
-
-        public void OnUpdate() { }
-
-        public void OnDispose() { }
     }
 }
