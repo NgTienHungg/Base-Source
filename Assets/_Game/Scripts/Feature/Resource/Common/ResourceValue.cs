@@ -6,8 +6,8 @@ namespace Feature.Resource
     [Serializable]
     public class ResourceValue
     {
-        [FormerlySerializedAs("ResourceType")] public EResource resourceType;
-        [FormerlySerializedAs("Value")] public int value;
+        public EResource resourceType;
+        public int value;
 
         public ResourceValue(EResource resourceType, int value) {
             this.resourceType = resourceType;
