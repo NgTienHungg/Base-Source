@@ -4,97 +4,116 @@ using Base.Core;
 using Cysharp.Threading.Tasks;
 using Sirenix.OdinInspector;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.U2D;
 using Object = UnityEngine.Object;
 
 namespace Base.Asset
 {
-    public class AssetLoader : MonoSingleton<AssetLoader>
+    public class AssetLoader : LiveSingleton<AssetLoader>
     {
         [ShowInInspector]
-        private readonly Dictionary<Type, Dictionary<string, object>> objectCached
+        private readonly Dictionary<Type, Dictionary<string, object>> assetCached
             = new Dictionary<Type, Dictionary<string, object>>();
 
         [ShowInInspector]
-        private readonly Dictionary<Type, Dictionary<string, AssetRequest>> assetCachedRequest
+        private readonly Dictionary<Type, Dictionary<string, AssetRequest>> requestCached
             = new Dictionary<Type, Dictionary<string, AssetRequest>>();
 
-        [ShowInInspector]
         private readonly IAssetLoader addressableLoader = new AddressableLoader();
-
-        [ShowInInspector]
         private readonly IAssetLoader resourceLoader = new ResourceLoader();
 
-        protected override void OnAwake() { }
-
-        public async UniTask<T> LoadAsync<T>(string path) where T : Object {
-            var type = typeof(T);
-
-            if (!objectCached.ContainsKey(type)) {
-                objectCached.Add(type, new Dictionary<string, object>());
-                assetCachedRequest.Add(type, new Dictionary<string, AssetRequest>());
-            }
-
-            var dic = objectCached[type];
-            var request = assetCachedRequest[type];
-            if (dic.ContainsKey(path)) {
-                return (T)dic[path];
-            }
-
-            var loader = addressableLoader.LoadAsync<T>(path);
-
-            await loader.Task;
-            if (!dic.ContainsKey(path)) {
-                request.Add(path, loader);
-                dic.Add(path, loader.Result);
-            }
-
-            return loader.Result;
+        protected override void OnAwake() {
+            SceneManager.activeSceneChanged += OnActiveSceneChanged;
         }
 
-        public T LoadResource<T>(string path) where T : Object {
+        private void OnActiveSceneChanged(Scene previousActiveScene, Scene newActiveScene) {
+            UnloadAll();
+        }
+
+        public static async UniTask<T> LoadAsync<T>(string path) where T : Object {
             var type = typeof(T);
 
-            if (!objectCached.ContainsKey(type)) {
-                objectCached.Add(type, new Dictionary<string, object>());
-                assetCachedRequest.Add(type, new Dictionary<string, AssetRequest>());
+            if (!Instance.assetCached.ContainsKey(type)) {
+                Instance.assetCached.Add(type, new Dictionary<string, object>());
+                Instance.requestCached.Add(type, new Dictionary<string, AssetRequest>());
             }
 
-            var objectDict = objectCached[type];
-            var requestDict = assetCachedRequest[type];
-            if (objectDict.ContainsKey(path)) {
-                return (T)objectDict[path];
+            var assetsOfType = Instance.assetCached[type];
+            var requestsOfType = Instance.requestCached[type];
+
+            if (assetsOfType.ContainsKey(path)) {
+                return (T)assetsOfType[path];
             }
 
-            var request = resourceLoader.Load<T>(path);
-            if (!objectDict.ContainsKey(path)) {
-                requestDict.Add(path, request);
-                objectDict.Add(path, request.Result);
+            var request = Instance.addressableLoader.LoadAsync<T>(path);
+            await request.Task;
+
+            if (!assetsOfType.ContainsKey(path)) {
+                assetsOfType.Add(path, request.Result);
+                requestsOfType.Add(path, request);
             }
 
             return request.Result;
         }
 
-        public void UnloadAsset<T>(string name) where T : Object {
+        public static T LoadResource<T>(string path) where T : Object {
             var type = typeof(T);
-            if (!assetCachedRequest.ContainsKey(type)) return;
-            var requestDict = assetCachedRequest[type];
-            if (requestDict.ContainsKey(name)) {
-                addressableLoader.Release(requestDict[name]);
-                objectCached[type].Remove(name);
-                requestDict.Remove(name);
+
+            if (!Instance.assetCached.ContainsKey(type)) {
+                Instance.assetCached.Add(type, new Dictionary<string, object>());
+                Instance.requestCached.Add(type, new Dictionary<string, AssetRequest>());
             }
+
+            var assetsOfType = Instance.assetCached[type];
+            var requestsOfType = Instance.requestCached[type];
+
+            if (assetsOfType.ContainsKey(path)) {
+                return (T)assetsOfType[path];
+            }
+
+            var request = Instance.resourceLoader.Load<T>(path);
+
+            if (!assetsOfType.ContainsKey(path)) {
+                assetsOfType.Add(path, request.Result);
+                requestsOfType.Add(path, request);
+            }
+
+            return request.Result;
         }
 
         public static async UniTask<Sprite> LoadSprite(string atlasPath, string spriteName) {
             try {
-                var atlas = await Instance.LoadAsync<SpriteAtlas>(atlasPath);
+                var atlas = await LoadAsync<SpriteAtlas>(atlasPath);
                 return atlas.GetSprite(spriteName);
             }
             catch (Exception) {
                 Debug.LogError($"Not found sprite: {spriteName.Color("red")} in atlas: {atlasPath.Color("red")}");
                 return null;
             }
+        }
+
+        public static void Unload<T>(string path) where T : Object {
+            var type = typeof(T);
+
+            if (!Instance.requestCached.ContainsKey(type))
+                return;
+
+            var assetsOfType = Instance.assetCached[type];
+            var requestsOfType = Instance.requestCached[type];
+
+            if (assetsOfType.ContainsKey(path)) {
+                var request = requestsOfType[path];
+                Instance.addressableLoader.Release(request);
+                assetsOfType.Remove(path);
+                requestsOfType.Remove(path);
+            }
+        }
+
+        private void UnloadAll() {
+            addressableLoader.ReleaseAll();
+            assetCached.Clear();
+            requestCached.Clear();
         }
     }
 }

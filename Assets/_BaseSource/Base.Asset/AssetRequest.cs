@@ -7,7 +7,7 @@ namespace Base.Asset
     {
         public int RequestId { get; }
 
-        public AssetRequestStatus Status { get; protected set; }
+        protected AssetRequestStatus Status { get; set; }
 
         public bool IsDone => Status != AssetRequestStatus.None;
 

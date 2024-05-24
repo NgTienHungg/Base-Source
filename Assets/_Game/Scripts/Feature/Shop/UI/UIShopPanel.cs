@@ -17,7 +17,7 @@ namespace Feature.Shop
             tabControl.Init();
 
             // get lại các Tween mới sinh ra
-            tweenPlayer.Init();
+            // tweenPlayer.Init();
         }
 
         // private void OnEnable() {
