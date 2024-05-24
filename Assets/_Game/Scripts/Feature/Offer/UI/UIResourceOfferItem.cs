@@ -20,7 +20,7 @@ namespace Feature.Offer
         public virtual void Setup(OfferEntity offer) {
             offerEntity = offer;
 
-            AssetLoader.LoadSprite(Address.OfferAtlas, offer.name)
+            AssetLoader.LoadSprite(Address.ShopOfferAtlas, offer.name)
                 .ContinueWith(sprite => {
                     iconImg.sprite = sprite;
                     iconImg.SetNativeSize();

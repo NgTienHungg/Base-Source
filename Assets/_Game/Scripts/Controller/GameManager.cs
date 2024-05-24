@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Controller
 {
-    public class GameManager : MonoSingleton<GameManager>
+    public class GameManager : LiveSingleton<GameManager>
     {
         protected override void OnAwake() {
             Application.targetFrameRate = 90;
