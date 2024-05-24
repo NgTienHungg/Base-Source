@@ -46,7 +46,7 @@ namespace Base.Pool
         public static void DespawnByPrefab(GameObject prefab) {
             foreach (var instance in LeanGameObjectPool.Instances) {
                 if (instance.Prefab == prefab) {
-                    instance.DespawnAll(false);
+                    instance.DespawnAll(true);
                     return;
                 }
             }

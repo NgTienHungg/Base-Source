@@ -1,4 +1,5 @@
-﻿using DG.Tweening;
+﻿using System;
+using DG.Tweening;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -37,6 +38,14 @@ namespace Base.UI
 
             sequence.Append(transform.DOScale(originScale * releaseScaleMultiplier, 0.1f))
                 .Append(transform.DOScale(originScale, 0.1f));
+        }
+
+        private void OnDisable() {
+            transform.DOKill();
+        }
+        
+        private void OnDestroy() {
+            transform.DOKill();
         }
     }
 }
