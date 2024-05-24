@@ -1,4 +1,5 @@
 ﻿using Base.UI;
+using Cysharp.Threading.Tasks;
 using UnityEngine;
 
 namespace Feature.Shop
@@ -10,29 +11,9 @@ namespace Feature.Shop
 
         public override bool CanBack => false;
 
-        public override void Init() {
-            base.Init();
-
-            // chờ cho ResourcePage sinh ra các Item
-            tabControl.Init();
-
-            // get lại các Tween mới sinh ra
-            tweenPlayer.Init();
+        public override async UniTask Init() {
+            await base.Init();
+            await tabControl.Init();
         }
-
-        // private void OnEnable() {
-        //     HelloAfter3s();
-        // }
-        //
-        // public async void HelloAfter3s() {
-        //     try {
-        //         Debug.Log("Prepare for hello...".Color("orange"));
-        //         await UniTask.Delay(3000, cancellationToken: tokenSource.Token);
-        //         Debug.Log($"Hello {tabControl.gameObject.name}!".Color("cyan"));
-        //     }
-        //     catch (OperationCanceledException) {
-        //         Debug.Log($"Hello {tabControl.gameObject.name}!".Color("cyan"));
-        //     }
-        // }
     }
 }

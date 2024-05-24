@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Cysharp.Threading.Tasks;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
@@ -25,11 +26,14 @@ namespace Base.UI
             }
         }
 
-        public void Init() {
+        public UniTask Init() {
+            var initTasks = new List<UniTask>();
             for (var i = 0; i < tabs.Count; i++) {
                 tabs[i].Register(this, i);
-                tabs[i].Init();
+                initTasks.Add(tabs[i].Init());
             }
+
+            return UniTask.WhenAll(initTasks);
         }
 
         private void OnEnable() {

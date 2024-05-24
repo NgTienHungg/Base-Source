@@ -1,9 +1,6 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
-
-#if GAME_FEATURE
 using Feature.Offer;
-#endif
 
 namespace Base.Data
 {

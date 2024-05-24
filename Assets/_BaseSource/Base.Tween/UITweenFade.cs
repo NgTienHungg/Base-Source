@@ -17,8 +17,8 @@ namespace Base.Tween
             canvasGroup = GetComponent<CanvasGroup>();
         }
 
-        protected override void Setup() {
-            base.Setup();
+        protected override async UniTask Setup() {
+            await base.Setup();
 
             if (canvasGroup == null) {
                 canvasGroup = GetComponent<CanvasGroup>();

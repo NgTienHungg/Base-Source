@@ -18,42 +18,51 @@ namespace Base.UI
             stackPanels = GetComponentsInChildren<UIPanel>().ToList();
         }
 
-        private void Start() {
-            stackPanels.ForEach(p => {
-                p.Init();
-                p.Show().Forget();
-            });
+        private async void Start() {
+            await UniTask.WhenAll(stackPanels.Select(p => p.Init()).ToList());
+            await UniTask.WhenAll(stackPanels.Select(p => p.PostInit()).ToList());
+            stackPanels.ForEach(p => p.Show().Forget());
         }
 
-        public async UniTask<TPanel> CreateAsync<TPanel>(string path, Action onLoaded = null) where TPanel : UIPanel {
-            var panel = (await Addressables.InstantiateAsync(path, transform)).GetComponent<TPanel>();
+        public async UniTask<T> CreateAsync<T>(string address) where T : UIPanel {
+            var panel = (await Addressables.InstantiateAsync(address, transform)).GetComponent<T>();
 
-            panel.OnInit += () => Register(panel);
-            panel.OnRelease += () => Unregister(panel);
-            panel.Init();
-
-            Debug.Log($"[PANEL] Created {typeof(TPanel).Name.Color("lime")}");
-            onLoaded?.Invoke();
+            Debug.Log($"[PANEL] Created {typeof(T).Name.Color("lime")}");
+            await panel.Init();
+            await panel.PostInit();
 
             return panel;
         }
 
-        public async UniTask Close<TPanel>(bool immediately = false) where TPanel : UIPanel {
-            var panel = stackPanels.Find(p => p.GetType() == typeof(TPanel));
+        public async UniTask<T> TransitionAsync<T>(string address) where T : UIPanel {
+            var lastPanel = LastPanel;
+            var newPanel = await CreateAsync<T>(address);
+
+            if (lastPanel != null) {
+                newPanel.OnPreOpen += () => lastPanel.HideTween().Forget();
+                newPanel.OnPreClose += () => lastPanel.ShowTween().Forget();
+            }
+
+            await newPanel.Show();
+            return newPanel;
+        }
+
+        public async UniTask Close<T>(bool immediately = false) where T : UIPanel {
+            var panel = stackPanels.Find(p => p.GetType() == typeof(T));
 
             if (panel == null) {
-                Debug.LogWarning($"[PANEL] Not found {typeof(TPanel).Name.Color("red")}");
+                Debug.LogWarning($"[PANEL] Not found {typeof(T).Name.Color("red")}");
                 return;
             }
 
             await panel.Hide();
         }
 
-        private void Register(UIPanel uiPanel) {
+        public void Register(UIPanel uiPanel) {
             stackPanels.Add(uiPanel);
         }
 
-        private void Unregister(UIPanel uiPanel) {
+        public void Unregister(UIPanel uiPanel) {
             stackPanels.Remove(uiPanel);
         }
 

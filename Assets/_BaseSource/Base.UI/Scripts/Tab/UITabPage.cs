@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Cysharp.Threading.Tasks;
+using UnityEngine;
 
 namespace Base.UI
 {
@@ -12,7 +13,9 @@ namespace Base.UI
             this.id = id;
         }
 
-        public virtual void Init() { }
+        public virtual UniTask Init() {
+            return UniTask.CompletedTask;
+        }
 
         public virtual void Active() {
             gameObject.SetActive(true);

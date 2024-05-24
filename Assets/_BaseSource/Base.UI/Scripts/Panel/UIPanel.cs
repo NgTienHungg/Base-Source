@@ -10,8 +10,6 @@ namespace Base.UI
     public abstract class UIPanel : MonoBehaviour, IPanel
     {
         public abstract bool CanBack { get; }
-        public Action OnInit { get; set; }
-        public Action OnRelease { get; set; }
         public Action OnPreOpen { get; set; }
         public Action OnPostOpen { get; set; }
         public Action OnPreClose { get; set; }
@@ -20,10 +18,15 @@ namespace Base.UI
         protected TweenPlayer tweenPlayer;
         protected CancellationTokenSource tokenSource;
 
-        public virtual void Init() {
-            OnInit?.Invoke();
+        public virtual UniTask Init() {
+            PanelManager.Instance.Register(this);
+            return UniTask.CompletedTask;
+        }
+
+        public virtual async UniTask PostInit() {
+            gameObject.SetActive(false);
             tweenPlayer = GetComponent<TweenPlayer>();
-            tweenPlayer.Init();
+            await tweenPlayer.Init();
         }
 
         public async UniTask Show() {
@@ -52,21 +55,19 @@ namespace Base.UI
             return tweenPlayer.HideTween(tokenSource.Token);
         }
 
-        //TODO: can override
-        protected virtual async UniTask Opening() {
+        protected async UniTask Opening() {
             gameObject.SetActive(true);
             await ShowTween();
         }
 
-        //TODO: can override
-        protected virtual async UniTask Closing() {
+        protected async UniTask Closing() {
             await HideTween();
             Destroy(gameObject);
         }
 
         protected virtual void OnDestroy() {
             tokenSource?.Dispose();
-            OnRelease?.Invoke();
+            PanelManager.Instance.Unregister(this);
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using Cysharp.Threading.Tasks;
 
 namespace Base.UI
 {
@@ -13,19 +14,21 @@ namespace Base.UI
             page.Register(control, id);
         }
 
-        public void Init() {
+        public UniTask Init() {
             button.Init();
-            page.Init();
+            return page.Init();
         }
 
-        public void Show() {
+        public UniTask Show() {
             button.Active();
             page.Active();
+            return UniTask.CompletedTask;
         }
 
-        public void Hide() {
+        public UniTask Hide() {
             button.Deactive();
             page.Deactive();
+            return UniTask.CompletedTask;
         }
     }
 }

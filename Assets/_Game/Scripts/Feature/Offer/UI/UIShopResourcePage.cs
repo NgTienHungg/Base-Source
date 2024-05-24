@@ -2,19 +2,13 @@
 using Base.Data;
 using Base.Pool;
 using Base.UI;
+using Cysharp.Threading.Tasks;
 using UnityEngine;
 
 namespace Feature.Offer
 {
     public class UIShopResourcePage : UITabPage
     {
-        // [Header("Prefab")]
-        // [SerializeField]
-        // private UIResourceOfferItem uiGemOfferPrefab;
-        //
-        // [SerializeField]
-        // private UIResourceOfferItem uiGoldOfferPrefab;
-
         [Header("Holder")]
         [SerializeField]
         private Transform gemOfferHolder;
@@ -24,8 +18,8 @@ namespace Feature.Offer
 
         private GameObject uiGemOfferPrefab, uiGoldOfferPrefab;
 
-        public override async void Init() {
-            base.Init();
+        public override async UniTask Init() {
+            await base.Init();
 
             var offerTable = DataManager.Database.Offer;
             var gemOffers = offerTable.GetOffersByType(EResourceOffer.Gem);
