@@ -1,4 +1,4 @@
-﻿using System;
+﻿using Base.Asset;
 using Base.Data;
 using Base.Pool;
 using Base.UI;
@@ -8,12 +8,12 @@ namespace Feature.Offer
 {
     public class UIShopResourcePage : UITabPage
     {
-        [Header("Prefab")]
-        [SerializeField]
-        private UIResourceOfferItem uiGemOfferPrefab;
-
-        [SerializeField]
-        private UIResourceOfferItem uiGoldOfferPrefab;
+        // [Header("Prefab")]
+        // [SerializeField]
+        // private UIResourceOfferItem uiGemOfferPrefab;
+        //
+        // [SerializeField]
+        // private UIResourceOfferItem uiGoldOfferPrefab;
 
         [Header("Holder")]
         [SerializeField]
@@ -22,19 +22,25 @@ namespace Feature.Offer
         [SerializeField]
         private Transform goldOfferHolder;
 
-        public override void Init() {
+        private GameObject uiGemOfferPrefab, uiGoldOfferPrefab;
+
+        public override async void Init() {
             base.Init();
 
             var offerTable = DataManager.Database.Offer;
             var gemOffers = offerTable.GetOffersByType(EResourceOffer.Gem);
+            var goldOffers = offerTable.GetOffersByType(EResourceOffer.Gold);
+
+            uiGemOfferPrefab = await AssetLoader.LoadAsync<GameObject>(Address.UIShopResourceOffer_Gem);
+            uiGoldOfferPrefab = await AssetLoader.LoadAsync<GameObject>(Address.UIShopResourceOffer_Gold);
+
             foreach (var offer in gemOffers) {
-                var uiGemOffer = PoolManager.Spawn(uiGemOfferPrefab, gemOfferHolder);
+                var uiGemOffer = PoolManager.Spawn<UIResourceOfferItem>(uiGemOfferPrefab, gemOfferHolder);
                 uiGemOffer.Setup(offer);
             }
 
-            var goldOffers = offerTable.GetOffersByType(EResourceOffer.Gold);
             foreach (var offer in goldOffers) {
-                var uiGoldOffer = PoolManager.Spawn(uiGoldOfferPrefab, goldOfferHolder);
+                var uiGoldOffer = PoolManager.Spawn<UIResourceOfferItem>(uiGoldOfferPrefab, goldOfferHolder);
                 uiGoldOffer.Setup(offer);
             }
         }

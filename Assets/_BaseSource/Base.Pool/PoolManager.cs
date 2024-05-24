@@ -1,3 +1,4 @@
+using System.Linq;
 using Base.Core;
 using Lean.Pool;
 using UnityEngine;
@@ -27,6 +28,14 @@ namespace Base.Pool
             return LeanPool.Spawn(prefab, parent);
         }
 
+        public static T Spawn<T>(GameObject prefab) {
+            return LeanPool.Spawn(prefab).GetComponent<T>();
+        }
+
+        public static T Spawn<T>(GameObject prefab, Transform parent) {
+            return LeanPool.Spawn(prefab, parent).GetComponent<T>();
+        }
+
         public static T Spawn<T>(T prefab) where T : Component {
             return LeanPool.Spawn(prefab);
         }
@@ -44,11 +53,9 @@ namespace Base.Pool
         }
 
         public static void DespawnByPrefab(GameObject prefab) {
-            foreach (var instance in LeanGameObjectPool.Instances) {
-                if (instance.Prefab == prefab) {
-                    instance.DespawnAll(true);
-                    return;
-                }
+            foreach (var instance in LeanGameObjectPool.Instances.Where(instance => instance.Prefab == prefab)) {
+                instance.DespawnAll(true);
+                return;
             }
         }
 
