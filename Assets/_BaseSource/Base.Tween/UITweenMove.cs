@@ -23,8 +23,8 @@ namespace Base.Tween
             rectTrans = transform as RectTransform;
         }
 
-        protected override void Setup() {
-            base.Setup();
+        protected override async UniTask Setup() {
+            await base.Setup();
 
             if (rectTrans == null) {
                 rectTrans = transform as RectTransform;

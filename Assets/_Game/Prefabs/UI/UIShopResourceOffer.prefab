@@ -242,21 +242,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4f6164edfbd4162b5135f1571b2920e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  settings: {fileID: 11400000, guid: 8da439ebc07d52f48b875ec56c99496e, type: 2}
   runType: 0
-  overrideCurve: 0
-  curveIn:
-    serializedVersion: 2
-    m_Curve: []
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  curveOut:
-    serializedVersion: 2
-    m_Curve: []
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
+  settings: {fileID: 11400000, guid: 8da439ebc07d52f48b875ec56c99496e, type: 2}
+  overrideEase: 0
+  easeIn: 1
+  easeOut: 1
   overrideDuration: 0
   durationIn: 0
   durationOut: 0
@@ -277,21 +267,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29a3397222f44aa6b5604f91dad10e38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  settings: {fileID: 11400000, guid: 56b7f3ea1e8bae344acfb77f29a4ec9f, type: 2}
   runType: 0
-  overrideCurve: 0
-  curveIn:
-    serializedVersion: 2
-    m_Curve: []
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  curveOut:
-    serializedVersion: 2
-    m_Curve: []
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
+  settings: {fileID: 11400000, guid: 56b7f3ea1e8bae344acfb77f29a4ec9f, type: 2}
+  overrideEase: 0
+  easeIn: 1
+  easeOut: 1
   overrideDuration: 0
   durationIn: 0
   durationOut: 0

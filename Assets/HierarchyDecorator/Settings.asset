@@ -285,7 +285,7 @@ MonoBehaviour:
     enableIcons: 1
     showMissingScriptWarning: 1
     showAll: 3
-    stackMonoBehaviours: 0
+    stackMonoBehaviours: 1
     unityGroups:
     - name: Animation
       components:
@@ -1136,6 +1136,17 @@ MonoBehaviour:
           m_Text: PlayableDirector
           m_Image: {fileID: -803061714574223827, guid: 0000000000000000d000000000000000, type: 0}
           m_Tooltip: PlayableDirector
+        shown: 0
+        isBuiltIn: 1
+        script: {fileID: 0}
+        hash: -1
+      - displayName: PlayerPrefsController
+        name: PlayerPrefsController, Unity.PlayerPrefsEditor.Samples.SampleScene,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        content:
+          m_Text: PlayerPrefsController
+          m_Image: {fileID: 0}
+          m_Tooltip: PlayerPrefsController
         shown: 0
         isBuiltIn: 1
         script: {fileID: 0}
@@ -2915,7 +2926,7 @@ MonoBehaviour:
         script: {fileID: 11500000, guid: b7d3f95214af4e83a4633c583752f3da, type: 3}
         hash: -1
       - displayName: FPSCounter
-        name: Base.UI.FPSCounter, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        name: Base.Utils.FPSCounter, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
           PublicKeyToken=null
         content:
           m_Text: FPSCounter
@@ -2947,16 +2958,192 @@ MonoBehaviour:
         isBuiltIn: 0
         script: {fileID: 11500000, guid: 3bac9cdd4b33745468852cecdaa72dbb, type: 3}
         hash: -1
-      - displayName: Test
-        name: DefaultNamespace.Test, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      - displayName: UIPlayPanel
+        name: Feature.Gameplay.UIPlayPanel, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
           PublicKeyToken=null
         content:
-          m_Text: Test
+          m_Text: UIPlayPanel
           m_Image: {fileID: -8204150473280056172, guid: 0000000000000000d000000000000000, type: 0}
-          m_Tooltip: Test
+          m_Tooltip: UIPlayPanel
         shown: 0
         isBuiltIn: 0
-        script: {fileID: 11500000, guid: f8d5b45f63104bd6a0747ae2c577fd0d, type: 3}
+        script: {fileID: 11500000, guid: 6b70310c5d8542ec8da1ac0801fd941e, type: 3}
+        hash: -1
+      - displayName: TweenPlayer
+        name: Base.Tween.TweenPlayer, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+        content:
+          m_Text: TweenPlayer
+          m_Image: {fileID: -8204150473280056172, guid: 0000000000000000d000000000000000, type: 0}
+          m_Tooltip: TweenPlayer
+        shown: 0
+        isBuiltIn: 0
+        script: {fileID: 11500000, guid: ff8178e8fdbd428b90bea69ee5c1e470, type: 3}
+        hash: -1
+      - displayName: UITweenFade
+        name: Base.Tween.UITweenFade, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+        content:
+          m_Text: UITweenFade
+          m_Image: {fileID: -8204150473280056172, guid: 0000000000000000d000000000000000, type: 0}
+          m_Tooltip: UITweenFade
+        shown: 0
+        isBuiltIn: 0
+        script: {fileID: 11500000, guid: 29a3397222f44aa6b5604f91dad10e38, type: 3}
+        hash: -1
+      - displayName: BaseInput
+        name: UnityEngine.EventSystems.BaseInput, UnityEngine.UI, Version=1.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        content:
+          m_Text: BaseInput
+          m_Image: {fileID: -8204150473280056172, guid: 0000000000000000d000000000000000, type: 0}
+          m_Tooltip: BaseInput
+        shown: 0
+        isBuiltIn: 0
+        script: {fileID: 11500000, guid: 1511ccae7919cfc46b603b9b337fdc94, type: 3}
+        hash: -1
+      - displayName: UIShopPanel
+        name: Feature.Shop.UIShopPanel, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+        content:
+          m_Text: UIShopPanel
+          m_Image: {fileID: -8204150473280056172, guid: 0000000000000000d000000000000000, type: 0}
+          m_Tooltip: UIShopPanel
+        shown: 0
+        isBuiltIn: 0
+        script: {fileID: 11500000, guid: 32491157cd284d0ab7a270d6ba0dc93e, type: 3}
+        hash: -1
+      - displayName: LeanGameObjectPool
+        name: Lean.Pool.LeanGameObjectPool, LeanPool, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+        content:
+          m_Text: LeanGameObjectPool
+          m_Image: {fileID: -8204150473280056172, guid: 0000000000000000d000000000000000, type: 0}
+          m_Tooltip: LeanGameObjectPool
+        shown: 0
+        isBuiltIn: 0
+        script: {fileID: 11500000, guid: eea08375da243a441b88d1e6b0713006, type: 3}
+        hash: -1
+      - displayName: SRServiceManager
+        name: SRF.Service.SRServiceManager, StompyRobot.SRF, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+        content:
+          m_Text: SRServiceManager
+          m_Image: {fileID: -8204150473280056172, guid: 0000000000000000d000000000000000, type: 0}
+          m_Tooltip: SRServiceManager
+        shown: 0
+        isBuiltIn: 0
+        script: {fileID: 11500000, guid: 83920a42d6e0f814bacbc701ae8636a5, type: 3}
+        hash: -1
+      - displayName: PrimeTweenManager
+        name: PrimeTween.PrimeTweenManager, PrimeTween.Runtime, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        content:
+          m_Text: PrimeTweenManager
+          m_Image: {fileID: -8204150473280056172, guid: 0000000000000000d000000000000000, type: 0}
+          m_Tooltip: PrimeTweenManager
+        shown: 0
+        isBuiltIn: 0
+        script: {fileID: 11500000, guid: f3f57bce977c474ba249eb63545eff3c, type: 3}
+        hash: -1
+      - displayName: DOTweenComponent
+        name: DG.Tweening.Core.DOTweenComponent, DOTween, Version=1.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+        content:
+          m_Text: DOTweenComponent
+          m_Image: {fileID: 1958022779231644424, guid: 0000000000000000d000000000000000, type: 0}
+          m_Tooltip: DOTweenComponent
+        shown: 0
+        isBuiltIn: 0
+        script: {fileID: -591303064, guid: 87a0c03d42b1eda448e20bb730f9fc76, type: 3}
+        hash: -1
+      - displayName: MonoBehaviourCallbackHooks
+        name: MonoBehaviourCallbackHooks, Unity.ResourceManager, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        content:
+          m_Text: MonoBehaviourCallbackHooks
+          m_Image: {fileID: -8204150473280056172, guid: 0000000000000000d000000000000000, type: 0}
+          m_Tooltip: MonoBehaviourCallbackHooks
+        shown: 0
+        isBuiltIn: 0
+        script: {fileID: 11500000, guid: c3a73b848f18b6b498c76e82b2551f0d, type: 3}
+        hash: -1
+      - displayName: DelayedActionManager
+        name: UnityEngine.ResourceManagement.Util.DelayedActionManager, Unity.ResourceManager,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        content:
+          m_Text: DelayedActionManager
+          m_Image: {fileID: -8204150473280056172, guid: 0000000000000000d000000000000000, type: 0}
+          m_Tooltip: DelayedActionManager
+        shown: 0
+        isBuiltIn: 0
+        script: {fileID: 11500000, guid: caa3431363af216479bf77b9d16e8c72, type: 3}
+        hash: -1
+      - displayName: AssetLoader
+        name: Base.Asset.AssetLoader, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+        content:
+          m_Text: AssetLoader
+          m_Image: {fileID: -8204150473280056172, guid: 0000000000000000d000000000000000, type: 0}
+          m_Tooltip: AssetLoader
+        shown: 0
+        isBuiltIn: 0
+        script: {fileID: 11500000, guid: 36264bfa6ed54eba9362bb32a550e345, type: 3}
+        hash: -1
+      - displayName: DatabaseManager
+        name: Base.Data.DatabaseManager, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+        content:
+          m_Text: DatabaseManager
+          m_Image: {fileID: -8204150473280056172, guid: 0000000000000000d000000000000000, type: 0}
+          m_Tooltip: DatabaseManager
+        shown: 0
+        isBuiltIn: 0
+        script: {fileID: 11500000, guid: 1a6d015fd8d044a182039d7d9f844aab, type: 3}
+        hash: -1
+      - displayName: DatasaveManager
+        name: Base.Data.DatasaveManager, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+        content:
+          m_Text: DatasaveManager
+          m_Image: {fileID: -8204150473280056172, guid: 0000000000000000d000000000000000, type: 0}
+          m_Tooltip: DatasaveManager
+        shown: 0
+        isBuiltIn: 0
+        script: {fileID: 11500000, guid: 2085ab34d27740da8018b2b35046d1c4, type: 3}
+        hash: -1
+      - displayName: UIScalable
+        name: Base.UI.UIScalable, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+        content:
+          m_Text: UIScalable
+          m_Image: {fileID: -8204150473280056172, guid: 0000000000000000d000000000000000, type: 0}
+          m_Tooltip: UIScalable
+        shown: 0
+        isBuiltIn: 0
+        script: {fileID: 11500000, guid: 50136ee827a844559c06f0c870dc4503, type: 3}
+        hash: -1
+      - displayName: UITweenScale
+        name: Base.Tween.UITweenScale, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+        content:
+          m_Text: UITweenScale
+          m_Image: {fileID: -8204150473280056172, guid: 0000000000000000d000000000000000, type: 0}
+          m_Tooltip: UITweenScale
+        shown: 0
+        isBuiltIn: 0
+        script: {fileID: 11500000, guid: b4f6164edfbd4162b5135f1571b2920e, type: 3}
+        hash: -1
+      - displayName: UIGemOfferItem
+        name: Feature.Offer.UIGemOfferItem, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+        content:
+          m_Text: UIGemOfferItem
+          m_Image: {fileID: -8204150473280056172, guid: 0000000000000000d000000000000000, type: 0}
+          m_Tooltip: UIGemOfferItem
+        shown: 0
+        isBuiltIn: 0
+        script: {fileID: 11500000, guid: f7a42524d6734d8d9f7a9b4c27fb3bce, type: 3}
         hash: -1
     excludedComponents:
       name: Excluded
@@ -2968,6 +3155,17 @@ MonoBehaviour:
           m_Text: MonoBehaviourCallbackHooks
           m_Image: {fileID: 0}
           m_Tooltip: MonoBehaviourCallbackHooks
+        shown: 0
+        isBuiltIn: 1
+        script: {fileID: 0}
+        hash: -1
+      - displayName: PlayerPrefsController
+        name: PlayerPrefsController, Unity.PlayerPrefsEditor.Samples.SampleScene,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        content:
+          m_Text: PlayerPrefsController
+          m_Image: {fileID: 0}
+          m_Tooltip: PlayerPrefsController
         shown: 0
         isBuiltIn: 1
         script: {fileID: 0}
@@ -5558,4 +5756,4 @@ MonoBehaviour:
         script: {fileID: 0}
         hash: -1
     unityVersion: 2022.3.20f1
-    unityCount: 236
+    unityCount: 237

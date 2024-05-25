@@ -1,9 +1,15 @@
 ﻿using Base.Core;
+using UnityEngine;
 
 namespace Controller
 {
-    public class GameManager : MonoSingleton<GameManager>
+    public class GameManager : LiveSingleton<GameManager>
     {
-        protected override void OnAwake() { }
+        public int Gold { get; set; }
+        public bool IsAdsRemoved { get; set; }
+
+        protected override void OnAwake() {
+            Application.targetFrameRate = 90;
+        }
     }
 }

@@ -1,4 +1,5 @@
-﻿using Cysharp.Threading.Tasks;
+﻿using Base.LoadAsset;
+using Cysharp.Threading.Tasks;
 using DG.Tweening;
 using Sirenix.OdinInspector;
 using UnityEngine;
@@ -56,22 +57,24 @@ namespace Base.Tween
             settings = Resources.Load<TweenSettings>(SettingsPath);
         }
 
-        public void Init() {
+        public async UniTask Init() {
             if (isInitialized) return;
             isInitialized = true;
-            Setup();
+            await Setup();
             Inactive();
         }
 
-        protected virtual void Setup() {
+        protected virtual UniTask Setup() {
             if (settings == null) {
                 settings = Resources.Load<TweenSettings>(SettingsPath);
 
                 if (settings == null) {
                     Debug.LogError($"Not found {SettingsPath.Color("red")} in Resources");
-                    settings = Resources.Load<TweenSettings>("TweenBaseSettings");
+                    settings = AssetLoader.LoadResource<TweenSettings>("TweenBaseSettings");
                 }
             }
+
+            return UniTask.CompletedTask;
         }
 
         public abstract UniTask Show();

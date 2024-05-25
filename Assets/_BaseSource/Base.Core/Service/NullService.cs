@@ -1,4 +1,6 @@
-﻿namespace Base.Core
+﻿using Base.Architecture;
+
+namespace Base.Core
 {
     public class NullService : IService
     {

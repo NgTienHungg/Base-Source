@@ -1,20 +1,14 @@
-﻿using System;
-using Base.Data;
+﻿using Base.Data;
+using Base.LoadAsset;
 using Base.Pool;
 using Base.UI;
+using Cysharp.Threading.Tasks;
 using UnityEngine;
 
 namespace Feature.Offer
 {
     public class UIShopResourcePage : UITabPage
     {
-        [Header("Prefab")]
-        [SerializeField]
-        private UIResourceOfferItem uiGemOfferPrefab;
-
-        [SerializeField]
-        private UIResourceOfferItem uiGoldOfferPrefab;
-
         [Header("Holder")]
         [SerializeField]
         private Transform gemOfferHolder;
@@ -22,19 +16,25 @@ namespace Feature.Offer
         [SerializeField]
         private Transform goldOfferHolder;
 
-        public override void Init() {
-            base.Init();
+        private GameObject uiGemOfferPrefab, uiGoldOfferPrefab;
+
+        public override async UniTask Init() {
+            await base.Init();
 
             var offerTable = DataManager.Database.Offer;
             var gemOffers = offerTable.GetOffersByType(EResourceOffer.Gem);
+            var goldOffers = offerTable.GetOffersByType(EResourceOffer.Gold);
+
+            uiGemOfferPrefab = await AssetLoader.LoadAsync<GameObject>(Address.UIShopResourceOffer_Gem);
+            uiGoldOfferPrefab = await AssetLoader.LoadAsync<GameObject>(Address.UIShopResourceOffer_Gold);
+
             foreach (var offer in gemOffers) {
-                var uiGemOffer = PoolManager.Spawn(uiGemOfferPrefab, gemOfferHolder);
+                var uiGemOffer = PoolManager.Spawn<UIResourceOfferItem>(uiGemOfferPrefab, gemOfferHolder);
                 uiGemOffer.Setup(offer);
             }
 
-            var goldOffers = offerTable.GetOffersByType(EResourceOffer.Gold);
             foreach (var offer in goldOffers) {
-                var uiGoldOffer = PoolManager.Spawn(uiGoldOfferPrefab, goldOfferHolder);
+                var uiGoldOffer = PoolManager.Spawn<UIResourceOfferItem>(uiGoldOfferPrefab, goldOfferHolder);
                 uiGoldOffer.Setup(offer);
             }
         }

@@ -2,10 +2,10 @@
 {
     public abstract class State<TMachine> : IState where TMachine : StateMachine
     {
-        protected TMachine owner;
+        protected TMachine entity;
 
-        protected State(TMachine owner) {
-            this.owner = owner;
+        protected State(TMachine entity) {
+            this.entity = entity;
         }
 
         public virtual void Enter() { }

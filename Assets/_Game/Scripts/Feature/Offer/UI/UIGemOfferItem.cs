@@ -1,5 +1,4 @@
 ﻿using Base.Utils;
-using Base.Utils.Extension;
 using TMPro;
 using UnityEngine;
 

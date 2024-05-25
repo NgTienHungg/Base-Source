@@ -6,7 +6,7 @@ namespace Base.Tween
     {
         bool IsAutoRun { get; }
 
-        void Init();
+        UniTask Init();
         UniTask Show();
         UniTask Hide();
     }
