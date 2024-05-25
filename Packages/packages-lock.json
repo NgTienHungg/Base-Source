@@ -21,18 +21,38 @@
       "dependencies": {},
       "hash": "4c1537e2a618043d52436f65411f18919b8c1318"
     },
-    "com.kyrylokuzyk.primetween": {
-      "version": "file:../Assets/Plugins/PrimeTween/internal/com.kyrylokuzyk.primetween.tgz",
-      "depth": 0,
-      "source": "local-tarball",
-      "dependencies": {}
-    },
     "com.ogxd.project-curator": {
       "version": "https://github.com/ogxd/project-curator.git",
       "depth": 0,
       "source": "git",
       "dependencies": {},
       "hash": "da8a264a30daf02a7365dbac920203fe1c0d9277"
+    },
+    "com.sparkle.core": {
+      "version": "1.0.1",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.sparkle.foundation": "1.0.0",
+        "com.sparkle.unitask": "2.3.3"
+      },
+      "url": "http://183.80.51.158:4873"
+    },
+    "com.sparkle.foundation": {
+      "version": "1.0.0",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.sparkle.unitask": "2.3.3"
+      },
+      "url": "http://183.80.51.158:4873"
+    },
+    "com.sparkle.unitask": {
+      "version": "2.3.3",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {},
+      "url": "http://183.80.51.158:4873"
     },
     "com.unity.addressables": {
       "version": "1.21.20",

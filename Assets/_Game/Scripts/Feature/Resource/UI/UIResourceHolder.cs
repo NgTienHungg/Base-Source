@@ -1,6 +1,6 @@
-﻿using Base.Asset;
-using Base.Core;
+﻿using Base.Core;
 using Base.Data;
+using Base.LoadAsset;
 using Cysharp.Threading.Tasks;
 using TMPro;
 using UnityEngine;

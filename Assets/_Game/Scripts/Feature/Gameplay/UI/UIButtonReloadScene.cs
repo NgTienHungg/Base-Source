@@ -1,13 +1,15 @@
+using Base.LoadScene;
 using Base.UI;
-using UnityEngine.SceneManagement;
+using Cysharp.Threading.Tasks;
 
 namespace Feature.Gameplay
 {
     public class UIButtonReloadScene : UIButtonBase
     {
         protected override void OnClick() {
-            var currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-            SceneManager.LoadScene(currentSceneIndex);
+            PanelManager.Instance.LastPanel.SetInteractable(false);
+            SceneLoader.Instance.LoadScene(Address.MainScene).Forget();
+            SceneLoader.Instance.OnSceneLoaded += async () => await SceneLoader.Instance.ActivateScene();
         }
     }
 }

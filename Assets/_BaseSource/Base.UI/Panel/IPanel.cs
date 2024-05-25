@@ -11,6 +11,7 @@ namespace Base.UI
         Action OnPostClose { get; set; }
 
         bool CanBack { get; }
+        void SetInteractable(bool interactable);
 
         UniTask Init();
         UniTask PostInit();

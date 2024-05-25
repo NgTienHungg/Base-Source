@@ -1,5 +1,5 @@
-﻿using Base.Asset;
-using Base.Data;
+﻿using Base.Data;
+using Base.LoadAsset;
 using Base.Pool;
 using Base.UI;
 using Cysharp.Threading.Tasks;

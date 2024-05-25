@@ -1,7 +1,8 @@
 ﻿public static class Address
 {
     // Scene
-    public const string MainScene = "Scenes/GameScene.unity";
+    public const string LoadingScene = "LoadingScene";
+    public const string MainScene = "MainScene";
 
     // Atlas
     public const string ResourceAtlas = "SpriteAtlas/Resource.spriteatlasv2";

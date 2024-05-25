@@ -1617,6 +1617,7 @@ GameObject:
   - component: {fileID: 4932077748575731448}
   - component: {fileID: 7506008789594230475}
   - component: {fileID: 2276652509781626716}
+  - component: {fileID: 3802001466180377169}
   m_Layer: 5
   m_Name: UIShopPanel
   m_TagString: Untagged
@@ -1669,6 +1670,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32491157cd284d0ab7a270d6ba0dc93e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvasGroup: {fileID: 3802001466180377169}
+  tweenPlayer: {fileID: 4932077748575731448}
   tabControl: {fileID: 8026013850900622472}
 --- !u!114 &2276652509781626716
 MonoBehaviour:
@@ -1685,15 +1688,27 @@ MonoBehaviour:
   runType: 0
   settings: {fileID: 11400000, guid: 56b7f3ea1e8bae344acfb77f29a4ec9f, type: 2}
   overrideEase: 0
-  easeIn: 0
-  easeOut: 0
+  easeIn: 1
+  easeOut: 1
   overrideDuration: 0
-  durationIn: 0
-  durationOut: 0
+  durationIn: 0.25
+  durationOut: 0.25
   delay: 0
   delayIn: 0
   delayOut: 0
-  canvasGroup: {fileID: 0}
+  canvasGroup: {fileID: 3802001466180377169}
+--- !u!225 &3802001466180377169
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8621302917854913478}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1001 &1293468139654439146
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -141,8 +141,8 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_SelectedColor: {r: 1, g: 1, b: 1, a: 1}
+    m_DisabledColor: {r: 1, g: 1, b: 1, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -360,6 +360,7 @@ GameObject:
   - component: {fileID: 4321953233123747556}
   - component: {fileID: 8737342637788884759}
   - component: {fileID: 6031777746413406}
+  - component: {fileID: 626703693788196148}
   m_Layer: 5
   m_Name: UIPlayPanel
   m_TagString: Untagged
@@ -411,6 +412,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b70310c5d8542ec8da1ac0801fd941e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvasGroup: {fileID: 626703693788196148}
+  tweenPlayer: {fileID: 4321953233123747556}
   goldText: {fileID: 8788485242615569524}
 --- !u!114 &6031777746413406
 MonoBehaviour:
@@ -427,15 +430,27 @@ MonoBehaviour:
   runType: 0
   settings: {fileID: 11400000, guid: 56b7f3ea1e8bae344acfb77f29a4ec9f, type: 2}
   overrideEase: 0
-  easeIn: 0
-  easeOut: 0
+  easeIn: 1
+  easeOut: 1
   overrideDuration: 0
-  durationIn: 3
-  durationOut: 3
+  durationIn: 0.25
+  durationOut: 0.25
   delay: 0
   delayIn: 0
   delayOut: 0
-  canvasGroup: {fileID: 0}
+  canvasGroup: {fileID: 626703693788196148}
+--- !u!225 &626703693788196148
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7360061746106044089}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &7565824682613224060
 GameObject:
   m_ObjectHideFlags: 0
@@ -594,8 +609,8 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_SelectedColor: {r: 1, g: 1, b: 1, a: 1}
+    m_DisabledColor: {r: 1, g: 1, b: 1, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:

@@ -36,11 +36,13 @@ namespace Base.UI
 
         public async UniTask<T> TransitionAsync<T>(string address) where T : UIPanel {
             var lastPanel = LastPanel;
-            var newPanel = await CreateAsync<T>(address);
+            lastPanel.SetInteractable(false);
 
+            var newPanel = await CreateAsync<T>(address);
             if (lastPanel != null) {
                 newPanel.OnPreOpen += () => lastPanel.HideTween().Forget();
                 newPanel.OnPreClose += () => lastPanel.ShowTween().Forget();
+                newPanel.OnPostClose += () => lastPanel.SetInteractable(true);
             }
 
             await newPanel.Show();

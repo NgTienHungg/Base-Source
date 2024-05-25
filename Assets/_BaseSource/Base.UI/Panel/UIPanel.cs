@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace Base.UI
 {
-    [RequireComponent(typeof(TweenPlayer))]
+    [RequireComponent(typeof(TweenPlayer), typeof(CanvasGroup))]
     public abstract class UIPanel : MonoBehaviour, IPanel
     {
         public abstract bool CanBack { get; }
@@ -15,8 +15,22 @@ namespace Base.UI
         public Action OnPreClose { get; set; }
         public Action OnPostClose { get; set; }
 
+        [SerializeField]
+        protected CanvasGroup canvasGroup;
+
+        [SerializeField]
         protected TweenPlayer tweenPlayer;
+
         protected CancellationTokenSource tokenSource;
+
+        protected void Reset() {
+            tweenPlayer = GetComponent<TweenPlayer>();
+            canvasGroup = GetComponent<CanvasGroup>();
+        }
+
+        public void SetInteractable(bool interactable) {
+            canvasGroup.interactable = interactable;
+        }
 
         public virtual UniTask Init() {
             PanelManager.Instance.Register(this);
@@ -25,7 +39,6 @@ namespace Base.UI
 
         public virtual async UniTask PostInit() {
             gameObject.SetActive(false);
-            tweenPlayer = GetComponent<TweenPlayer>();
             await tweenPlayer.Init();
         }
 

@@ -1,4 +1,4 @@
-﻿using Base.Asset;
+﻿using Base.LoadAsset;
 using Cysharp.Threading.Tasks;
 using DG.Tweening;
 using Sirenix.OdinInspector;
