@@ -7,3 +7,4 @@ E:/UnityPackages
 -SRDebugger
 -LeanPool
 -PlayerPrefs Editor
+-Build Report Tool v3.8.2
