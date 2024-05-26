@@ -2,7 +2,7 @@ using Base.LoadScene;
 using Base.UI;
 using Cysharp.Threading.Tasks;
 
-namespace Feature.Gameplay
+namespace Logic
 {
     public class UIButtonReloadScene : UIButtonBase
     {

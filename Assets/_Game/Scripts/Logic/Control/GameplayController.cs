@@ -2,7 +2,7 @@ using Base.UI;
 using Cysharp.Threading.Tasks;
 using UnityEngine;
 
-namespace Feature.Gameplay
+namespace Logic
 {
     public class GameplayController : MonoBehaviour
     {

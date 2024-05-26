@@ -4,7 +4,7 @@ using Cysharp.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 
-namespace Base.Core
+namespace Controller
 {
     public class GameInit : MonoBehaviour
     {

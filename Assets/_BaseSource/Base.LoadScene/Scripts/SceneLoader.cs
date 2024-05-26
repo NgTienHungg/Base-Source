@@ -29,7 +29,7 @@ namespace Base.LoadScene
         protected override void OnAwake() { }
 
         public async UniTask LoadScene(string sceneId) {
-            Debug.Log($"[SCENE] Load scene: {sceneId.Color("cyan")}...");
+            Debug.Log($"[SCENE] Load scene: {sceneId.Color("cyan")}");
             InitializeLoading();
 
             var operationHandle = Addressables.LoadSceneAsync(sceneId, LoadSceneMode.Single, false);

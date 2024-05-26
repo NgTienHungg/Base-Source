@@ -3,7 +3,7 @@ using Controller;
 using TMPro;
 using UnityEngine;
 
-namespace Feature.Gameplay
+namespace Logic
 {
     public class UIPlayPanel : UIPanel
     {

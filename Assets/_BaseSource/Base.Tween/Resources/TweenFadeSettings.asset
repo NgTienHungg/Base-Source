@@ -15,4 +15,4 @@ MonoBehaviour:
   curveIn: 3
   curveOut: 2
   durationIn: 0.25
-  durationOut: 0.25
+  durationOut: 0.2
