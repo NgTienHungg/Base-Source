@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15635222085d4da9823d3c95d4485c12, type: 3}
   m_Name: TweenMoveSettings
   m_EditorClassIdentifier: 
-  curveIn: 6
-  curveOut: 5
+  easeIn: 6
+  easeOut: 5
   durationIn: 0.25
   durationOut: 0.25

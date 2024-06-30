@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15635222085d4da9823d3c95d4485c12, type: 3}
   m_Name: TweenFadeSettings
   m_EditorClassIdentifier: 
-  curveIn: 3
-  curveOut: 2
+  easeIn: 3
+  easeOut: 2
   durationIn: 0.3
   durationOut: 0.25
