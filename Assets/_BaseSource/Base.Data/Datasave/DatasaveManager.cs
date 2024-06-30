@@ -3,22 +3,12 @@ using BayatGames.SaveGameFree;
 using BayatGames.SaveGameFree.Serializers;
 using Sirenix.OdinInspector;
 using UnityEngine;
-using Feature.Offer;
-using Feature.Resource;
 
 namespace Base.Data
 {
-    public class DatasaveManager : MonoBehaviour
+    public partial class DatasaveManager : MonoBehaviour
     {
-        #region =====>>> GAME <<<=====
-        public OfferSave Offer;
-        public ResourceSave Resource;
-        #endregion
-
-        [ShowInInspector] [ReadOnly]
         private bool encode = true;
-
-        [ShowInInspector] [ReadOnly]
         private string password = "NgTienHung";
 
         private readonly List<ISaveData> datasave = new List<ISaveData>();
@@ -32,14 +22,6 @@ namespace Base.Data
             SaveGame.Serializer = new SaveGameJsonSerializer();
 
             LoadData();
-        }
-
-        private void LoadData() {
-            Offer = SaveGame.Load("Offer", new OfferSave("Save"));
-            Resource = SaveGame.Load("Resource", new ResourceSave("Save"));
-
-            datasave.Add(Offer);
-            datasave.Add(Resource);
         }
 
         [Button]

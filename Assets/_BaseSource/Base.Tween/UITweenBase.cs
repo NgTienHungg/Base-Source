@@ -43,8 +43,8 @@ namespace Base.Tween
         protected float delayOut;
 
         public bool IsAutoRun => runType == ETweenRun.Auto;
-        protected Ease EaseIn => overrideEase ? easeIn : settings.curveIn;
-        protected Ease EaseOut => overrideEase ? easeOut : settings.curveOut;
+        protected Ease EaseIn => overrideEase ? easeIn : settings.easeIn;
+        protected Ease EaseOut => overrideEase ? easeOut : settings.easeOut;
         protected float DurationIn => overrideDuration ? durationIn : settings.durationIn;
         protected float DurationOut => overrideDuration ? durationOut : settings.durationOut;
         protected float DelayIn => delay ? delayIn : 0f;
@@ -53,22 +53,27 @@ namespace Base.Tween
         protected abstract string SettingsPath { get; }
         protected bool isInitialized;
 
-        protected virtual void Reset() {
+        protected virtual void Reset()
+        {
             settings = Resources.Load<TweenSettings>(SettingsPath);
         }
 
-        public async UniTask Init() {
+        public async UniTask Init()
+        {
             if (isInitialized) return;
             isInitialized = true;
             await Setup();
             Inactive();
         }
 
-        protected virtual UniTask Setup() {
-            if (settings == null) {
+        protected virtual UniTask Setup()
+        {
+            if (settings == null)
+            {
                 settings = Resources.Load<TweenSettings>(SettingsPath);
 
-                if (settings == null) {
+                if (settings == null)
+                {
                     Debug.LogError($"Not found {SettingsPath.Color("red")} in Resources");
                     settings = AssetLoader.LoadResource<TweenSettings>("TweenBaseSettings");
                 }

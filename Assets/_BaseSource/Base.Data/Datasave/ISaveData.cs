@@ -4,6 +4,5 @@
     {
         void Save();
         void Fix();
-        void OnLoaded();
     }
 }

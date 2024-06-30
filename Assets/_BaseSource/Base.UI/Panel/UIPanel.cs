@@ -10,10 +10,10 @@ namespace Base.UI
     public abstract class UIPanel : MonoBehaviour, IPanel
     {
         public abstract bool CanBack { get; }
-        public Action OnPreOpen { get; set; }
-        public Action OnPostOpen { get; set; }
-        public Action OnPreClose { get; set; }
-        public Action OnPostClose { get; set; }
+        public Action OnPreShow { get; set; }
+        public Action OnPostShow { get; set; }
+        public Action OnPreHide { get; set; }
+        public Action OnPostHide { get; set; }
 
         [SerializeField]
         protected CanvasGroup canvasGroup;
@@ -23,64 +23,72 @@ namespace Base.UI
 
         protected CancellationTokenSource tokenSource;
 
-        protected void Reset() {
+        protected void Reset()
+        {
             tweenPlayer = GetComponent<TweenPlayer>();
             canvasGroup = GetComponent<CanvasGroup>();
         }
 
-        public void SetInteractable(bool interactable) {
-            canvasGroup.interactable = interactable;
-        }
-
-        public virtual UniTask Init() {
+        /// <summary>
+        /// Thực hiện các tác vụ init, sinh, await ... của các thành phần trong panel. 
+        /// </summary>
+        public virtual UniTask Init()
+        {
             PanelManager.Instance.Register(this);
             return UniTask.CompletedTask;
         }
 
-        public virtual async UniTask PostInit() {
+        /// <summary>
+        /// Chờ Init() vì trong khi đó có thể sinh ra các item có Tween
+        /// Sau đó mới init tween để show đủ tất cả các animation
+        /// </summary>
+        public virtual async UniTask PostInit()
+        {
             gameObject.SetActive(false);
             await tweenPlayer.Init();
         }
 
-        public async UniTask Show() {
+        public async UniTask Show()
+        {
             tokenSource?.Cancel();
             tokenSource = new CancellationTokenSource();
 
-            OnPreOpen?.Invoke();
-            await Opening();
-            OnPostOpen?.Invoke();
+            OnPreShow?.Invoke();
+            gameObject.SetActive(true);
+            await ShowTween();
+            OnPostShow?.Invoke();
         }
 
-        public async UniTask Hide() {
+        public async UniTask Hide()
+        {
             tokenSource?.Cancel();
             tokenSource = new CancellationTokenSource();
 
-            OnPreClose?.Invoke();
-            await Closing();
-            OnPostClose?.Invoke();
+            OnPreHide?.Invoke();
+            await HideTween();
+            Destroy(gameObject);
+            OnPostHide?.Invoke();
         }
 
-        public UniTask ShowTween() {
+        public UniTask ShowTween()
+        {
             return tweenPlayer.ShowTween(tokenSource.Token);
         }
 
-        public UniTask HideTween() {
+        public UniTask HideTween()
+        {
             return tweenPlayer.HideTween(tokenSource.Token);
         }
 
-        protected async UniTask Opening() {
-            gameObject.SetActive(true);
-            await ShowTween();
-        }
-
-        protected async UniTask Closing() {
-            await HideTween();
-            Destroy(gameObject);
-        }
-
-        protected virtual void OnDestroy() {
+        protected virtual void OnDestroy()
+        {
             tokenSource?.Dispose();
             PanelManager.Instance.Unregister(this);
+        }
+
+        public void SetInteractable(bool interactable)
+        {
+            canvasGroup.interactable = interactable;
         }
     }
 }

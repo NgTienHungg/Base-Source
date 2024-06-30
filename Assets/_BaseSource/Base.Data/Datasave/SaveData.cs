@@ -20,7 +20,5 @@ namespace Base.Data
         }
 
         public virtual void Fix() { }
-
-        public virtual void OnLoaded() { }
     }
 }

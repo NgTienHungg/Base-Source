@@ -12,41 +12,49 @@ namespace Base.Tween
 
         protected override string SettingsPath => "TweenFadeSettings";
 
-        protected override void Reset() {
+        protected override void Reset()
+        {
             base.Reset();
             canvasGroup = GetComponent<CanvasGroup>();
         }
 
-        protected override async UniTask Setup() {
+        protected override async UniTask Setup()
+        {
             await base.Setup();
 
-            if (canvasGroup == null) {
+            if (canvasGroup == null)
+            {
                 canvasGroup = GetComponent<CanvasGroup>();
-                if (canvasGroup == null) {
+                if (canvasGroup == null)
+                {
                     canvasGroup = gameObject.AddComponent<CanvasGroup>();
                 }
             }
         }
 
-        public override async UniTask Show() {
+        public override async UniTask Show()
+        {
             await canvasGroup.DOFade(1, DurationIn)
                 .SetEase(EaseIn).SetDelay(DelayIn)
                 .ToUniTask().ContinueWith(Active);
         }
 
-        public override async UniTask Hide() {
+        public override async UniTask Hide()
+        {
             canvasGroup.interactable = false;
             await canvasGroup.DOFade(0, DurationOut)
                 .SetEase(EaseOut).SetDelay(DelayOut)
                 .ToUniTask().ContinueWith(Inactive);
         }
 
-        protected override void Active() {
+        protected override void Active()
+        {
             canvasGroup.alpha = 1;
             canvasGroup.interactable = true;
         }
 
-        protected override void Inactive() {
+        protected override void Inactive()
+        {
             canvasGroup.alpha = 0;
             canvasGroup.interactable = false;
         }

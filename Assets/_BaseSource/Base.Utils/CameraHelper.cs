@@ -26,4 +26,15 @@ namespace Base.Utils
             return MainCam.WorldToScreenPoint(worldPos);
         }
     }
+
+    public class A
+    {
+        public A() {
+            
+        }
+        
+        ~A() {
+            
+        }
+    }
 }

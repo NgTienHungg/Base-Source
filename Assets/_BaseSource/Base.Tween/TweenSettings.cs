@@ -7,8 +7,8 @@ namespace Base.Tween
     public class TweenSettings : ScriptableObject
     {
         [Space]
-        public Ease curveIn = Ease.Linear;
-        public Ease curveOut = Ease.Linear;
+        public Ease easeIn = Ease.Linear;
+        public Ease easeOut = Ease.Linear;
 
         [Space]
         public float durationIn = 0.2f;

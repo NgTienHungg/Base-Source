@@ -6,7 +6,7 @@ namespace Feature.Shop
     public class UIButtonOpenShop : UIButtonBase
     {
         protected override void OnClick() {
-            PanelManager.Instance.TransitionAsync<UIShopPanel>(Address.UIShopPanel).Forget();
+            PanelManager.Instance.Transition<UIShopPanel>(Address.UIShopPanel).Forget();
         }
     }
 }

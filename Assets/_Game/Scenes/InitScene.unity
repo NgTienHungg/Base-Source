@@ -227,7 +227,7 @@ GameObject:
   - component: {fileID: 537076575}
   - component: {fileID: 537076576}
   m_Layer: 0
-  m_Name: DatasaveManager
+  m_Name: Datasave
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -304,7 +304,7 @@ GameObject:
   - component: {fileID: 891164580}
   - component: {fileID: 891164581}
   m_Layer: 0
-  m_Name: DatabaseManager
+  m_Name: Database
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -355,7 +355,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &925042577
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -457,7 +457,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11496292, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
       propertyPath: m_ramModuleState
-      value: 0
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 11496292, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
       propertyPath: m_audioModuleState
@@ -596,7 +596,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.007843138, g: 0.007843138, b: 0.007843138, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0

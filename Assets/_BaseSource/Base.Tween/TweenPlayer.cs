@@ -12,12 +12,14 @@ namespace Base.Tween
         [ShowInInspector] [ReadOnly]
         private List<ITween> uiTweens = new List<ITween>();
 
-        public UniTask Init() {
+        public UniTask Init()
+        {
             uiTweens = GetComponentsInChildren<ITween>(includeInactive: true).ToList();
             return UniTask.WhenAll(uiTweens.Select(tween => tween.Init()));
         }
 
-        public UniTask ShowTween(CancellationToken token) {
+        public UniTask ShowTween(CancellationToken token)
+        {
             var showTasks = uiTweens.Where(tween => tween.IsAutoRun)
                 .Select(tween => tween.Show())
                 .ToList();
@@ -25,7 +27,8 @@ namespace Base.Tween
             return UniTask.WhenAll(showTasks).AttachExternalCancellation(token);
         }
 
-        public UniTask HideTween(CancellationToken token) {
+        public UniTask HideTween(CancellationToken token)
+        {
             var hideTasks = uiTweens.Where(tween => tween.IsAutoRun)
                 .Select(tween => tween.Hide())
                 .ToList();

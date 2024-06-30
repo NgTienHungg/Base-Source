@@ -18,15 +18,18 @@ namespace Base.Tween
 
         protected override string SettingsPath => "TweenMoveSettings";
 
-        protected override void Reset() {
+        protected override void Reset()
+        {
             base.Reset();
             rectTrans = transform as RectTransform;
         }
 
-        protected override async UniTask Setup() {
+        protected override async UniTask Setup()
+        {
             await base.Setup();
 
-            if (rectTrans == null) {
+            if (rectTrans == null)
+            {
                 rectTrans = transform as RectTransform;
             }
 
@@ -34,23 +37,27 @@ namespace Base.Tween
             inactivePos = activePos + offset;
         }
 
-        public override async UniTask Show() {
+        public override async UniTask Show()
+        {
             await rectTrans.DOAnchorPos(activePos, DurationIn)
                 .SetEase(EaseIn).SetDelay(DelayIn)
                 .ToUniTask().ContinueWith(Active);
         }
 
-        public override async UniTask Hide() {
+        public override async UniTask Hide()
+        {
             await rectTrans.DOAnchorPos(inactivePos, DurationOut)
                 .SetEase(EaseOut).SetDelay(DelayOut)
                 .ToUniTask().ContinueWith(Inactive);
         }
 
-        protected override void Active() {
+        protected override void Active()
+        {
             rectTrans.anchoredPosition = activePos;
         }
 
-        protected override void Inactive() {
+        protected override void Inactive()
+        {
             rectTrans.anchoredPosition = inactivePos;
         }
     }

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Base.Data;
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace Feature.Resource
@@ -8,12 +9,12 @@ namespace Feature.Resource
     [Serializable]
     public class ResourceSave : SaveData
     {
-        public Dictionary<EResource, int> ResourceDictionary;
+        [ShowInInspector]
+        public Dictionary<EResource, int> ResourceDictionary = new Dictionary<EResource, int>();
+
         public Action<EResource, int> OnResourceChanged;
 
-        public ResourceSave(string keySave) : base(keySave) {
-            ResourceDictionary = new Dictionary<EResource, int>();
-        }
+        public ResourceSave(string keySave) : base(keySave) { }
 
         public void SetResource(EResource type, int value) {
             var preChangeValue = GetResource(type);
@@ -41,7 +42,7 @@ namespace Feature.Resource
         }
 
         public int GetResource(EResource type) {
-            return ResourceDictionary.ContainsKey(type) ? ResourceDictionary[type] : 0;
+            return ResourceDictionary.TryGetValue(type, out var value) ? value : 0;
         }
     }
 }

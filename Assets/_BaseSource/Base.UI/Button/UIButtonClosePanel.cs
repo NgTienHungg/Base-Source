@@ -8,12 +8,14 @@ namespace Base.UI
         [SerializeField]
         private UIPanel panel;
 
-        protected override void Reset() {
+        protected override void Reset()
+        {
             base.Reset();
             panel = GetComponentInParent<UIPanel>();
         }
 
-        protected override void OnClick() {
+        protected override void OnClick()
+        {
             panel.Hide().Forget();
         }
     }

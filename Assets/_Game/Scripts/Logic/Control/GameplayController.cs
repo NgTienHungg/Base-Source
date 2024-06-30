@@ -7,7 +7,7 @@ namespace Logic
     public class GameplayController : MonoBehaviour
     {
         private void Start() {
-            PanelManager.Instance.CreateAsync<UIPlayPanel>(Address.UIPlayPanel)
+            PanelManager.Instance.Create<UIPlayPanel>(Address.UIPlayPanel)
                 .ContinueWith(panel => panel.Show().Forget());
         }
     }

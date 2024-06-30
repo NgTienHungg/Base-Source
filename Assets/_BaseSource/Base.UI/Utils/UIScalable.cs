@@ -1,5 +1,4 @@
-﻿using System;
-using DG.Tweening;
+﻿using DG.Tweening;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -16,35 +15,42 @@ namespace Base.UI
         [SerializeField]
         private float releaseScaleMultiplier = 1.15f;
 
-        private void Reset() {
+        private void Reset()
+        {
             originScale = transform.localScale.x;
         }
 
-        public void OnPointerDown(PointerEventData eventData) {
+        public void OnPointerDown(PointerEventData eventData)
+        {
             OnHoldEvent();
         }
 
-        public void OnPointerUp(PointerEventData eventData) {
+        public void OnPointerUp(PointerEventData eventData)
+        {
             OnReleaseEvent();
         }
 
-        private void OnHoldEvent() {
+        private void OnHoldEvent()
+        {
             transform.DOScale(originScale * pressScaleMultiplier, 0.1f)
                 .SetUpdate(true);
         }
 
-        public void OnReleaseEvent() {
+        public void OnReleaseEvent()
+        {
             var sequence = DOTween.Sequence().SetUpdate(true);
 
             sequence.Append(transform.DOScale(originScale * releaseScaleMultiplier, 0.1f))
                 .Append(transform.DOScale(originScale, 0.1f));
         }
 
-        private void OnDisable() {
+        private void OnDisable()
+        {
             transform.DOKill();
         }
-        
-        private void OnDestroy() {
+
+        private void OnDestroy()
+        {
             transform.DOKill();
         }
     }

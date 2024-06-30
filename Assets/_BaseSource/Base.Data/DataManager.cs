@@ -18,7 +18,7 @@ namespace Base.Data
             OnInit();
         }
 
-        public void OnInit() {
+        private void OnInit() {
             database.Init();
             datasave.Init();
         }

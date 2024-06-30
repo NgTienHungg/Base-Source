@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   curveIn: 27
   curveOut: 26
-  durationIn: 0.3
-  durationOut: 0.25
+  durationIn: 0.4
+  durationOut: 0.3
