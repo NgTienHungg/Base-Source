@@ -17,7 +17,8 @@ namespace Base.LoadAsset
 
         public Exception OperationException { get; protected set; }
 
-        protected AssetRequest(int requestId) {
+        protected AssetRequest(int requestId)
+        {
             RequestId = requestId;
         }
     }
@@ -25,28 +26,34 @@ namespace Base.LoadAsset
     public sealed class AssetRequest<TAsset> : AssetRequest, IAssetRequest<TAsset> where TAsset : UnityEngine.Object
     {
         public TAsset Result { get; private set; }
-        
+
         public UniTask<TAsset> Task { get; private set; }
 
-        public AssetRequest(int requestId) : base(requestId) { }
+        public AssetRequest(int requestId) : base(requestId)
+        { }
 
-        void IAssetRequest<TAsset>.SetStatus(AssetRequestStatus status) {
+        void IAssetRequest<TAsset>.SetStatus(AssetRequestStatus status)
+        {
             Status = status;
         }
 
-        void IAssetRequest<TAsset>.SetResult(TAsset result) {
+        void IAssetRequest<TAsset>.SetResult(TAsset result)
+        {
             Result = result;
         }
 
-        void IAssetRequest<TAsset>.SetProgressFunc(Func<float> progressFunc) {
+        void IAssetRequest<TAsset>.SetProgressFunc(Func<float> progressFunc)
+        {
             ProgressFunc = progressFunc;
         }
 
-        void IAssetRequest<TAsset>.SetTask(UniTask<TAsset> task) {
+        void IAssetRequest<TAsset>.SetTask(UniTask<TAsset> task)
+        {
             Task = task;
         }
 
-        void IAssetRequest<TAsset>.SetOperationException(Exception ex) {
+        void IAssetRequest<TAsset>.SetOperationException(Exception ex)
+        {
             OperationException = ex;
         }
     }

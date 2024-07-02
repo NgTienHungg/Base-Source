@@ -28,18 +28,22 @@ namespace Base.UI
 
         public override bool CanBack => true;
 
-        private UIMessagePanel SetTitle(string title) {
+        private UIMessagePanel SetTitle(string title)
+        {
             txtTitle.text = title;
             return this;
         }
 
-        private UIMessagePanel SetContent(string content) {
+        private UIMessagePanel SetContent(string content)
+        {
             txtContent.text = content;
             return this;
         }
 
-        private UIMessagePanel SetLayout(EMessage type) {
-            switch (type) {
+        private UIMessagePanel SetLayout(EMessage type)
+        {
+            switch (type)
+            {
                 case EMessage.Notice:
                     btnYes.gameObject.SetActive(false);
                     btnNo.gameObject.SetActive(false);
@@ -56,7 +60,8 @@ namespace Base.UI
             return this;
         }
 
-        public void SetupNotice(string title, string content) {
+        public void SetupNotice(string title, string content)
+        {
             this.SetTitle(title)
                 .SetContent(content)
                 .SetLayout(EMessage.Notice);
@@ -64,17 +69,20 @@ namespace Base.UI
             btnClose.onClick.AddListener(() => Hide().Forget());
         }
 
-        public void SetupConfirm(string title, string content, Action onYes, Action onNo) {
+        public void SetupConfirm(string title, string content, Action onYes, Action onNo)
+        {
             this.SetTitle(title)
                 .SetContent(content)
                 .SetLayout(EMessage.Confirm);
 
-            btnYes.onClick.AddListener(() => {
+            btnYes.onClick.AddListener(() =>
+            {
                 onYes?.Invoke();
                 Hide().Forget();
             });
 
-            btnNo.onClick.AddListener(() => {
+            btnNo.onClick.AddListener(() =>
+            {
                 onNo?.Invoke();
                 Hide().Forget();
             });

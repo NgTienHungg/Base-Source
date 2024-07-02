@@ -3,12 +3,12 @@ using DG.Tweening;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
-namespace Base.Tween
+namespace Base.UI
 {
     public class UITweenFade : UITweenBase
     {
-        [Title("Fade")] [SerializeField]
-        protected CanvasGroup canvasGroup;
+        [Title("Fade")]
+        [SerializeField] private CanvasGroup canvasGroup;
 
         protected override string SettingsPath => "TweenFadeSettings";
 

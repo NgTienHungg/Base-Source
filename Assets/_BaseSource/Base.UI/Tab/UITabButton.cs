@@ -37,47 +37,59 @@ namespace Base.UI
         protected UITabControl control;
         protected int id;
 
-        protected override void Reset() {
+        protected override void Reset()
+        {
             base.Reset();
             bgImg = GetComponent<Image>();
         }
 
-        public void Register(UITabControl control, int id) {
+        public void Register(UITabControl control, int id)
+        {
             this.control = control;
             this.id = id;
         }
 
-        public virtual void Init() { }
+        public virtual void Init()
+        { }
 
-        public virtual void Active() {
-            if (useBackground) {
+        public virtual void Active()
+        {
+            if (useBackground)
+            {
                 bgImg.sprite = onBgSprite;
             }
 
-            if (useIcon) {
+            if (useIcon)
+            {
                 iconImg.sprite = onIconSprite;
             }
 
-            if (useText) {
+            if (useText)
+            {
                 textTMP.color = onTextColor;
             }
         }
 
-        public virtual void Deactive() {
-            if (useBackground) {
+        public virtual void Deactive()
+        {
+            if (useBackground)
+            {
                 bgImg.sprite = offBgSprite;
             }
 
-            if (useIcon) {
+            if (useIcon)
+            {
                 iconImg.sprite = offIconSprite;
             }
 
-            if (useText) {
+            if (useText)
+            {
                 textTMP.color = offTextColor;
             }
         }
 
-        protected override void OnClick() {
+        protected override void OnClick()
+        {
             control.OpenTab(id);
         }
     }

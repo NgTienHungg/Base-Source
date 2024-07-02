@@ -1,6 +1,6 @@
 using System;
 using System.Threading;
-using Base.Tween;
+using Base.UI;
 using Cysharp.Threading.Tasks;
 using UnityEngine;
 
@@ -15,11 +15,8 @@ namespace Base.UI
         public Action OnPreHide { get; set; }
         public Action OnPostHide { get; set; }
 
-        [SerializeField]
-        protected CanvasGroup canvasGroup;
-
-        [SerializeField]
-        protected TweenPlayer tweenPlayer;
+        [SerializeField] protected TweenPlayer tweenPlayer;
+        [SerializeField] protected CanvasGroup canvasGroup;
 
         protected CancellationTokenSource tokenSource;
 

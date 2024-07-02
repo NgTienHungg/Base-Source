@@ -23,18 +23,22 @@ namespace Base.LoadAsset
         private readonly IAssetLoader addressableLoader = new AddressableLoader();
         private readonly IAssetLoader resourceLoader = new ResourceLoader();
 
-        protected override void OnAwake() {
+        protected override void OnAwake()
+        {
             SceneManager.activeSceneChanged += OnActiveSceneChanged;
         }
 
-        private void OnActiveSceneChanged(Scene previousActiveScene, Scene newActiveScene) {
+        private void OnActiveSceneChanged(Scene previousActiveScene, Scene newActiveScene)
+        {
             UnloadAll();
         }
 
-        public static async UniTask<T> LoadAsync<T>(string path) where T : Object {
+        public static async UniTask<T> LoadAsync<T>(string path) where T : Object
+        {
             var type = typeof(T);
 
-            if (!Instance.assetCached.ContainsKey(type)) {
+            if (!Instance.assetCached.ContainsKey(type))
+            {
                 Instance.assetCached.Add(type, new Dictionary<string, object>());
                 Instance.requestCached.Add(type, new Dictionary<string, AssetRequest>());
             }
@@ -42,14 +46,16 @@ namespace Base.LoadAsset
             var assetsOfType = Instance.assetCached[type];
             var requestsOfType = Instance.requestCached[type];
 
-            if (assetsOfType.ContainsKey(path)) {
+            if (assetsOfType.ContainsKey(path))
+            {
                 return (T)assetsOfType[path];
             }
 
             var request = Instance.addressableLoader.LoadAsync<T>(path);
             await request.Task;
 
-            if (!assetsOfType.ContainsKey(path)) {
+            if (!assetsOfType.ContainsKey(path))
+            {
                 assetsOfType.Add(path, request.Result);
                 requestsOfType.Add(path, request);
             }
@@ -57,10 +63,12 @@ namespace Base.LoadAsset
             return request.Result;
         }
 
-        public static T LoadResource<T>(string path) where T : Object {
+        public static T LoadResource<T>(string path) where T : Object
+        {
             var type = typeof(T);
 
-            if (!Instance.assetCached.ContainsKey(type)) {
+            if (!Instance.assetCached.ContainsKey(type))
+            {
                 Instance.assetCached.Add(type, new Dictionary<string, object>());
                 Instance.requestCached.Add(type, new Dictionary<string, AssetRequest>());
             }
@@ -68,13 +76,15 @@ namespace Base.LoadAsset
             var assetsOfType = Instance.assetCached[type];
             var requestsOfType = Instance.requestCached[type];
 
-            if (assetsOfType.ContainsKey(path)) {
+            if (assetsOfType.ContainsKey(path))
+            {
                 return (T)assetsOfType[path];
             }
 
             var request = Instance.resourceLoader.Load<T>(path);
 
-            if (!assetsOfType.ContainsKey(path)) {
+            if (!assetsOfType.ContainsKey(path))
+            {
                 assetsOfType.Add(path, request.Result);
                 requestsOfType.Add(path, request);
             }
@@ -82,18 +92,22 @@ namespace Base.LoadAsset
             return request.Result;
         }
 
-        public static async UniTask<Sprite> LoadSprite(string atlasPath, string spriteName) {
-            try {
+        public static async UniTask<Sprite> LoadSprite(string atlasPath, string spriteName)
+        {
+            try
+            {
                 var atlas = await LoadAsync<SpriteAtlas>(atlasPath);
                 return atlas.GetSprite(spriteName);
             }
-            catch (Exception) {
+            catch (Exception)
+            {
                 Debug.LogError($"Not found sprite: {spriteName.Color("red")} in atlas: {atlasPath.Color("red")}");
                 return null;
             }
         }
 
-        public static void Unload<T>(string path) where T : Object {
+        public static void Unload<T>(string path) where T : Object
+        {
             var type = typeof(T);
 
             if (!Instance.requestCached.ContainsKey(type))
@@ -102,7 +116,8 @@ namespace Base.LoadAsset
             var assetsOfType = Instance.assetCached[type];
             var requestsOfType = Instance.requestCached[type];
 
-            if (assetsOfType.ContainsKey(path)) {
+            if (assetsOfType.ContainsKey(path))
+            {
                 var request = requestsOfType[path];
                 Instance.addressableLoader.Release(request);
                 assetsOfType.Remove(path);
@@ -110,7 +125,8 @@ namespace Base.LoadAsset
             }
         }
 
-        private void UnloadAll() {
+        private void UnloadAll()
+        {
             addressableLoader.ReleaseAll();
             assetCached.Clear();
             requestCached.Clear();

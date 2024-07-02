@@ -33,26 +33,6 @@ namespace Base.UI
             return panel;
         }
 
-        public async UniTask<T> Show<T>(string address) where T : UIPanel
-        {
-            var panel = await Create<T>(address);
-            await panel.Show();
-            return panel;
-        }
-
-        public async UniTask Close<T>() where T : UIPanel
-        {
-            var panel = stackPanels.Find(p => p.GetType() == typeof(T));
-
-            if (panel == null)
-            {
-                Debug.LogWarning($"[PANEL] Not found {typeof(T).Name.Color("red")}");
-                return;
-            }
-
-            await panel.Hide();
-        }
-
         public void Register(UIPanel uiPanel)
         {
             stackPanels.Add(uiPanel);

@@ -4,10 +4,11 @@ using DG.Tweening;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
-namespace Base.Tween
+namespace Base.UI
 {
     public abstract class UITweenBase : MonoBehaviour, ITween
     {
+        #region ===== Fields =====
         [Title("Base")]
         [SerializeField] [EnumToggleButtons]
         protected ETweenRun runType = ETweenRun.Auto;
@@ -41,7 +42,9 @@ namespace Base.Tween
 
         [SerializeField] [ShowIf("@delay")]
         protected float delayOut;
+        #endregion
 
+        #region ===== Properties =====
         public bool IsAutoRun => runType == ETweenRun.Auto;
         protected Ease EaseIn => overrideEase ? easeIn : settings.easeIn;
         protected Ease EaseOut => overrideEase ? easeOut : settings.easeOut;
@@ -49,9 +52,11 @@ namespace Base.Tween
         protected float DurationOut => overrideDuration ? durationOut : settings.durationOut;
         protected float DelayIn => delay ? delayIn : 0f;
         protected float DelayOut => delay ? delayOut : 0f;
+        #endregion
 
         protected abstract string SettingsPath { get; }
-        protected bool isInitialized;
+
+        private bool isInitialized;
 
         protected virtual void Reset()
         {

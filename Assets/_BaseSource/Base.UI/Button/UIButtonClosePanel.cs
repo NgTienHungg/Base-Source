@@ -5,8 +5,7 @@ namespace Base.UI
 {
     public class UIButtonClosePanel : UIButtonBase
     {
-        [SerializeField]
-        private UIPanel panel;
+        [SerializeField] private UIPanel panel;
 
         protected override void Reset()
         {

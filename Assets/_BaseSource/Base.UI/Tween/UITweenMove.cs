@@ -3,15 +3,13 @@ using DG.Tweening;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
-namespace Base.Tween
+namespace Base.UI
 {
     public class UITweenMove : UITweenBase
     {
-        [Title("Move")] [SerializeField]
-        private RectTransform rectTrans;
-
-        [SerializeField]
-        protected Vector2 offset;
+        [Title("Move")]
+        [SerializeField] private RectTransform rectTrans;
+        [SerializeField] private Vector2 offset;
 
         private Vector2 activePos;
         private Vector2 inactivePos;

@@ -2,15 +2,13 @@
 using DG.Tweening;
 using UnityEngine;
 
-namespace Base.Tween
+namespace Base.UI
 {
     public class UITweenScale : UITweenBase
     {
-        [Header("Scale")] [SerializeField]
-        private float inactiveScale;
-
-        [SerializeField]
-        private float activeScale = 1f;
+        [Header("Scale")]
+        [SerializeField] private float inactiveScale;
+        [SerializeField] private float activeScale = 1f;
 
         protected override string SettingsPath => "TweenScaleSettings";
 

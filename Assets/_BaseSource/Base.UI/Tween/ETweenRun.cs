@@ -1,4 +1,4 @@
-﻿namespace Base.Tween
+﻿namespace Base.UI
 {
     public enum ETweenRun
     {

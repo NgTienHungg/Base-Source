@@ -13,7 +13,8 @@ namespace Base.LoadAsset
         private readonly Dictionary<int, AsyncOperationHandle> requestDict
             = new Dictionary<int, AsyncOperationHandle>();
 
-        public AssetRequest<TAsset> Load<TAsset>(string address) where TAsset : Object {
+        public AssetRequest<TAsset> Load<TAsset>(string address) where TAsset : Object
+        {
             var requestId = nextRequest++;
             var operationHandle = Addressables.LoadAssetAsync<TAsset>(address);
             operationHandle.WaitForCompletion();
@@ -30,7 +31,8 @@ namespace Base.LoadAsset
             return request;
         }
 
-        public AssetRequest<TAsset> LoadAsync<TAsset>(string address) where TAsset : Object {
+        public AssetRequest<TAsset> LoadAsync<TAsset>(string address) where TAsset : Object
+        {
             var requestId = nextRequest++;
             var operationHandle = Addressables.LoadAssetAsync<TAsset>(address);
             requestDict.Add(requestId, operationHandle);
@@ -41,7 +43,8 @@ namespace Base.LoadAsset
 
             setter.SetTask(completionSource.Task);
             setter.SetProgressFunc(() => operationHandle.PercentComplete);
-            operationHandle.Completed += x => {
+            operationHandle.Completed += x =>
+            {
                 setter.SetResult(x.Result);
                 setter.SetStatus(x.Status == AsyncOperationStatus.Succeeded
                     ? AssetRequestStatus.Succeeded
@@ -53,8 +56,10 @@ namespace Base.LoadAsset
             return request;
         }
 
-        public void Release(AssetRequest request) {
-            if (!requestDict.ContainsKey(request.RequestId)) {
+        public void Release(AssetRequest request)
+        {
+            if (!requestDict.ContainsKey(request.RequestId))
+            {
                 throw new System.InvalidOperationException(
                     $"There is no asset that has been requested for release (RequestId: {request.RequestId}).");
             }
@@ -64,8 +69,10 @@ namespace Base.LoadAsset
             requestDict.Remove(request.RequestId);
         }
 
-        public void ReleaseAll() {
-            foreach (var data in requestDict) {
+        public void ReleaseAll()
+        {
+            foreach (var data in requestDict)
+            {
                 Addressables.ReleaseInstance(data.Value);
             }
 

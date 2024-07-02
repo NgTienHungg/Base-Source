@@ -7,6 +7,10 @@ namespace Base.UI
 {
     public partial class PanelManager
     {
+        public UIPanel LastPanel => stackPanels.Count > 0 ? stackPanels.Last() : null;
+
+        public Type LastPanelType => stackPanels.Count > 0 ? stackPanels.Last().GetType() : null;
+
         public UIPanel Get<T>() where T : UIPanel
         {
             var panel = stackPanels.FindAll(p => p.GetType() == typeof(T)).Last();
@@ -18,6 +22,26 @@ namespace Base.UI
             }
 
             return panel;
+        }
+
+        public async UniTask<T> CreateAndShow<T>(string address) where T : UIPanel
+        {
+            var panel = await Create<T>(address);
+            await panel.Show();
+            return panel;
+        }
+
+        public async UniTask Hide<T>() where T : UIPanel
+        {
+            var panel = stackPanels.Find(p => p.GetType() == typeof(T));
+
+            if (panel == null)
+            {
+                Debug.LogWarning($"[PANEL] Not found {typeof(T).Name.Color("red")}");
+                return;
+            }
+
+            await panel.Hide();
         }
 
         public async UniTask<T> Transition<T>(string address) where T : UIPanel
@@ -35,9 +59,5 @@ namespace Base.UI
             await newPanel.Show();
             return newPanel;
         }
-
-        public UIPanel LastPanel => stackPanels.Count > 0 ? stackPanels.Last() : null;
-
-        public Type LastPanelType => stackPanels.Count > 0 ? stackPanels.Last().GetType() : null;
     }
 }

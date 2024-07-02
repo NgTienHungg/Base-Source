@@ -1,9 +1,9 @@
 ﻿using DG.Tweening;
 using UnityEngine;
 
-namespace Base.Tween
+namespace Base.UI
 {
-    [CreateAssetMenu(menuName = "HungNT/TweenSettings")]
+    [CreateAssetMenu(menuName = "Base/TweenSettings")]
     public class TweenSettings : ScriptableObject
     {
         [Space]

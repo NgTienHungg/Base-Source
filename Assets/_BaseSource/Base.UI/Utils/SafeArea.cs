@@ -4,19 +4,20 @@ namespace Base.UI
 {
     public class SafeArea : MonoBehaviour
     {
-        [SerializeField]
-        private Rect rect;
+        [SerializeField] private Rect rect;
 
         // Start is called before the first frame update
-        private void Awake() {
+        private void Awake()
+        {
             Safe();
         }
 
-        public void Safe() {
-            Canvas canvas = GetComponentInParent<Canvas>();
+        public void Safe()
+        {
+            var canvas = GetComponentInParent<Canvas>();
             rect = Screen.safeArea;
             rect.size /= canvas.scaleFactor;
-            RectTransform rt = GetComponent<RectTransform>();
+            var rt = GetComponent<RectTransform>();
 
             var safeArea = Screen.safeArea;
 

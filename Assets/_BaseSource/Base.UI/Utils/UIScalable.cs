@@ -6,14 +6,9 @@ namespace Base.UI
 {
     public class UIScalable : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     {
-        [SerializeField]
-        private float originScale = 1f;
-
-        [SerializeField]
-        private float pressScaleMultiplier = 0.9f;
-
-        [SerializeField]
-        private float releaseScaleMultiplier = 1.15f;
+        [SerializeField] private float originScale = 1f;
+        [SerializeField] private float pressScaleMultiplier = 0.9f;
+        [SerializeField] private float releaseScaleMultiplier = 1.15f;
 
         private void Reset()
         {

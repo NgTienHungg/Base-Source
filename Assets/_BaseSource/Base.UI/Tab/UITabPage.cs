@@ -8,20 +8,24 @@ namespace Base.UI
         protected UITabControl control;
         protected int id;
 
-        public void Register(UITabControl control, int id) {
+        public void Register(UITabControl control, int id)
+        {
             this.control = control;
             this.id = id;
         }
 
-        public virtual UniTask Init() {
+        public virtual UniTask Init()
+        {
             return UniTask.CompletedTask;
         }
 
-        public virtual void Active() {
+        public virtual void Active()
+        {
             gameObject.SetActive(true);
         }
 
-        public virtual void Deactive() {
+        public virtual void Deactive()
+        {
             gameObject.SetActive(false);
         }
     }

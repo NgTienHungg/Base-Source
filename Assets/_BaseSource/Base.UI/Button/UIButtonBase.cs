@@ -5,8 +5,7 @@ namespace Base.UI
 {
     public abstract class UIButtonBase : MonoBehaviour
     {
-        [SerializeField]
-        protected Button button;
+        [SerializeField] protected Button button;
 
         protected virtual void Reset()
         {

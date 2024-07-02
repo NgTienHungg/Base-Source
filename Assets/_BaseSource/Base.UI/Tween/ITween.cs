@@ -1,6 +1,6 @@
 ﻿using Cysharp.Threading.Tasks;
 
-namespace Base.Tween
+namespace Base.UI
 {
     public interface ITween
     {

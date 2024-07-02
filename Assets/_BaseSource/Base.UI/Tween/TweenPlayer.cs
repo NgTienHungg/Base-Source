@@ -5,7 +5,7 @@ using Cysharp.Threading.Tasks;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
-namespace Base.Tween
+namespace Base.UI
 {
     public class TweenPlayer : MonoBehaviour
     {
