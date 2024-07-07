@@ -8,75 +8,36 @@ namespace Base.LoadAsset
 {
     public class AddressableLoader : IAssetLoader
     {
-        private int nextRequest;
+        private List<AsyncOperationHandle> listRequest;
 
-        private readonly Dictionary<int, AsyncOperationHandle> requestDict
-            = new Dictionary<int, AsyncOperationHandle>();
-
-        public AssetRequest<TAsset> Load<TAsset>(string address) where TAsset : Object
+        public void Init()
         {
-            var requestId = nextRequest++;
-            var operationHandle = Addressables.LoadAssetAsync<TAsset>(address);
-            operationHandle.WaitForCompletion();
-            requestDict.Add(requestId, operationHandle);
-            var request = new AssetRequest<TAsset>(requestId);
-            var setter = (IAssetRequest<TAsset>)request;
-            setter.SetTask(UniTask.FromResult(operationHandle.Result));
-            setter.SetProgressFunc(() => operationHandle.PercentComplete);
-            setter.SetResult(operationHandle.Result);
-            setter.SetStatus(operationHandle.Status == AsyncOperationStatus.Succeeded
-                ? AssetRequestStatus.Succeeded
-                : AssetRequestStatus.Failed);
-            setter.SetOperationException(operationHandle.OperationException);
-            return request;
+            listRequest = new List<AsyncOperationHandle>();
         }
 
-        public AssetRequest<TAsset> LoadAsync<TAsset>(string address) where TAsset : Object
+        public TAsset Load<TAsset>(string address) where TAsset : Object
         {
-            var requestId = nextRequest++;
-            var operationHandle = Addressables.LoadAssetAsync<TAsset>(address);
-            requestDict.Add(requestId, operationHandle);
-
-            var request = new AssetRequest<TAsset>(requestId);
-            var setter = (IAssetRequest<TAsset>)request;
-            var completionSource = new UniTaskCompletionSource<TAsset>();
-
-            setter.SetTask(completionSource.Task);
-            setter.SetProgressFunc(() => operationHandle.PercentComplete);
-            operationHandle.Completed += x =>
-            {
-                setter.SetResult(x.Result);
-                setter.SetStatus(x.Status == AsyncOperationStatus.Succeeded
-                    ? AssetRequestStatus.Succeeded
-                    : AssetRequestStatus.Failed);
-                setter.SetOperationException(operationHandle.OperationException);
-                completionSource.TrySetResult(x.Result);
-            };
-
-            return request;
+            Debug.LogError("AddressLoader does not support Load(). Use ResourceLoader instead.");
+            return null;
         }
 
-        public void Release(AssetRequest request)
+        public async UniTask<TAsset> LoadAsync<TAsset>(string address) where TAsset : Object
         {
-            if (!requestDict.ContainsKey(request.RequestId))
-            {
-                throw new System.InvalidOperationException(
-                    $"There is no asset that has been requested for release (RequestId: {request.RequestId}).");
-            }
+            var requestHandle = Addressables.LoadAssetAsync<TAsset>(address);
+            listRequest.Add(requestHandle);
 
-            var operation = requestDict[request.RequestId];
-            Addressables.Release(operation);
-            requestDict.Remove(request.RequestId);
+            await requestHandle.Task;
+            return requestHandle.Result;
         }
 
         public void ReleaseAll()
         {
-            foreach (var data in requestDict)
+            foreach (var request in listRequest)
             {
-                Addressables.ReleaseInstance(data.Value);
+                Addressables.ReleaseInstance(request);
             }
 
-            requestDict.Clear();
+            listRequest.Clear();
         }
     }
 }

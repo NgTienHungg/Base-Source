@@ -17,11 +17,13 @@ namespace Feature.Offer
         public OfferEntity Entity => offerEntity;
         protected OfferEntity offerEntity;
 
-        public virtual void Setup(OfferEntity offer) {
+        public virtual void Setup(OfferEntity offer)
+        {
             offerEntity = offer;
 
-            AssetLoader.LoadSprite(Address.ShopOfferAtlas, offer.name)
-                .ContinueWith(sprite => {
+            AssetLoader.Instance.LoadSprite(Address.ShopOfferAtlas, offer.name)
+                .ContinueWith(sprite =>
+                {
                     iconImg.sprite = sprite;
                     iconImg.SetNativeSize();
                 });

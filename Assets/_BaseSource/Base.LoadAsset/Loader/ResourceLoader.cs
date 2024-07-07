@@ -1,4 +1,4 @@
-﻿using System;
+﻿using System.Collections.Generic;
 using Cysharp.Threading.Tasks;
 using UnityEngine;
 using Object = UnityEngine.Object;
@@ -7,61 +7,35 @@ namespace Base.LoadAsset
 {
     public class ResourceLoader : IAssetLoader
     {
-        private int nextRequestId;
+        private List<Object> listAsset;
 
-        public AssetRequest<TAsset> Load<TAsset>(string address) where TAsset : Object
+        public void Init()
         {
-            var requestId = nextRequestId++;
-            var request = new AssetRequest<TAsset>(requestId);
-            var setter = (IAssetRequest<TAsset>)request;
+            listAsset = new List<Object>();
+        }
+
+        public TAsset Load<TAsset>(string address) where TAsset : Object
+        {
             var result = Resources.Load<TAsset>(address);
-
-            setter.SetTask(UniTask.FromResult(result));
-            setter.SetProgressFunc(() => 1.0f);
-            setter.SetResult(result);
-            setter.SetStatus(result != null ? AssetRequestStatus.Succeeded : AssetRequestStatus.Failed);
-            if (result == null)
-            {
-                setter.SetOperationException(
-                    new InvalidOperationException($"Requested asset（Key: {address}）was not found.")
-                );
-            }
-
-            return request;
+            listAsset.Add(result);
+            return result;
         }
 
-        public AssetRequest<TAsset> LoadAsync<TAsset>(string address) where TAsset : Object
+        public async UniTask<TAsset> LoadAsync<TAsset>(string address) where TAsset : Object
         {
-            var requestId = nextRequestId++;
-            var request = new AssetRequest<TAsset>(requestId);
-            var setter = (IAssetRequest<TAsset>)request;
-            var completionSource = new UniTaskCompletionSource<TAsset>();
-
-            var resourceRequest = Resources.LoadAsync<TAsset>(address);
-            setter.SetTask(completionSource.Task);
-            setter.SetProgressFunc(() => resourceRequest.progress);
-            resourceRequest.completed += _ =>
-            {
-                var result = resourceRequest.asset as TAsset;
-                setter.SetResult(result);
-                setter.SetStatus(result != null ? AssetRequestStatus.Succeeded : AssetRequestStatus.Failed);
-                if (result == null)
-                {
-                    setter.SetOperationException(
-                        new InvalidOperationException($"Requested asset（Key: {address}）was not found.")
-                    );
-                }
-
-                completionSource.TrySetResult(result);
-            };
-
-            return request;
+            var result = await Resources.LoadAsync<TAsset>(address);
+            listAsset.Add(result);
+            return (TAsset)result;
         }
-
-        public void Release(AssetRequest request)
-        { }
 
         public void ReleaseAll()
-        { }
+        {
+            foreach (var asset in listAsset)
+            {
+                Resources.UnloadAsset(asset);
+            }
+
+            listAsset.Clear();
+        }
     }
 }

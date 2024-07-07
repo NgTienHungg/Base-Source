@@ -80,7 +80,7 @@ namespace Base.UI
                 if (settings == null)
                 {
                     Debug.LogError($"Not found {SettingsPath.Color("red")} in Resources");
-                    settings = AssetLoader.LoadResource<TweenSettings>("TweenBaseSettings");
+                    settings = AssetLoader.Instance.LoadResource<TweenSettings>("TweenBaseSettings");
                 }
             }
 

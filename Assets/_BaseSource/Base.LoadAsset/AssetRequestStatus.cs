@@ -1,9 +1,9 @@
-﻿namespace Base.LoadAsset
-{
-    public enum AssetRequestStatus
-    {
-        None,
-        Succeeded,
-        Failed
-    }
-}
+﻿// namespace Base.LoadAsset
+// {
+//     public enum AssetRequestStatus
+//     {
+//         None,
+//         Succeeded,
+//         Failed
+//     }
+// }

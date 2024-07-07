@@ -27,7 +27,7 @@ namespace Feature.Resource
         }
 
         private void SetupUI() {
-            AssetLoader.LoadSprite(Address.ResourceAtlas, resourceValue.resourceType.ToString())
+            AssetLoader.Instance.LoadSprite(Address.ResourceAtlas, resourceValue.resourceType.ToString())
                 .ContinueWith(sprite => { iconImg.sprite = sprite; });
 
             valueTxt.text = $"x{resourceValue.value}";

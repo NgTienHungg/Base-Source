@@ -25,8 +25,8 @@ namespace Feature.Offer
             var gemOffers = offerTable.GetOffersByType(EResourceOffer.Gem);
             var goldOffers = offerTable.GetOffersByType(EResourceOffer.Gold);
 
-            uiGemOfferPrefab = await AssetLoader.LoadAsync<GameObject>(Address.UIShopResourceOffer_Gem);
-            uiGoldOfferPrefab = await AssetLoader.LoadAsync<GameObject>(Address.UIShopResourceOffer_Gold);
+            uiGemOfferPrefab = await AssetLoader.Instance.LoadAddressAsync<GameObject>(Address.UIShopResourceOffer_Gem);
+            uiGoldOfferPrefab = await AssetLoader.Instance.LoadAddressAsync<GameObject>(Address.UIShopResourceOffer_Gold);
 
             foreach (var offer in gemOffers) {
                 var uiGemOffer = PoolManager.Spawn<UIResourceOfferItem>(uiGemOfferPrefab, gemOfferHolder);

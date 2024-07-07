@@ -19,25 +19,30 @@ namespace Feature.Resource
         [SerializeField]
         private TextMeshProUGUI valueTxt;
 
-        private void SetupUI() {
-            AssetLoader.LoadSprite(Address.ResourceAtlas, resourceType.ToString())
+        private void SetupUI()
+        {
+            AssetLoader.Instance.LoadSprite(Address.ResourceAtlas, resourceType.ToString())
                 .ContinueWith(sprite => { iconImg.sprite = sprite; });
 
             valueTxt.text = DataManager.Datasave.Resource.GetResource(resourceType).ToString();
         }
 
-        private void OnEnable() {
+        private void OnEnable()
+        {
             SetupUI();
 
             DataManager.Datasave.Resource.OnResourceChanged += OnResourceChanged;
         }
 
-        private void OnDisable() {
+        private void OnDisable()
+        {
             DataManager.Datasave.Resource.OnResourceChanged -= OnResourceChanged;
         }
 
-        private void OnResourceChanged(EResource type, int valueChanged) {
-            if (type == resourceType) {
+        private void OnResourceChanged(EResource type, int valueChanged)
+        {
+            if (type == resourceType)
+            {
                 valueTxt.text = DataManager.Datasave.Resource.GetResource(resourceType).ToString();
             }
         }

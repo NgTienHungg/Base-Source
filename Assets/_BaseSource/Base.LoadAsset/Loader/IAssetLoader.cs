@@ -1,14 +1,15 @@
-﻿using UnityEngine;
+﻿using Cysharp.Threading.Tasks;
+using UnityEngine;
 
 namespace Base.LoadAsset
 {
     public interface IAssetLoader
     {
-        AssetRequest<TAsset> Load<TAsset>(string address) where TAsset : Object;
+        void Init();
+        
+        TAsset Load<TAsset>(string address) where TAsset : Object;
 
-        AssetRequest<TAsset> LoadAsync<TAsset>(string address) where TAsset : Object;
-
-        void Release(AssetRequest request);
+        UniTask<TAsset> LoadAsync<TAsset>(string address) where TAsset : Object;
 
         void ReleaseAll();
     }
