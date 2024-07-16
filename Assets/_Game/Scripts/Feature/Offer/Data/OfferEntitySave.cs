@@ -8,14 +8,16 @@ namespace Feature.Offer
         public int id;
         public int buyCount;
         public bool isFirstTimeBuy;
-        
-        public OfferEntitySave(int id) {
+
+        public OfferEntitySave(int id)
+        {
             this.id = id;
             buyCount = 0;
             isFirstTimeBuy = true;
         }
 
-        public void Buy() {
+        public void Buy()
+        {
             buyCount++;
             isFirstTimeBuy = false;
         }

@@ -14,7 +14,8 @@ namespace Controller
         [SerializeField]
         private float delayToActiveNextScene = 2f;
 
-        private async void Start() {
+        private async void Start()
+        {
             await UniTask.Delay(500);
             await Addressables.InitializeAsync();
 
@@ -22,8 +23,9 @@ namespace Controller
             Application.targetFrameRate = Mathf.Max(targetFPS, (int)Screen.currentResolution.refreshRateRatio.value);
 
             // loading scene
-            SceneLoader.Instance.LoadScene(Address.MainScene).Forget();
-            SceneLoader.Instance.OnSceneLoaded += async () => {
+            SceneLoader.Instance.LoadScene(GameConfig.Address.MainScene).Forget();
+            SceneLoader.Instance.OnSceneLoaded += async () =>
+            {
                 await UniTask.Delay(TimeSpan.FromSeconds(delayToActiveNextScene));
                 await SceneLoader.Instance.ActivateScene();
             };

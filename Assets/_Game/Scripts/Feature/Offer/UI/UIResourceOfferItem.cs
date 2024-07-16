@@ -1,4 +1,5 @@
-﻿using Base.LoadAsset;
+﻿using Base.Asset;
+using Base.Core;
 using Cysharp.Threading.Tasks;
 using TMPro;
 using UnityEngine;
@@ -21,7 +22,7 @@ namespace Feature.Offer
         {
             offerEntity = offer;
 
-            AssetLoader.Instance.LoadSprite(Address.ShopOfferAtlas, offer.name)
+            AssetLoader.Instance.LoadSprite(GameConfig.Address.ShopOfferAtlas, offer.name)
                 .ContinueWith(sprite =>
                 {
                     iconImg.sprite = sprite;

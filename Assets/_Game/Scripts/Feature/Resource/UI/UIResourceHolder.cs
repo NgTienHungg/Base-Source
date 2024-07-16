@@ -1,6 +1,6 @@
-﻿using Base.Core;
+﻿using Base.Asset;
 using Base.Data;
-using Base.LoadAsset;
+using Base.Core;
 using Cysharp.Threading.Tasks;
 using TMPro;
 using UnityEngine;
@@ -21,7 +21,7 @@ namespace Feature.Resource
 
         private void SetupUI()
         {
-            AssetLoader.Instance.LoadSprite(Address.ResourceAtlas, resourceType.ToString())
+            AssetLoader.Instance.LoadSprite(GameConfig.Address.ResourceAtlas, resourceType.ToString())
                 .ContinueWith(sprite => { iconImg.sprite = sprite; });
 
             valueTxt.text = DataManager.Datasave.Resource.GetResource(resourceType).ToString();

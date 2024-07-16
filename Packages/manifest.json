@@ -3,14 +3,16 @@
     "com.coffee.ui-effect": "https://github.com/mob-sakai/UIEffect.git",
     "com.cysharp.unitask": "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask",
     "com.demigiant.dotween": "https://github.com/grashaar/DOTween.git",
+    "com.hungnt.buildreporttool": "https://github.com/HungNT-Packages/HungNT-BuildReportTool.git",
+    "com.hungnt.enhancedscroller": "https://github.com/HungNT-Packages/HungNT-EnhancedScroller.git",
     "com.ogxd.project-curator": "https://github.com/ogxd/project-curator.git",
-    "com.sparkle.core": "1.0.1",
     "com.unity.addressables": "1.21.20",
     "com.unity.ai.navigation": "1.1.5",
     "com.unity.collab-proxy": "2.3.1",
     "com.unity.device-simulator.devices": "1.0.0",
     "com.unity.ide.rider": "3.0.27",
     "com.unity.ide.visualstudio": "2.0.22",
+    "com.unity.nuget.newtonsoft-json": "3.2.1",
     "com.unity.test-framework": "1.1.33",
     "com.unity.textmeshpro": "3.0.6",
     "com.unity.timeline": "1.7.6",
@@ -53,7 +55,9 @@
     {
       "name": "taind",
       "url": "http://183.80.51.158:4873",
-      "scopes": ["com.sparkle"]
+      "scopes": [
+        "com.sparkle"
+      ]
     }
   ]
 }

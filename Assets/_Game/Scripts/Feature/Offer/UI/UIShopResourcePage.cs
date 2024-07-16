@@ -1,5 +1,6 @@
-﻿using Base.Data;
-using Base.LoadAsset;
+﻿using Base.Asset;
+using Base.Data;
+using Base.Core;
 using Base.Pool;
 using Base.UI;
 using Cysharp.Threading.Tasks;
@@ -18,28 +19,32 @@ namespace Feature.Offer
 
         private GameObject uiGemOfferPrefab, uiGoldOfferPrefab;
 
-        public override async UniTask Init() {
+        public override async UniTask Init()
+        {
             await base.Init();
 
             var offerTable = DataManager.Database.Offer;
             var gemOffers = offerTable.GetOffersByType(EResourceOffer.Gem);
             var goldOffers = offerTable.GetOffersByType(EResourceOffer.Gold);
 
-            uiGemOfferPrefab = await AssetLoader.Instance.LoadAddressAsync<GameObject>(Address.UIShopResourceOffer_Gem);
-            uiGoldOfferPrefab = await AssetLoader.Instance.LoadAddressAsync<GameObject>(Address.UIShopResourceOffer_Gold);
+            uiGemOfferPrefab = await AssetLoader.Instance.LoadAddressAsync<GameObject>(GameConfig.Address.UIShopResourceOffer_Gem);
+            uiGoldOfferPrefab = await AssetLoader.Instance.LoadAddressAsync<GameObject>(GameConfig.Address.UIShopResourceOffer_Gold);
 
-            foreach (var offer in gemOffers) {
+            foreach (var offer in gemOffers)
+            {
                 var uiGemOffer = PoolManager.Spawn<UIResourceOfferItem>(uiGemOfferPrefab, gemOfferHolder);
                 uiGemOffer.Setup(offer);
             }
 
-            foreach (var offer in goldOffers) {
+            foreach (var offer in goldOffers)
+            {
                 var uiGoldOffer = PoolManager.Spawn<UIResourceOfferItem>(uiGoldOfferPrefab, goldOfferHolder);
                 uiGoldOffer.Setup(offer);
             }
         }
 
-        private void OnDestroy() {
+        private void OnDestroy()
+        {
             PoolManager.DespawnByPrefab(uiGemOfferPrefab);
             PoolManager.DespawnByPrefab(uiGoldOfferPrefab);
         }

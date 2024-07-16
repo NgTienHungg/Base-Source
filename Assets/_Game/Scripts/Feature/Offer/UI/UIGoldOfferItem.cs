@@ -8,7 +8,8 @@ namespace Feature.Offer
         [SerializeField]
         private UIResourceValue price;
 
-        public override void Setup(OfferEntity offer) {
+        public override void Setup(OfferEntity offer)
+        {
             base.Setup(offer);
             price.SetValue(new ResourceValue(EResource.Gem, offer.price));
         }

@@ -5,8 +5,9 @@ namespace Feature.Shop
 {
     public class UIButtonOpenShop : UIButtonBase
     {
-        protected override void OnClick() {
-            PanelManager.Instance.Transition<UIShopPanel>(Address.UIShopPanel).Forget();
+        protected override void OnClick()
+        {
+            PanelManager.Instance.Transition<UIShopPanel>(GameConfig.Address.UIShopPanel).Forget();
         }
     }
 }

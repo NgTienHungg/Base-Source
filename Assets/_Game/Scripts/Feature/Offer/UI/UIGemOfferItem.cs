@@ -1,5 +1,4 @@
-﻿using Base.Utils;
-using TMPro;
+﻿using TMPro;
 using UnityEngine;
 
 namespace Feature.Offer
@@ -9,7 +8,8 @@ namespace Feature.Offer
         [SerializeField]
         private TextMeshProUGUI priceTxt;
 
-        public override void Setup(OfferEntity offer) {
+        public override void Setup(OfferEntity offer)
+        {
             base.Setup(offer);
             priceTxt.text = offer.price.ToCurrencyFormat();
         }

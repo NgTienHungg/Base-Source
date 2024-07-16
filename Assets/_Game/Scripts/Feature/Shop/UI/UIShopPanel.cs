@@ -11,7 +11,8 @@ namespace Feature.Shop
 
         public override bool CanBack => false;
 
-        public override async UniTask Init() {
+        public override async UniTask Init()
+        {
             await base.Init();
             await tabControl.Init();
         }

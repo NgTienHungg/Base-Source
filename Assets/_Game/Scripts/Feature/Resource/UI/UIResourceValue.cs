@@ -1,4 +1,5 @@
-﻿using Base.LoadAsset;
+﻿using Base.Asset;
+using Base.Core;
 using Cysharp.Threading.Tasks;
 using TMPro;
 using UnityEngine;
@@ -17,23 +18,27 @@ namespace Feature.Resource
         [SerializeField]
         private ResourceValue resourceValue;
 
-        private void Reset() {
+        private void Reset()
+        {
             iconImg = GetComponentInChildren<Image>();
             valueTxt = GetComponentInChildren<TextMeshProUGUI>();
         }
-        
-        public void OnEnable() {
+
+        public void OnEnable()
+        {
             SetupUI();
         }
 
-        private void SetupUI() {
-            AssetLoader.Instance.LoadSprite(Address.ResourceAtlas, resourceValue.resourceType.ToString())
+        private void SetupUI()
+        {
+            AssetLoader.Instance.LoadSprite(GameConfig.Address.ResourceAtlas, resourceValue.resourceType.ToString())
                 .ContinueWith(sprite => { iconImg.sprite = sprite; });
 
             valueTxt.text = $"x{resourceValue.value}";
         }
 
-        public void SetValue(ResourceValue value) {
+        public void SetValue(ResourceValue value)
+        {
             resourceValue = value;
             SetupUI();
         }
