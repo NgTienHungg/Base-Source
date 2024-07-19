@@ -2,7 +2,7 @@ namespace Game.DinoPass
 {
     public enum EDinoReward
     {
-        BoosterAddSlot,
+        BoosterAddSlot = 0,
         BoosterShuffle,
         BoosterRemove,
         BoosterRevival,

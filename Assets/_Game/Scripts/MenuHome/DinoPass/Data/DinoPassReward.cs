@@ -7,5 +7,7 @@ namespace Game.DinoPass
     {
         public EDinoReward RewardType;
         public int Quantity = 1;
+        
+        // public int 
     }
 }

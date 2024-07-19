@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using WingsMob.BoatPacking;
 
 namespace Game.DinoPass
 {
@@ -16,8 +17,15 @@ namespace Game.DinoPass
         public List<int> FreeRewardsClaimed = new List<int>();
         public List<int> VipRewardsClaimed = new List<int>();
 
+        public bool IsUnlockStage(int stageId)
+        {
+            return CurrentStageId > stageId;
+        }
+
         public void Reset()
         {
+            Logger.LogError("Reset Dino Pass".Color("yellow"));
+
             IsActiveVip = false;
 
             CurrentStageId = 0;
@@ -33,7 +41,16 @@ namespace Game.DinoPass
 
         public void ActivateDinoPass()
         {
+            // Common.LogError("Active Dino Pass".Color("lime"));
             IsActiveVip = true;
         }
+
+        // public void ClaimReward(EDinoPassChest type, int stageId)
+        // {
+        //     if (type == EDinoPassChest.Free)
+        //         FreeRewardsClaimed.Add(stageId);
+        //     else
+        //         VipRewardsClaimed.Add(stageId);
+        // }
     }
 }

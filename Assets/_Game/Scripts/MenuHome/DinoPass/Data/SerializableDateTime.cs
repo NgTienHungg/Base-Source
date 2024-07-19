@@ -1,8 +1,7 @@
 using System;
 using System.Globalization;
-using UnityEngine;
 
-namespace Game
+namespace WingsMob.BoatPacking
 {
     [Serializable]
     public class SerializableDateTime
@@ -29,7 +28,7 @@ namespace Game
             }
             catch (Exception e)
             {
-                Debug.LogError($"Error parsing DateTime: {dateTimeString} - {e.Message}");
+                // Common.LogError($"Error parsing DateTime: {dateTimeString} - {e.Message}");
                 return DateTime.MinValue;
             }
         }

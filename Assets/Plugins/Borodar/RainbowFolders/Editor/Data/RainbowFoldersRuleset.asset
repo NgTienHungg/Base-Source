@@ -153,9 +153,9 @@ MonoBehaviour:
     SmallIcon: {fileID: 0}
     LargeIcon: {fileID: 0}
     IsIconRecursive: 0
-    BackgroundType: 0
+    BackgroundType: 140
     BackgroundTexture: {fileID: 0}
-    IsBackgroundRecursive: 0
+    IsBackgroundRecursive: 1
     IsHidden: 0
   - Type: 0
     Key: Project
@@ -350,32 +350,8 @@ MonoBehaviour:
     IsBackgroundRecursive: 0
     IsHidden: 0
   - Type: 1
-    Key: Assets/_Game/Prefabs/Panel
-    Ordinal: 28
-    Priority: 0
-    IconType: 120
-    SmallIcon: {fileID: 0}
-    LargeIcon: {fileID: 0}
-    IsIconRecursive: 0
-    BackgroundType: 120
-    BackgroundTexture: {fileID: 0}
-    IsBackgroundRecursive: 0
-    IsHidden: 0
-  - Type: 1
-    Key: Assets/_Game/Prefabs/UI
-    Ordinal: 29
-    Priority: 0
-    IconType: 120
-    SmallIcon: {fileID: 0}
-    LargeIcon: {fileID: 0}
-    IsIconRecursive: 0
-    BackgroundType: 120
-    BackgroundTexture: {fileID: 0}
-    IsBackgroundRecursive: 0
-    IsHidden: 0
-  - Type: 1
     Key: Assets/_Game
-    Ordinal: 30
+    Ordinal: 28
     Priority: 0
     IconType: 2130
     SmallIcon: {fileID: 0}
@@ -387,7 +363,7 @@ MonoBehaviour:
     IsHidden: 0
   - Type: 1
     Key: Assets/Packages
-    Ordinal: 31
+    Ordinal: 29
     Priority: 0
     IconType: 510
     SmallIcon: {fileID: 0}
