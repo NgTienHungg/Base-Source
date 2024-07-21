@@ -2,7 +2,7 @@ using BayatGames.SaveGameFree;
 using Feature.Offer;
 using Feature.Resource;
 
-namespace Base.Data
+namespace Base
 {
     public partial class DatasaveManager
     {

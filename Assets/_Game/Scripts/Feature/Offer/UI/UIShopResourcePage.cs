@@ -1,8 +1,5 @@
-﻿using Base.Asset;
-using Base.Data;
-using Base.Core;
+﻿using Base;
 using Base.Pool;
-using Base.UI;
 using Cysharp.Threading.Tasks;
 using UnityEngine;
 
@@ -11,13 +8,12 @@ namespace Feature.Offer
     public class UIShopResourcePage : UITabPage
     {
         [Header("Holder")]
-        [SerializeField]
-        private Transform gemOfferHolder;
+        [SerializeField] private Transform gemOfferHolder;
+        [SerializeField] private Transform goldOfferHolder;
 
-        [SerializeField]
-        private Transform goldOfferHolder;
-
-        private GameObject uiGemOfferPrefab, uiGoldOfferPrefab;
+        [Header("Prefabs")]
+        [SerializeField] private GameObject uiGemOfferPrefab;
+        [SerializeField] private GameObject uiGoldOfferPrefab;
 
         public override async UniTask Init()
         {
@@ -27,8 +23,8 @@ namespace Feature.Offer
             var gemOffers = offerTable.GetOffersByType(EResourceOffer.Gem);
             var goldOffers = offerTable.GetOffersByType(EResourceOffer.Gold);
 
-            uiGemOfferPrefab = await AssetLoader.Instance.LoadAddressAsync<GameObject>(GameConfig.Address.UIShopResourceOffer_Gem);
-            uiGoldOfferPrefab = await AssetLoader.Instance.LoadAddressAsync<GameObject>(GameConfig.Address.UIShopResourceOffer_Gold);
+            // uiGemOfferPrefab = await AssetLoader.Instance.LoadAddressAsync<GameObject>(GameConfig.Address.UIShopResourceOffer_Gem);
+            // uiGoldOfferPrefab = await AssetLoader.Instance.LoadAddressAsync<GameObject>(GameConfig.Address.UIShopResourceOffer_Gold);
 
             foreach (var offer in gemOffers)
             {

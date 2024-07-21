@@ -30,30 +30,31 @@ MonoBehaviour:
     serializationDepthLimit: 64
     assemblyNames:
     - Assembly-CSharp-firstpass
-    - Zenject
-    - EnhancedScroller_asmdef
     - spine-csharp
+    - EnhancedScroller_asmdef
+    - Zenject
+    - Assembly-CSharp
+    - BuildReportTool
+    - StompyRobot.SRF.Editor
     - Zenject-IntegrationTests
     - UniTask.Linq
-    - StompyRobot.SRF
     - UniTask
-    - StompyRobot.SRDebugger
-    - Tayx.Graphy.Editor
     - CW.Common
     - PrimeTween.Demo
+    - StompyRobot.SRF
+    - StompyRobot.SRDebugger
     - spine-unity-editor
-    - Tayx.Graphy
-    - StompyRobot.SRDebugger.Editor
-    - Assembly-CSharp
     - LeanCommon
     - Wooshii.HierarchyDecorator.Editor
     - spine-unity
     - PrimeTween.Debug
     - DOTween.Modules
+    - Tayx.Graphy.Editor
+    - StompyRobot.SRDebugger.Editor
     - UIEffect
+    - Tayx.Graphy
     - UniTask.Addressables
     - Zenject-TestFramework
-    - StompyRobot.SRF.Editor
     - Ogxd.ProjectCurator
     - Wooshii.HierarchyDecorator
     - UniTask.Editor

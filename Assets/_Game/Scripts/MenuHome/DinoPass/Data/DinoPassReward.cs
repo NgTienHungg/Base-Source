@@ -1,4 +1,5 @@
 using System;
+using Sirenix.OdinInspector;
 
 namespace Game.DinoPass
 {
@@ -7,7 +8,18 @@ namespace Game.DinoPass
     {
         public EDinoReward RewardType;
         public int Quantity = 1;
-        
-        // public int 
+
+        [ShowIf("@IsFrameOrTheme()")] [GUIColor("yellow")]
+        public int SkinId;
+
+        public bool IsFrameOrTheme()
+        {
+            return RewardType is EDinoReward.Frame or EDinoReward.Theme;
+        }
+
+        public bool IsUnlimitedHeart()
+        {
+            return RewardType == EDinoReward.UnlimitedHeart;
+        }
     }
 }

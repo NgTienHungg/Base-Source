@@ -841,8 +841,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d585aa2322f44298b2e8e0542f32b27e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  database: {fileID: 891164581}
-  datasave: {fileID: 537076576}
+  dataConfig: {fileID: 0}
+  dataSave: {fileID: 0}
 --- !u!1001 &2030170993
 PrefabInstance:
   m_ObjectHideFlags: 0

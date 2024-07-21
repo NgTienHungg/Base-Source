@@ -1,0 +1,507 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c96f3ad99dd4d76aacc0413223628f5, type: 3}
+  m_Name: DinoPassDataConfig
+  m_EditorClassIdentifier: 
+  Stages:
+  - Id: 0
+    PickaxeCount: 0
+    FreeChest:
+      IsUseChest: 0
+      ChestSprite: {fileID: 0}
+      ListRewards:
+      - RewardType: 3
+        Quantity: 1
+        SkinId: 0
+    VipChest:
+      IsUseChest: 0
+      ChestSprite: {fileID: 21300000, guid: 14fe742e715a5064e948a2a16a3c97e9, type: 3}
+      ListRewards:
+      - RewardType: 6
+        Quantity: 8
+        SkinId: 0
+      - RewardType: 8
+        Quantity: 1
+        SkinId: 0
+  - Id: 1
+    PickaxeCount: 2
+    FreeChest:
+      IsUseChest: 0
+      ChestSprite: {fileID: 0}
+      ListRewards:
+      - RewardType: 8
+        Quantity: 1
+        SkinId: 1
+    VipChest:
+      IsUseChest: 0
+      ChestSprite: {fileID: 0}
+      ListRewards:
+      - RewardType: 1
+        Quantity: 6
+        SkinId: 0
+  - Id: 2
+    PickaxeCount: 3
+    FreeChest:
+      IsUseChest: 0
+      ChestSprite: {fileID: 0}
+      ListRewards:
+      - RewardType: 2
+        Quantity: 1
+        SkinId: 0
+    VipChest:
+      IsUseChest: 0
+      ChestSprite: {fileID: 0}
+      ListRewards:
+      - RewardType: 9
+        Quantity: 15
+        SkinId: 0
+  - Id: 3
+    PickaxeCount: 5
+    FreeChest:
+      IsUseChest: 0
+      ChestSprite: {fileID: 0}
+      ListRewards:
+      - RewardType: 5
+        Quantity: 100
+        SkinId: 0
+    VipChest:
+      IsUseChest: 0
+      ChestSprite: {fileID: 0}
+      ListRewards:
+      - RewardType: 2
+        Quantity: 2
+        SkinId: 0
+  - Id: 4
+    PickaxeCount: 8
+    FreeChest:
+      IsUseChest: 1
+      ChestSprite: {fileID: 21300000, guid: a2d1450b72d7994429459496dde781ab, type: 3}
+      ListRewards:
+      - RewardType: 9
+        Quantity: 15
+        SkinId: 0
+      - RewardType: 0
+        Quantity: 1
+        SkinId: 0
+    VipChest:
+      IsUseChest: 1
+      ChestSprite: {fileID: 21300000, guid: 87e59c74902f56748befa1eb622b2e1f, type: 3}
+      ListRewards:
+      - RewardType: 3
+        Quantity: 1
+        SkinId: 0
+      - RewardType: 0
+        Quantity: 1
+        SkinId: 0
+      - RewardType: 4
+        Quantity: 1
+        SkinId: 0
+      - RewardType: 5
+        Quantity: 200
+        SkinId: 0
+  - Id: 5
+    PickaxeCount: 8
+    FreeChest:
+      IsUseChest: 0
+      ChestSprite: {fileID: 0}
+      ListRewards:
+      - RewardType: 7
+        Quantity: 1
+        SkinId: 0
+    VipChest:
+      IsUseChest: 0
+      ChestSprite: {fileID: 0}
+      ListRewards:
+      - RewardType: 7
+        Quantity: 1
+        SkinId: 1
+      - RewardType: 7
+        Quantity: 1
+        SkinId: 2
+  - Id: 6
+    PickaxeCount: 11
+    FreeChest:
+      IsUseChest: 0
+      ChestSprite: {fileID: 0}
+      ListRewards:
+      - RewardType: 8
+        Quantity: 1
+        SkinId: 2
+    VipChest:
+      IsUseChest: 0
+      ChestSprite: {fileID: 0}
+      ListRewards:
+      - RewardType: 8
+        Quantity: 1
+        SkinId: 5
+      - RewardType: 8
+        Quantity: 1
+        SkinId: 6
+  - Id: 7
+    PickaxeCount: 11
+    FreeChest:
+      IsUseChest: 0
+      ChestSprite: {fileID: 0}
+      ListRewards:
+      - RewardType: 4
+        Quantity: 1
+        SkinId: 0
+    VipChest:
+      IsUseChest: 0
+      ChestSprite: {fileID: 0}
+      ListRewards:
+      - RewardType: 0
+        Quantity: 2
+        SkinId: 0
+  - Id: 8
+    PickaxeCount: 11
+    FreeChest:
+      IsUseChest: 1
+      ChestSprite: {fileID: 21300000, guid: a2d1450b72d7994429459496dde781ab, type: 3}
+      ListRewards:
+      - RewardType: 2
+        Quantity: 1
+        SkinId: 0
+      - RewardType: 1
+        Quantity: 1
+        SkinId: 0
+      - RewardType: 5
+        Quantity: 50
+        SkinId: 0
+    VipChest:
+      IsUseChest: 1
+      ChestSprite: {fileID: 21300000, guid: 98772c9738eeeac4d89ddcfad8d5d5f6, type: 3}
+      ListRewards:
+      - RewardType: 2
+        Quantity: 1
+        SkinId: 0
+      - RewardType: 1
+        Quantity: 2
+        SkinId: 0
+      - RewardType: 5
+        Quantity: 200
+        SkinId: 0
+  - Id: 9
+    PickaxeCount: 11
+    FreeChest:
+      IsUseChest: 0
+      ChestSprite: {fileID: 0}
+      ListRewards:
+      - RewardType: 5
+        Quantity: 100
+        SkinId: 0
+    VipChest:
+      IsUseChest: 0
+      ChestSprite: {fileID: 0}
+      ListRewards:
+      - RewardType: 8
+        Quantity: 1
+        SkinId: 7
+      - RewardType: 8
+        Quantity: 1
+        SkinId: 8
+  - Id: 10
+    PickaxeCount: 14
+    FreeChest:
+      IsUseChest: 0
+      ChestSprite: {fileID: 0}
+      ListRewards:
+      - RewardType: 3
+        Quantity: 1
+        SkinId: 0
+    VipChest:
+      IsUseChest: 0
+      ChestSprite: {fileID: 0}
+      ListRewards:
+      - RewardType: 3
+        Quantity: 3
+        SkinId: 0
+  - Id: 11
+    PickaxeCount: 14
+    FreeChest:
+      IsUseChest: 0
+      ChestSprite: {fileID: 0}
+      ListRewards:
+      - RewardType: 8
+        Quantity: 1
+        SkinId: 3
+    VipChest:
+      IsUseChest: 0
+      ChestSprite: {fileID: 0}
+      ListRewards:
+      - RewardType: 8
+        Quantity: 1
+        SkinId: 9
+      - RewardType: 8
+        Quantity: 1
+        SkinId: 10
+  - Id: 12
+    PickaxeCount: 14
+    FreeChest:
+      IsUseChest: 1
+      ChestSprite: {fileID: 21300000, guid: a2d1450b72d7994429459496dde781ab, type: 3}
+      ListRewards:
+      - RewardType: 0
+        Quantity: 1
+        SkinId: 0
+      - RewardType: 4
+        Quantity: 1
+        SkinId: 0
+    VipChest:
+      IsUseChest: 1
+      ChestSprite: {fileID: 21300000, guid: ac80942fe24d74146ad4f674dfaa9b02, type: 3}
+      ListRewards:
+      - RewardType: 9
+        Quantity: 60
+        SkinId: 0
+      - RewardType: 4
+        Quantity: 2
+        SkinId: 0
+      - RewardType: 5
+        Quantity: 300
+        SkinId: 0
+  - Id: 13
+    PickaxeCount: 14
+    FreeChest:
+      IsUseChest: 0
+      ChestSprite: {fileID: 0}
+      ListRewards:
+      - RewardType: 7
+        Quantity: 1
+        SkinId: 3
+    VipChest:
+      IsUseChest: 0
+      ChestSprite: {fileID: 0}
+      ListRewards:
+      - RewardType: 4
+        Quantity: 2
+        SkinId: 0
+  - Id: 14
+    PickaxeCount: 16
+    FreeChest:
+      IsUseChest: 0
+      ChestSprite: {fileID: 0}
+      ListRewards:
+      - RewardType: 8
+        Quantity: 1
+        SkinId: 4
+    VipChest:
+      IsUseChest: 0
+      ChestSprite: {fileID: 0}
+      ListRewards:
+      - RewardType: 8
+        Quantity: 1
+        SkinId: 11
+      - RewardType: 8
+        Quantity: 1
+        SkinId: 12
+  - Id: 15
+    PickaxeCount: 16
+    FreeChest:
+      IsUseChest: 0
+      ChestSprite: {fileID: 0}
+      ListRewards:
+      - RewardType: 7
+        Quantity: 1
+        SkinId: 4
+    VipChest:
+      IsUseChest: 0
+      ChestSprite: {fileID: 0}
+      ListRewards:
+      - RewardType: 7
+        Quantity: 1
+        SkinId: 5
+      - RewardType: 7
+        Quantity: 1
+        SkinId: 6
+  - Id: 16
+    PickaxeCount: 16
+    FreeChest:
+      IsUseChest: 0
+      ChestSprite: {fileID: 0}
+      ListRewards:
+      - RewardType: 3
+        Quantity: 1
+        SkinId: 0
+    VipChest:
+      IsUseChest: 1
+      ChestSprite: {fileID: 21300000, guid: 1e5618e3b6dbab14f90a62e616eb47a0, type: 3}
+      ListRewards:
+      - RewardType: 0
+        Quantity: 1
+        SkinId: 0
+      - RewardType: 3
+        Quantity: 2
+        SkinId: 0
+      - RewardType: 5
+        Quantity: 400
+        SkinId: 0
+  - Id: 17
+    PickaxeCount: 16
+    FreeChest:
+      IsUseChest: 0
+      ChestSprite: {fileID: 0}
+      ListRewards:
+      - RewardType: 9
+        Quantity: 30
+        SkinId: 0
+    VipChest:
+      IsUseChest: 0
+      ChestSprite: {fileID: 0}
+      ListRewards:
+      - RewardType: 4
+        Quantity: 3
+        SkinId: 0
+  - Id: 18
+    PickaxeCount: 16
+    FreeChest:
+      IsUseChest: 0
+      ChestSprite: {fileID: 0}
+      ListRewards:
+      - RewardType: 4
+        Quantity: 1
+        SkinId: 0
+    VipChest:
+      IsUseChest: 0
+      ChestSprite: {fileID: 0}
+      ListRewards:
+      - RewardType: 3
+        Quantity: 2
+        SkinId: 0
+  - Id: 19
+    PickaxeCount: 16
+    FreeChest:
+      IsUseChest: 1
+      ChestSprite: {fileID: 21300000, guid: a2d1450b72d7994429459496dde781ab, type: 3}
+      ListRewards:
+      - RewardType: 9
+        Quantity: 30
+        SkinId: 0
+      - RewardType: 0
+        Quantity: 1
+        SkinId: 0
+    VipChest:
+      IsUseChest: 0
+      ChestSprite: {fileID: 0}
+      ListRewards:
+      - RewardType: 5
+        Quantity: 400
+        SkinId: 0
+  - Id: 20
+    PickaxeCount: 16
+    FreeChest:
+      IsUseChest: 0
+      ChestSprite: {fileID: 0}
+      ListRewards:
+      - RewardType: 5
+        Quantity: 200
+        SkinId: 0
+    VipChest:
+      IsUseChest: 0
+      ChestSprite: {fileID: 0}
+      ListRewards:
+      - RewardType: 9
+        Quantity: 60
+        SkinId: 0
+  - Id: 21
+    PickaxeCount: 16
+    FreeChest:
+      IsUseChest: 0
+      ChestSprite: {fileID: 0}
+      ListRewards:
+      - RewardType: 1
+        Quantity: 2
+        SkinId: 0
+    VipChest:
+      IsUseChest: 0
+      ChestSprite: {fileID: 0}
+      ListRewards:
+      - RewardType: 1
+        Quantity: 4
+        SkinId: 0
+  - Id: 22
+    PickaxeCount: 16
+    FreeChest:
+      IsUseChest: 0
+      ChestSprite: {fileID: 0}
+      ListRewards:
+      - RewardType: 4
+        Quantity: 1
+        SkinId: 0
+    VipChest:
+      IsUseChest: 0
+      ChestSprite: {fileID: 0}
+      ListRewards:
+      - RewardType: 4
+        Quantity: 4
+        SkinId: 0
+  - Id: 23
+    PickaxeCount: 16
+    FreeChest:
+      IsUseChest: 0
+      ChestSprite: {fileID: 0}
+      ListRewards:
+      - RewardType: 0
+        Quantity: 1
+        SkinId: 0
+    VipChest:
+      IsUseChest: 0
+      ChestSprite: {fileID: 0}
+      ListRewards:
+      - RewardType: 0
+        Quantity: 2
+        SkinId: 0
+  - Id: 24
+    PickaxeCount: 16
+    FreeChest:
+      IsUseChest: 1
+      ChestSprite: {fileID: 21300000, guid: a2d1450b72d7994429459496dde781ab, type: 3}
+      ListRewards:
+      - RewardType: 3
+        Quantity: 1
+        SkinId: 0
+      - RewardType: 1
+        Quantity: 1
+        SkinId: 0
+      - RewardType: 2
+        Quantity: 1
+        SkinId: 0
+    VipChest:
+      IsUseChest: 1
+      ChestSprite: {fileID: 21300000, guid: 189aeef21e2fe7b4897437d3a100e2bf, type: 3}
+      ListRewards:
+      - RewardType: 9
+        Quantity: 60
+        SkinId: 0
+      - RewardType: 3
+        Quantity: 3
+        SkinId: 0
+      - RewardType: 2
+        Quantity: 2
+        SkinId: 0
+      - RewardType: 1
+        Quantity: 3
+        SkinId: 0
+      - RewardType: 5
+        Quantity: 1000
+        SkinId: 0
+  RewardSprites:
+  - {fileID: 21300000, guid: 9217f95cb20ff0c41aab573584b4d356, type: 3}
+  - {fileID: 21300000, guid: aee40c502a5abf6489d38c0c63100ce5, type: 3}
+  - {fileID: 21300000, guid: 1a22ca5b38bf56d4da1d992a0f7b45f5, type: 3}
+  - {fileID: 21300000, guid: 9b8dbcebd89041e43b5cd80afc53d4a6, type: 3}
+  - {fileID: 21300000, guid: c1e3dd347bedf664a801e0dc254ad618, type: 3}
+  - {fileID: 21300000, guid: 36504bb755e13894e9b2a85d4eda4ba8, type: 3}
+  - {fileID: 21300000, guid: f3429ef898999f84f9f62111877d72fa, type: 3}
+  - {fileID: 21300000, guid: c37281d3cbd2d034eb6ba0a72d50d4c8, type: 3}
+  - {fileID: 21300000, guid: ecdb39f2cfc93f042b97ad5067b34380, type: 3}
+  - {fileID: 21300000, guid: f3429ef898999f84f9f62111877d72fa, type: 3}

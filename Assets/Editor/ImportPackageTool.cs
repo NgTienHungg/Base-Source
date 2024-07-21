@@ -4,7 +4,7 @@ using UnityEditor;
 using UnityEngine;
 using Debug = UnityEngine.Debug;
 
-namespace Base.Editor
+namespace Base
 {
     public static class ImportPackageTool
     {

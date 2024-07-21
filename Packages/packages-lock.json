@@ -26,7 +26,7 @@
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "d4196bb869a216696526a46870b988e8d1d0074d"
+      "hash": "49e26989c921156825fe760f47f04fca8ac22cae"
     },
     "com.hungnt.enhancedscroller": {
       "version": "https://github.com/HungNT-Packages/HungNT-EnhancedScroller.git",
@@ -34,6 +34,13 @@
       "source": "git",
       "dependencies": {},
       "hash": "6c051fd416b54dda90ab52e1a3a1e012630ac173"
+    },
+    "com.hungnt.rainbowfolder": {
+      "version": "https://github.com/HungNT-Packages/HungNT-RainbowFolder.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "6c6bf458a5dfbc485f1d51895c8fa6a41e9a4277"
     },
     "com.ogxd.project-curator": {
       "version": "https://github.com/ogxd/project-curator.git",

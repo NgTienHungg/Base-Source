@@ -1,5 +1,5 @@
 using System;
-using Base.UI;
+using Base;
 using UnityEngine;
 
 namespace Logic
