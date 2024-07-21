@@ -1,0 +1,104 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb98608241432354ab0c0020cdd3261d, type: 3}
+  m_Name: AvatarData
+  m_EditorClassIdentifier: 
+  Avatars:
+  - Index: 0
+    Icon: {fileID: 21300000, guid: 861a110af9c0e7b4c979e6592f2b5583, type: 3}
+    IsBlock: 0
+  - Index: 1
+    Icon: {fileID: 21300000, guid: 622cdf88b19305546b0c764f0f83fd60, type: 3}
+    IsBlock: 0
+  - Index: 2
+    Icon: {fileID: 21300000, guid: f3e1018cef02306478eedcfcd27bb919, type: 3}
+    IsBlock: 0
+  - Index: 3
+    Icon: {fileID: 21300000, guid: e9f78c8a48c35cc4fb6addc63dc80c34, type: 3}
+    IsBlock: 1
+  - Index: 4
+    Icon: {fileID: 21300000, guid: 3faae4fbc106a474588565afb28b4916, type: 3}
+    IsBlock: 1
+  - Index: 5
+    Icon: {fileID: 21300000, guid: 6e295dd1ec8040345b82b47720681a87, type: 3}
+    IsBlock: 1
+  - Index: 6
+    Icon: {fileID: 21300000, guid: 3c60a4a749361b34da8b61a7fde0a04a, type: 3}
+    IsBlock: 1
+  - Index: 7
+    Icon: {fileID: 21300000, guid: abc3177dfb3be9a40af589951b140aa0, type: 3}
+    IsBlock: 1
+  - Index: 8
+    Icon: {fileID: 21300000, guid: 86038d47fb5868844bbad1f2b7f49a53, type: 3}
+    IsBlock: 1
+  Frames:
+  - Index: 0
+    Icon: {fileID: 21300000, guid: ecdb39f2cfc93f042b97ad5067b34380, type: 3}
+    IsBlock: 0
+  - Index: 1
+    Icon: {fileID: 21300000, guid: 225d0f9708334a644a313616be2a6f3e, type: 3}
+    IsBlock: 1
+  - Index: 2
+    Icon: {fileID: 21300000, guid: f76eb42053c0de64cbae791b55a64199, type: 3}
+    IsBlock: 1
+  - Index: 3
+    Icon: {fileID: 21300000, guid: bdbc537cb4945524ab2bdd87322e9279, type: 3}
+    IsBlock: 1
+  - Index: 4
+    Icon: {fileID: 21300000, guid: b432296a893c7554c85d413210d26955, type: 3}
+    IsBlock: 1
+  - Index: 5
+    Icon: {fileID: 21300000, guid: 83cf59d161a20484681fad8af1406aa9, type: 3}
+    IsBlock: 1
+  - Index: 6
+    Icon: {fileID: 21300000, guid: 24292b60a0def454abbfbe34806563e7, type: 3}
+    IsBlock: 1
+  - Index: 7
+    Icon: {fileID: 21300000, guid: 952f84a553ff81f43ac417b525260554, type: 3}
+    IsBlock: 1
+  - Index: 8
+    Icon: {fileID: 21300000, guid: bfdde6b2643b8254da8c1bf12c9d6527, type: 3}
+    IsBlock: 1
+  - Index: 9
+    Icon: {fileID: 21300000, guid: 8776d7f7922a27b4c88f75c1ba29a59c, type: 3}
+    IsBlock: 1
+  - Index: 10
+    Icon: {fileID: 21300000, guid: 7afa8a8067ea8b24fbb6c0dd6ece3476, type: 3}
+    IsBlock: 1
+  - Index: 11
+    Icon: {fileID: 21300000, guid: 46ec848cc26db294489700bc6b8eb154, type: 3}
+    IsBlock: 1
+  - Index: 12
+    Icon: {fileID: 21300000, guid: fa7a52412e905754985ee672f30360ef, type: 3}
+    IsBlock: 1
+  Effect:
+  - Index: 0
+    Icon: {fileID: 21300000, guid: c37281d3cbd2d034eb6ba0a72d50d4c8, type: 3}
+    IsBlock: 1
+  - Index: 0
+    Icon: {fileID: 21300000, guid: 927f7e98373ef2848952597fb37d37c1, type: 3}
+    IsBlock: 1
+  - Index: 0
+    Icon: {fileID: 21300000, guid: 4c4799f2cba3e714a8fba9ba50f8ccb2, type: 3}
+    IsBlock: 1
+  - Index: 0
+    Icon: {fileID: 21300000, guid: f31b662244556ad4cab1935368f3ecf3, type: 3}
+    IsBlock: 1
+  - Index: 0
+    Icon: {fileID: 21300000, guid: f67af5e522770cd4cace8af36eb64aca, type: 3}
+    IsBlock: 1
+  - Index: 0
+    Icon: {fileID: 21300000, guid: aba387ece7e0d7243acef1e16593efc3, type: 3}
+    IsBlock: 1
+  - Index: 0
+    Icon: {fileID: 21300000, guid: c01c8602c116e724fb1c9d591a34850a, type: 3}
+    IsBlock: 1

@@ -30,7 +30,6 @@ MonoBehaviour:
     serializationDepthLimit: 64
     assemblyNames:
     - Assembly-CSharp-firstpass
-    - spine-csharp
     - EnhancedScroller_asmdef
     - Zenject
     - Assembly-CSharp
@@ -43,10 +42,9 @@ MonoBehaviour:
     - PrimeTween.Demo
     - StompyRobot.SRF
     - StompyRobot.SRDebugger
-    - spine-unity-editor
     - LeanCommon
+    - Coffee.UIParticle
     - Wooshii.HierarchyDecorator.Editor
-    - spine-unity
     - PrimeTween.Debug
     - DOTween.Modules
     - Tayx.Graphy.Editor
@@ -60,6 +58,7 @@ MonoBehaviour:
     - UniTask.Editor
     - LeanPool
     - UniTask.TextMeshPro
+    - Coffee.UIParticle.Editor
     - PrimeTween.Installer
     - UniTask.DOTween
     showAdvancedSettings: 0

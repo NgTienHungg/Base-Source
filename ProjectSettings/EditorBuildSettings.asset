@@ -14,5 +14,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Game/Scenes/MainScene.unity
     guid: bbf322a0a5f7674438ea12fe4e04e8c1
+  - enabled: 1
+    path: Assets/_Game/Scenes/UIEnvironment_Portrait.unity
+    guid: 4d2e3991adad5df43bbebb8456ee4cb6
+  - enabled: 1
+    path: Assets/_Game/Scenes/UIEnvironment_Landscape.unity
+    guid: e8dd1202d93c0b24fa56a8b1e9c4b173
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 5dfd4c6d4b421d347b42ed19f1b5e3a7, type: 2}

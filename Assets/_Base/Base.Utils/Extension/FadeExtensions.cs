@@ -1,5 +1,4 @@
 using DG.Tweening;
-using Spine.Unity;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -27,9 +26,9 @@ public static class FadeExtensions
         renderer.color = renderer.color.Fade(alpha);
     }
 
-    public static void Fade(this SkeletonGraphic skeleton, float alpha) {
-        skeleton.color = skeleton.color.Fade(alpha);
-    }
+    // public static void Fade(this SkeletonGraphic skeleton, float alpha) {
+    //     skeleton.color = skeleton.color.Fade(alpha);
+    // }
 
     public static void FadeAll(this GameObject obj, float alpha) {
         var spriteRenderer = obj.GetComponent<SpriteRenderer>();
