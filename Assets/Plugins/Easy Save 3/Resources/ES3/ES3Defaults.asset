@@ -33,34 +33,36 @@ MonoBehaviour:
     - EnhancedScroller_asmdef
     - Zenject
     - Assembly-CSharp
-    - BuildReportTool
-    - StompyRobot.SRF.Editor
     - Zenject-IntegrationTests
-    - UniTask.Linq
     - UniTask
     - CW.Common
-    - PrimeTween.Demo
-    - StompyRobot.SRF
     - StompyRobot.SRDebugger
+    - PsdPlugin
     - LeanCommon
-    - Coffee.UIParticle
-    - Wooshii.HierarchyDecorator.Editor
+    - BuildReportTool
     - PrimeTween.Debug
+    - UniTask.Linq
     - DOTween.Modules
     - Tayx.Graphy.Editor
+    - Wooshii.HierarchyDecorator.Editor
     - StompyRobot.SRDebugger.Editor
     - UIEffect
     - Tayx.Graphy
-    - UniTask.Addressables
-    - Zenject-TestFramework
+    - PrimeTween.Demo
+    - StompyRobot.SRF
     - Ogxd.ProjectCurator
+    - Coffee.UIParticle
+    - Zenject-TestFramework
     - Wooshii.HierarchyDecorator
-    - UniTask.Editor
-    - LeanPool
     - UniTask.TextMeshPro
+    - LeanPool
     - Coffee.UIParticle.Editor
+    - StompyRobot.SRF.Editor
+    - UniTask.Addressables
+    - UniTask.Editor
     - PrimeTween.Installer
     - UniTask.DOTween
+    - Sirenix.OdinInspector.Modules.UnityMathematics
     showAdvancedSettings: 0
   addMgrToSceneAutomatically: 0
   autoUpdateReferences: 1
