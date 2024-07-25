@@ -30,37 +30,39 @@ MonoBehaviour:
     serializationDepthLimit: 64
     assemblyNames:
     - Assembly-CSharp-firstpass
-    - Zenject
     - EnhancedScroller_asmdef
-    - spine-csharp
-    - Zenject-IntegrationTests
-    - UniTask.Linq
-    - StompyRobot.SRF
-    - UniTask
-    - StompyRobot.SRDebugger
-    - Tayx.Graphy.Editor
-    - CW.Common
-    - PrimeTween.Demo
-    - spine-unity-editor
-    - Tayx.Graphy
-    - StompyRobot.SRDebugger.Editor
+    - Zenject
     - Assembly-CSharp
+    - Zenject-IntegrationTests
+    - UniTask
+    - CW.Common
+    - StompyRobot.SRDebugger
+    - PsdPlugin
     - LeanCommon
-    - Wooshii.HierarchyDecorator.Editor
-    - spine-unity
+    - BuildReportTool
     - PrimeTween.Debug
+    - UniTask.Linq
     - DOTween.Modules
+    - Tayx.Graphy.Editor
+    - Wooshii.HierarchyDecorator.Editor
+    - StompyRobot.SRDebugger.Editor
     - UIEffect
-    - UniTask.Addressables
-    - Zenject-TestFramework
-    - StompyRobot.SRF.Editor
+    - Tayx.Graphy
+    - PrimeTween.Demo
+    - StompyRobot.SRF
     - Ogxd.ProjectCurator
+    - Coffee.UIParticle
+    - Zenject-TestFramework
     - Wooshii.HierarchyDecorator
-    - UniTask.Editor
-    - LeanPool
     - UniTask.TextMeshPro
+    - LeanPool
+    - Coffee.UIParticle.Editor
+    - StompyRobot.SRF.Editor
+    - UniTask.Addressables
+    - UniTask.Editor
     - PrimeTween.Installer
     - UniTask.DOTween
+    - Sirenix.OdinInspector.Modules.UnityMathematics
     showAdvancedSettings: 0
   addMgrToSceneAutomatically: 0
   autoUpdateReferences: 1

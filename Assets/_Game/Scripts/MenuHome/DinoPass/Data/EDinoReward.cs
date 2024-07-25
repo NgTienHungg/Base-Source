@@ -11,9 +11,6 @@ namespace Game.DinoPass
         Heart,
         Theme,
         Frame,
-        FrameVIP,
-        UnlimitedHeart_15m,
-        UnlimitedHeart_30m,
-        UnlimitedHeart_1h,
+        UnlimitedHeart
     }
 }

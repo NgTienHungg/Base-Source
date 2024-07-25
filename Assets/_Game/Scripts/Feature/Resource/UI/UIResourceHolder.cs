@@ -1,5 +1,4 @@
-﻿using Base.Asset;
-using Base.Data;
+﻿using Base;
 using Base.Core;
 using Cysharp.Threading.Tasks;
 using TMPro;

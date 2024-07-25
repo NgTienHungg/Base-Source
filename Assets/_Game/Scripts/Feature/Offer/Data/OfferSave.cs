@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using Base.Data;
+using Base;
 
 namespace Feature.Offer
 {

@@ -1,6 +1,6 @@
 using Feature.Offer;
 
-namespace Base.Data
+namespace Base
 {
     public partial class DatabaseManager
     {

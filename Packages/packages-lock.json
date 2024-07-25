@@ -7,6 +7,16 @@
       "dependencies": {},
       "hash": "332340e7bc2f8257816dd28784607a1edf6b6c2a"
     },
+    "com.coffee.ui-particle": {
+      "version": "https://github.com/mob-sakai/ParticleEffectForUGUI.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.ugui": "1.0.0",
+        "com.unity.modules.particlesystem": "1.0.0"
+      },
+      "hash": "4dfcb9075e166fa53fee5decc51975bdc247cdad"
+    },
     "com.cysharp.unitask": {
       "version": "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask",
       "depth": 0,
@@ -26,7 +36,7 @@
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "d4196bb869a216696526a46870b988e8d1d0074d"
+      "hash": "49e26989c921156825fe760f47f04fca8ac22cae"
     },
     "com.hungnt.enhancedscroller": {
       "version": "https://github.com/HungNT-Packages/HungNT-EnhancedScroller.git",
@@ -35,12 +45,62 @@
       "dependencies": {},
       "hash": "6c051fd416b54dda90ab52e1a3a1e012630ac173"
     },
+    "com.hungnt.rainbowfolder": {
+      "version": "https://github.com/HungNT-Packages/HungNT-RainbowFolder.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "6c6bf458a5dfbc485f1d51895c8fa6a41e9a4277"
+    },
     "com.ogxd.project-curator": {
       "version": "https://github.com/ogxd/project-curator.git",
       "depth": 0,
       "source": "git",
       "dependencies": {},
       "hash": "da8a264a30daf02a7365dbac920203fe1c0d9277"
+    },
+    "com.unity.2d.animation": {
+      "version": "9.1.1",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.2d.common": "8.0.2",
+        "com.unity.2d.sprite": "1.0.0",
+        "com.unity.collections": "1.1.0",
+        "com.unity.modules.animation": "1.0.0",
+        "com.unity.modules.uielements": "1.0.0"
+      },
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.2d.common": {
+      "version": "8.0.2",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.2d.sprite": "1.0.0",
+        "com.unity.mathematics": "1.1.0",
+        "com.unity.modules.uielements": "1.0.0",
+        "com.unity.modules.animation": "1.0.0",
+        "com.unity.burst": "1.7.3"
+      },
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.2d.psdimporter": {
+      "version": "8.0.5",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.2d.animation": "9.1.1",
+        "com.unity.2d.common": "8.0.2",
+        "com.unity.2d.sprite": "1.0.0"
+      },
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.2d.sprite": {
+      "version": "1.0.0",
+      "depth": 0,
+      "source": "builtin",
+      "dependencies": {}
     },
     "com.unity.addressables": {
       "version": "1.21.20",
@@ -65,11 +125,31 @@
       },
       "url": "https://packages.unity.com"
     },
+    "com.unity.burst": {
+      "version": "1.8.12",
+      "depth": 2,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.mathematics": "1.2.1",
+        "com.unity.modules.jsonserialize": "1.0.0"
+      },
+      "url": "https://packages.unity.com"
+    },
     "com.unity.collab-proxy": {
       "version": "2.3.1",
       "depth": 0,
       "source": "registry",
       "dependencies": {},
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.collections": {
+      "version": "1.2.4",
+      "depth": 2,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.burst": "1.6.6",
+        "com.unity.test-framework": "1.1.31"
+      },
       "url": "https://packages.unity.com"
     },
     "com.unity.device-simulator.devices": {
@@ -104,9 +184,9 @@
       },
       "url": "https://packages.unity.com"
     },
-    "com.unity.mobile.android-logcat": {
-      "version": "1.4.2",
-      "depth": 0,
+    "com.unity.mathematics": {
+      "version": "1.2.6",
+      "depth": 2,
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"

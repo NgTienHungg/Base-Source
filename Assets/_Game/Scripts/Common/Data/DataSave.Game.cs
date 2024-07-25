@@ -1,16 +1,18 @@
+using BayatGames.SaveGameFree;
 using Game.DinoPass;
-using Newtonsoft.Json;
 using Sirenix.OdinInspector;
-using UnityEngine;
 
-public partial class DataSave
+namespace Base
 {
-    [GUIColor("yellow")]
-    public DinoPassDataSave DinoPass;
-    
-    private void LoadData()
+    public partial class DataSaveManager
     {
-        Debug.Log("[Data] Load save data...".Color("orange"));
-        DinoPass = JsonConvert.DeserializeObject<DinoPassDataSave>(GameConfig.FilePath.DinoPassDataSave);
+        [GUIColor("yellow")]
+        public DinoPassDataSave DinoPass;
+
+        private void LoadData()
+        {
+            Logger.Log("[Data] Load data save...".Color("orange"));
+            DinoPass = SaveGame.Load(GameConfig.File.DinoPassDataSave, new DinoPassDataSave(GameConfig.File.DinoPassDataSave));
+        }
     }
 }

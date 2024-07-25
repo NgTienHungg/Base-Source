@@ -1,11 +1,15 @@
 {
   "dependencies": {
     "com.coffee.ui-effect": "https://github.com/mob-sakai/UIEffect.git",
+    "com.coffee.ui-particle": "https://github.com/mob-sakai/ParticleEffectForUGUI.git",
     "com.cysharp.unitask": "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask",
     "com.demigiant.dotween": "https://github.com/grashaar/DOTween.git",
     "com.hungnt.buildreporttool": "https://github.com/HungNT-Packages/HungNT-BuildReportTool.git",
     "com.hungnt.enhancedscroller": "https://github.com/HungNT-Packages/HungNT-EnhancedScroller.git",
+    "com.hungnt.rainbowfolder": "https://github.com/HungNT-Packages/HungNT-RainbowFolder.git",
     "com.ogxd.project-curator": "https://github.com/ogxd/project-curator.git",
+    "com.unity.2d.psdimporter": "8.0.5",
+    "com.unity.2d.sprite": "1.0.0",
     "com.unity.addressables": "1.21.20",
     "com.unity.ai.navigation": "1.1.5",
     "com.unity.collab-proxy": "2.3.1",

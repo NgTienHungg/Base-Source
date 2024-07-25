@@ -1,5 +1,6 @@
 using System;
 using System.Globalization;
+using Sirenix.OdinInspector;
 
 namespace WingsMob.BoatPacking
 {
@@ -8,6 +9,7 @@ namespace WingsMob.BoatPacking
     {
         public const string FORMAT = "dd/MM/yyyy HH:mm:ss";
 
+        [HideLabel]
         public string dateTimeString;
 
         public SerializableDateTime()

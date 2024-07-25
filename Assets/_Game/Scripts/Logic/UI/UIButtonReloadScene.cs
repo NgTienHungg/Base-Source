@@ -1,5 +1,5 @@
 using Base.LoadScene;
-using Base.UI;
+using Base;
 using Cysharp.Threading.Tasks;
 
 namespace Logic

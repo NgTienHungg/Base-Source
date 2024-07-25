@@ -1,6 +1,6 @@
 public partial class GameConfig
 {
-    public class SoundName : ValueDropdown<SoundName>
+    public static class Sound
     {
         public const string Theme = "Sound/Theme";
         public const string ButtonClick = "Sound/ButtonClick";

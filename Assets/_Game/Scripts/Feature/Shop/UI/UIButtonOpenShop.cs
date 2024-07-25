@@ -1,4 +1,4 @@
-using Base.UI;
+using Base;
 using Cysharp.Threading.Tasks;
 
 namespace Feature.Shop

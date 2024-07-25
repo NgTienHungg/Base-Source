@@ -1,8 +1,7 @@
 // using TMPro;
 // using UnityEngine;
-// using WingsMob.Scripts.Utils.Time;
 //
-// namespace WingsMob.BoatPacking.DinoPass
+// namespace Game.DinoPass
 // {
 //     public class UIPopupPurchaseDinoPass : UIPopUp
 //     {
@@ -12,7 +11,7 @@
 //         protected override void Start()
 //         {
 //             base.Start();
-//             iapButton.Setup(OnPurchaseSuccess, null);
+//             // iapButton.Setup(OnPurchaseSuccess, null);
 //
 //             StartCoroutine(TimeUtils.IECountDown(
 //                 endTime: ProfileManager.Instance.UserData.DinoPassDataSave.EndTime.ToDateTime(),
@@ -21,9 +20,12 @@
 //             ));
 //         }
 //
-//         private void OnPurchaseSuccess()
+//         public void OnPurchaseSuccess()
 //         {
+//             Common.LogError("Active Dino Pass".Color("lime"));
 //             ProfileManager.Instance.UserData.DinoPassDataSave.ActivateDinoPass();
+//             this.PostEvent(EventInGameConfig.OnActivateDinoPass);
+//             ClosePopUp();
 //         }
 //     }
 // }
