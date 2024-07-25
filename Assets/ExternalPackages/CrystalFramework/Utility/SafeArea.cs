@@ -54,7 +54,7 @@ namespace Crystal
         /// </summary>
         Rect[] NSA_iPhoneX = new Rect[]
         {
-            new Rect (0f, 0f, 1f, 2202f / 2436f),  // Portrait
+            new Rect (0f, 102f / 2436f, 1f, 2202f / 2436f),  // Portrait
             new Rect (132f / 2436f, 63f / 1125f, 2172f / 2436f, 1062f / 1125f)  // Landscape
         };
 
@@ -97,46 +97,34 @@ namespace Crystal
         #endregion
 
         RectTransform Panel;
-        Rect LastSafeArea = new Rect(0, 0, 0, 0);
-        Vector2Int LastScreenSize = new Vector2Int(0, 0);
+        Rect LastSafeArea = new Rect (0, 0, 0, 0);
+        Vector2Int LastScreenSize = new Vector2Int (0, 0);
         ScreenOrientation LastOrientation = ScreenOrientation.AutoRotation;
         [SerializeField] bool ConformX = true;  // Conform to screen safe area on X-axis (default true, disable to ignore)
         [SerializeField] bool ConformY = true;  // Conform to screen safe area on Y-axis (default true, disable to ignore)
         [SerializeField] bool Logging = false;  // Conform to screen safe area on Y-axis (default true, disable to ignore)
-        [SerializeField] private bool ForceBottomZero = false; //Some case we want safe area ignore bottom
-        
-        private float m_maxY = 1f;
-        private float m_minY = 0f;
 
-        void Awake()
+        void Awake ()
         {
-            Panel = GetComponent<RectTransform>();
+            Panel = GetComponent<RectTransform> ();
 
             if (Panel == null)
             {
-                Debug.LogError("Cannot apply safe area - no RectTransform found on " + name);
-                Destroy(gameObject);
+                Debug.LogError ("Cannot apply safe area - no RectTransform found on " + name);
+                Destroy (gameObject);
             }
-            Refresh();
+
+            Refresh ();
         }
 
-        /// <summary>
-        /// No need call on update
-        /// </summary>
-        //void Update ()
-        //{
-        //    Refresh ();
-        //}
-
-        public void Refresh()
+        void Update ()
         {
+            Refresh ();
+        }
 
-            if (Panel == null)
-            {
-                Panel = GetComponent<RectTransform>();
-            }
-
-            Rect safeArea = GetSafeArea();
+        void Refresh ()
+        {
+            Rect safeArea = GetSafeArea ();
 
             if (safeArea != LastSafeArea
                 || Screen.width != LastScreenSize.x
@@ -149,17 +137,17 @@ namespace Crystal
                 LastScreenSize.y = Screen.height;
                 LastOrientation = Screen.orientation;
 
-                ApplySafeArea(safeArea);
+                ApplySafeArea (safeArea);
             }
         }
 
-        Rect GetSafeArea()
+        Rect GetSafeArea ()
         {
             Rect safeArea = Screen.safeArea;
 
             if (Application.isEditor && Sim != SimDevice.None)
             {
-                Rect nsa = new Rect(0, 0, Screen.width, Screen.height);
+                Rect nsa = new Rect (0, 0, Screen.width, Screen.height);
 
                 switch (Sim)
                 {
@@ -191,13 +179,13 @@ namespace Crystal
                         break;
                 }
 
-                safeArea = new Rect(Screen.width * nsa.x, Screen.height * nsa.y, Screen.width * nsa.width, Screen.height * nsa.height);
+                safeArea = new Rect (Screen.width * nsa.x, Screen.height * nsa.y, Screen.width * nsa.width, Screen.height * nsa.height);
             }
 
             return safeArea;
         }
 
-        void ApplySafeArea(Rect r)
+        void ApplySafeArea (Rect r)
         {
             LastSafeArea = r;
 
@@ -226,56 +214,20 @@ namespace Crystal
                 anchorMax.x /= Screen.width;
                 anchorMax.y /= Screen.height;
 
-                m_minY = anchorMin.y;
-                
-#if UNITY_ANDROID
-                //Force bottom = 0
-                anchorMin.y = 0f;
-#endif
-                if (ForceBottomZero)
-                {
-                    anchorMin.y = 0f;
-                }
-
                 // Fix for some Samsung devices (e.g. Note 10+, A71, S20) where Refresh gets called twice and the first time returns NaN anchor coordinates
                 // See https://forum.unity.com/threads/569236/page-2#post-6199352
                 if (anchorMin.x >= 0 && anchorMin.y >= 0 && anchorMax.x >= 0 && anchorMax.y >= 0)
                 {
                     Panel.anchorMin = anchorMin;
                     Panel.anchorMax = anchorMax;
-                    m_maxY = anchorMax.y;
                 }
             }
 
             if (Logging)
             {
-                Debug.LogFormat("New safe area applied to {0}: x={1}, y={2}, w={3}, h={4} on full extents w={5}, h={6}",
+                Debug.LogFormat ("New safe area applied to {0}: x={1}, y={2}, w={3}, h={4} on full extents w={5}, h={6}",
                 name, r.x, r.y, r.width, r.height, Screen.width, Screen.height);
             }
-        }
-
-        /// <summary>
-        /// Get height top of safe area in Unity unit
-        /// </summary>
-        /// <param name="cam"></param>
-        /// <returns></returns>
-        public float GetHeightTopSafeArea(Camera cam)
-        {
-            float height = 0f;
-            height = (1f - m_maxY) * 2f * cam.orthographicSize;
-            return height;
-        }
-
-        /// <summary>
-        /// Get height bottom of safe area in Unity unit
-        /// </summary>
-        /// <param name="cam"></param>
-        /// <returns></returns>
-        public float GetHeightBottomSafeArea(Camera cam)
-        {
-            Refresh();
-            float height = m_minY * 1920f;
-            return height;
         }
     }
 }
