@@ -1,6 +1,6 @@
 using System;
 
-namespace WingsMob.BoatPacking
+namespace ViewPager.BoatPacking
 {
     // [Serializable]
     // public class UnlimitedLifeDataSave

@@ -6,7 +6,7 @@ using Sirenix.OdinInspector.Editor;
 using UnityEditor;
 using Object = UnityEngine.Object;
 
-namespace WingsMob.BoatPacking
+namespace ViewPager.BoatPacking
 {
     public class GameDataEditorWindow<T> : OdinEditorWindow
     {

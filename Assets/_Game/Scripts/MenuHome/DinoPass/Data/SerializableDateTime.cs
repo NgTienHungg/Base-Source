@@ -2,7 +2,7 @@ using System;
 using System.Globalization;
 using Sirenix.OdinInspector;
 
-namespace WingsMob.BoatPacking
+namespace ViewPager.BoatPacking
 {
     [Serializable]
     public class SerializableDateTime

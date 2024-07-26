@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEngine;
 
-namespace Base.Utils
+namespace Base
 {
     public static class TimeHelper
     {

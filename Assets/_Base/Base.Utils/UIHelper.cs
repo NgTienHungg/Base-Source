@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-namespace Base.Utils
+namespace Base
 {
     public static class UIHelper
     {
