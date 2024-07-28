@@ -26,6 +26,11 @@ namespace ViewPager
             return bgTabImg.rectTransform.position;
         }
 
+        public Vector2 GetSizeDelta()
+        {
+            return bgTabImg.rectTransform.sizeDelta;
+        }
+
         public void OnClick()
         {
             UIHomeViewPager.OnChangeTab?.Invoke(tabIndex);

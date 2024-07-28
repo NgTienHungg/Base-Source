@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using DG.Tweening;
 using EnhancedUI.EnhancedScroller;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace ViewPager
 {
@@ -12,6 +13,11 @@ namespace ViewPager
         [SerializeField] private List<EnhancedScrollerCellView> listPages;
         [SerializeField] private List<UIViewPageTab> listTabs;
         [SerializeField] private RectTransform bgTabSelecting;
+        
+        
+        [Header("Scroll Bar")]
+        [SerializeField] private Scrollbar scrollbar;
+        private List<float> listScrollValue;
 
         public static Action<int> OnChangeTab;
 
@@ -65,6 +71,7 @@ namespace ViewPager
 
             // anim bg selecting
             bgTabSelecting.DOKill();
+            bgTabSelecting.sizeDelta = listTabs[index].GetSizeDelta();
             bgTabSelecting.DOMoveX(listTabs[index].GetPos().x, 0.4f).SetEase(Ease.OutQuart);
         }
 
@@ -86,6 +93,17 @@ namespace ViewPager
                     _deltaXSwipe = CameraUtils.GetMouseWorldPosition().x - _currSwipePos.x;
                     SnapScrollView();
                 }
+            }
+        }
+
+        private void OnDrawGizmos()
+        {
+            if (Input.GetMouseButton(0))
+            {
+                Gizmos.color = Color.red;
+                Vector3 startPos = CameraUtils.GetMouseWorldPosition();
+                Vector3 endPos = new Vector3(_currSwipePos.x, startPos.y, startPos.z);
+                Gizmos.DrawLine(startPos, endPos);
             }
         }
 
