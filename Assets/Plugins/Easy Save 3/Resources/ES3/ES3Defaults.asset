@@ -33,7 +33,9 @@ MonoBehaviour:
     - EnhancedScroller_asmdef
     - Zenject
     - Assembly-CSharp
+    - SingularityGroup.HotReload.Runtime
     - Zenject-IntegrationTests
+    - SingularityGroup.HotReload.Editor
     - UniTask
     - CW.Common
     - StompyRobot.SRDebugger
@@ -53,6 +55,7 @@ MonoBehaviour:
     - Ogxd.ProjectCurator
     - Coffee.UIParticle
     - Zenject-TestFramework
+    - SingularityGroup.HotReload.Runtime.Public
     - Wooshii.HierarchyDecorator
     - UniTask.TextMeshPro
     - LeanPool

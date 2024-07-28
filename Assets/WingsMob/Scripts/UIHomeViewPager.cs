@@ -11,7 +11,7 @@ namespace ViewPager
         [Header("Enhanced Scroller")]
         [SerializeField] private List<EnhancedScrollerCellView> listPages;
         [SerializeField] private List<UIViewPageTab> listTabs;
-        [SerializeField] private Transform bgTabSelecting;
+        [SerializeField] private RectTransform bgTabSelecting;
 
         public static Action<int> OnChangeTab;
 
@@ -36,7 +36,7 @@ namespace ViewPager
 
         private void Start()
         {
-            SetTabImmediately(0);
+            SetTabImmediately(NumberOfCells / 2);
             // ChangeTab(NumberOfCells / 2);
         }
 
@@ -53,7 +53,7 @@ namespace ViewPager
 
         private void ChangeTab(int index)
         {
-            Debug.Log($"change tab : {index}".Color("yellow"));
+            Debug.Log($"change tab : {index}".Color("cyan"));
 
             if (!IsValidIndex(index))
                 return;
@@ -63,9 +63,9 @@ namespace ViewPager
             for (var i = 0; i < NumberOfCells; i++)
                 listTabs[i].SetSelected(i == index);
 
-            bgTabSelecting.DOMoveX(listTabs[index].GetPos().x, 0.5f)
-                .SetEase(Ease.OutCubic)
-                .OnComplete(() => Debug.Log("bg selecting pos " + bgTabSelecting.position));
+            // anim bg selecting
+            bgTabSelecting.DOKill();
+            bgTabSelecting.DOMoveX(listTabs[index].GetPos().x, 0.4f).SetEase(Ease.OutQuart);
         }
 
         private void Update()
