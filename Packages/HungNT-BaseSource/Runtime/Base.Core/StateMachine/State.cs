@@ -1,4 +1,4 @@
-﻿namespace Base.Core
+﻿namespace Base
 {
     public abstract class State<TMachine> : IState where TMachine : StateMachine
     {

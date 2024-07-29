@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Base.Core
+namespace Base
 {
     public abstract class StateMachine : MonoBehaviour
     {

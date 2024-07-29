@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using Base.Core;
+using Base;
 using Cysharp.Threading.Tasks;
 using Sirenix.OdinInspector;
 using UnityEngine.SceneManagement;

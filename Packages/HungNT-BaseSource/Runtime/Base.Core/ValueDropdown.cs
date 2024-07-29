@@ -1,37 +1,40 @@
 using System.Collections.Generic;
 using System.Reflection;
 
-public class ValueDropdown<T>
+namespace Base
 {
-    public static IEnumerable<string> GetAllStrings()
+    public class ValueDropdown<T>
     {
-        var soundNames = new List<string>();
-        var fields = typeof(T).GetFields(BindingFlags.Public | BindingFlags.Static | BindingFlags.FlattenHierarchy);
-
-        foreach (var field in fields)
+        public static IEnumerable<string> GetAllStrings()
         {
-            if (field.IsLiteral && !field.IsInitOnly && field.FieldType == typeof(string))
-            {
-                soundNames.Add((string)field.GetValue(null));
-            }
-        }
+            var soundNames = new List<string>();
+            var fields = typeof(T).GetFields(BindingFlags.Public | BindingFlags.Static | BindingFlags.FlattenHierarchy);
 
-        return soundNames;
-    }
+            foreach (var field in fields)
+            {
+                if (field.IsLiteral && !field.IsInitOnly && field.FieldType == typeof(string))
+                {
+                    soundNames.Add((string)field.GetValue(null));
+                }
+            }
+
+            return soundNames;
+        }
     
-    public static List<string> GetAllStringsList()
-    {
-        var soundNames = new List<string>();
-        var fields = typeof(T).GetFields(BindingFlags.Public | BindingFlags.Static | BindingFlags.FlattenHierarchy);
-
-        foreach (var field in fields)
+        public static List<string> GetAllStringsList()
         {
-            if (field.IsLiteral && !field.IsInitOnly && field.FieldType == typeof(string))
-            {
-                soundNames.Add((string)field.GetValue(null));
-            }
-        }
+            var soundNames = new List<string>();
+            var fields = typeof(T).GetFields(BindingFlags.Public | BindingFlags.Static | BindingFlags.FlattenHierarchy);
 
-        return soundNames;
+            foreach (var field in fields)
+            {
+                if (field.IsLiteral && !field.IsInitOnly && field.FieldType == typeof(string))
+                {
+                    soundNames.Add((string)field.GetValue(null));
+                }
+            }
+
+            return soundNames;
+        }
     }
 }

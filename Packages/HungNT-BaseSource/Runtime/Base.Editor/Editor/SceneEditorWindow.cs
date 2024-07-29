@@ -10,7 +10,7 @@ namespace Base
 {
     public class SceneEditorWindow : OdinEditorWindow
     {
-        [MenuItem("Base/Scene/Scene Editor Window")]
+        [MenuItem("Base Source/Scene/Scene Editor Window")]
         private static void OpenWindow()
         {
             var window = GetWindow<SceneEditorWindow>();
@@ -39,7 +39,7 @@ namespace Base
             EditorSceneManager.OpenScene(scenePath);
         }
 
-        [MenuItem("Base/Scene/Save & Play Game")]
+        [MenuItem("Base Source/Scene/Save & Play Game")]
         public static void QuickSaveAndPlay()
         {
             EditorSceneManager.SaveOpenScenes(); // Lưu scene hiện tại mà không hỏi

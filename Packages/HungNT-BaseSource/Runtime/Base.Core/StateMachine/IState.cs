@@ -1,4 +1,4 @@
-﻿namespace Base.Core
+﻿namespace Base
 {
     public interface IState
     {

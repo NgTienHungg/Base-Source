@@ -5,24 +5,29 @@ using UnityEngine.UI;
 
 public static class FadeExtensions
 {
-    public static Color Fade(this Color color, float alpha) {
+    public static Color Fade(this Color color, float alpha)
+    {
         color.a = alpha;
         return color;
     }
 
-    public static void Fade(this CanvasGroup canvasGroup, float alpha) {
+    public static void Fade(this CanvasGroup canvasGroup, float alpha)
+    {
         canvasGroup.alpha = alpha;
     }
 
-    public static void Fade(this Image image, float alpha) {
+    public static void Fade(this Image image, float alpha)
+    {
         image.color = image.color.Fade(alpha);
     }
 
-    public static void Fade(this TextMeshProUGUI text, float alpha) {
+    public static void Fade(this TextMeshProUGUI text, float alpha)
+    {
         text.color = text.color.Fade(alpha);
     }
 
-    public static void Fade(this SpriteRenderer renderer, float alpha) {
+    public static void Fade(this SpriteRenderer renderer, float alpha)
+    {
         renderer.color = renderer.color.Fade(alpha);
     }
 
@@ -30,7 +35,8 @@ public static class FadeExtensions
     //     skeleton.color = skeleton.color.Fade(alpha);
     // }
 
-    public static void FadeAll(this GameObject obj, float alpha) {
+    public static void FadeAll(this GameObject obj, float alpha)
+    {
         var spriteRenderer = obj.GetComponent<SpriteRenderer>();
 
         if (spriteRenderer)
@@ -40,9 +46,11 @@ public static class FadeExtensions
             FadeAll(child.gameObject, alpha);
     }
 
-    public static void DOFade(this GameObject obj, float alpha, float duration = 0f, float delay = 0f) {
+    public static void DOFade(this GameObject obj, float alpha, float duration = 0f, float delay = 0f)
+    {
         var spriteRenderer = obj.GetComponent<SpriteRenderer>();
-        if (spriteRenderer != null) {
+        if (spriteRenderer != null)
+        {
             spriteRenderer.DOKill();
             spriteRenderer.DOFade(alpha, duration).SetDelay(delay);
         }
