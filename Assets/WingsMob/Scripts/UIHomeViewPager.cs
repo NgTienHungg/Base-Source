@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using DG.Tweening;
 using EnhancedUI.EnhancedScroller;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace ViewPager
 {
@@ -11,7 +12,12 @@ namespace ViewPager
         [Header("Enhanced Scroller")]
         [SerializeField] private List<EnhancedScrollerCellView> listPages;
         [SerializeField] private List<UIViewPageTab> listTabs;
-        [SerializeField] private Transform bgTabSelecting;
+        [SerializeField] private RectTransform bgTabSelecting;
+        
+        
+        [Header("Scroll Bar")]
+        [SerializeField] private Scrollbar scrollbar;
+        private List<float> listScrollValue;
 
         public static Action<int> OnChangeTab;
 
@@ -36,7 +42,7 @@ namespace ViewPager
 
         private void Start()
         {
-            SetTabImmediately(0);
+            SetTabImmediately(NumberOfCells / 2);
             // ChangeTab(NumberOfCells / 2);
         }
 
@@ -53,7 +59,7 @@ namespace ViewPager
 
         private void ChangeTab(int index)
         {
-            Debug.Log($"change tab : {index}".Color("yellow"));
+            Debug.Log($"change tab : {index}".Color("cyan"));
 
             if (!IsValidIndex(index))
                 return;
@@ -63,9 +69,10 @@ namespace ViewPager
             for (var i = 0; i < NumberOfCells; i++)
                 listTabs[i].SetSelected(i == index);
 
-            bgTabSelecting.DOMoveX(listTabs[index].GetPos().x, 0.5f)
-                .SetEase(Ease.OutCubic)
-                .OnComplete(() => Debug.Log("bg selecting pos " + bgTabSelecting.position));
+            // anim bg selecting
+            bgTabSelecting.DOKill();
+            bgTabSelecting.sizeDelta = listTabs[index].GetSizeDelta();
+            bgTabSelecting.DOMoveX(listTabs[index].GetPos().x, 0.4f).SetEase(Ease.OutQuart);
         }
 
         private void Update()
@@ -86,6 +93,17 @@ namespace ViewPager
                     _deltaXSwipe = CameraUtils.GetMouseWorldPosition().x - _currSwipePos.x;
                     SnapScrollView();
                 }
+            }
+        }
+
+        private void OnDrawGizmos()
+        {
+            if (Input.GetMouseButton(0))
+            {
+                Gizmos.color = Color.red;
+                Vector3 startPos = CameraUtils.GetMouseWorldPosition();
+                Vector3 endPos = new Vector3(_currSwipePos.x, startPos.y, startPos.z);
+                Gizmos.DrawLine(startPos, endPos);
             }
         }
 

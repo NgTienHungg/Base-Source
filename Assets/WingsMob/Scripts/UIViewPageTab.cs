@@ -18,12 +18,17 @@ namespace ViewPager
             bgTabImg.sprite = isSelected ? bgSelectedSpr : bgNormalSpr;
             bgTabImg.SetNativeSize();
             animButtonTab.SetBool("Action", isSelected);
+            Canvas.ForceUpdateCanvases();
         }
 
         public Vector3 GetPos()
         {
-            Debug.Log("Pos x: " + bgTabImg.transform.position);
-            return bgTabImg.transform.position;
+            return bgTabImg.rectTransform.position;
+        }
+
+        public Vector2 GetSizeDelta()
+        {
+            return bgTabImg.rectTransform.sizeDelta;
         }
 
         public void OnClick()
