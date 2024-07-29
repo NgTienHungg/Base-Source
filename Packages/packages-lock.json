@@ -31,6 +31,12 @@
       "dependencies": {},
       "hash": "4c1537e2a618043d52436f65411f18919b8c1318"
     },
+    "com.hungnt.basesource": {
+      "version": "file:HungNT-BaseSource",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
     "com.hungnt.buildreporttool": {
       "version": "https://github.com/HungNT-Packages/HungNT-BuildReportTool.git",
       "depth": 0,
@@ -45,6 +51,16 @@
       "dependencies": {},
       "hash": "6c051fd416b54dda90ab52e1a3a1e012630ac173"
     },
+    "com.hungnt.hotreload": {
+      "version": "https://github.com/HungNT-Packages/Hungnt-HotReload.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.ugui": "1.0.0",
+        "com.unity.modules.unitywebrequest": "1.0.0"
+      },
+      "hash": "b8607db8a664c91869c51437a87bd33568a7bcd3"
+    },
     "com.hungnt.rainbowfolder": {
       "version": "https://github.com/HungNT-Packages/HungNT-RainbowFolder.git",
       "depth": 0,
@@ -58,15 +74,6 @@
       "source": "git",
       "dependencies": {},
       "hash": "da8a264a30daf02a7365dbac920203fe1c0d9277"
-    },
-    "com.singularitygroup.hotreload": {
-      "version": "file:com.singularitygroup.hotreload",
-      "depth": 0,
-      "source": "embedded",
-      "dependencies": {
-        "com.unity.ugui": "1.0.0",
-        "com.unity.modules.unitywebrequest": "1.0.0"
-      }
     },
     "com.unity.2d.animation": {
       "version": "9.1.1",

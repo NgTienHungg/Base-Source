@@ -5,227 +5,560 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d9d98754-cac2-44e3-bae1-f2e59cfa312a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/WingsMob/Scripts.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/WingsMob/Scripts/UIHomeViewPager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/WingsMob/Scripts/UIHomeViewPager.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/WingsMob/Scripts/UIViewPageTab.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/WingsMob/Scripts/UIViewPageTab.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Base-Source/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Base-Source/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj.DotSettings" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj.DotSettings" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExternalPackages/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalPackages/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/HierarchyDecorator/Settings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/HierarchyDecorator/Settings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Button.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Button/Blue gradient.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Button/Blue gradient.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Button/Blue outline gradient.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Button/Blue outline gradient.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Button/Green gradient.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Button/Green gradient.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Button/Green outline gradient.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Button/Green outline gradient.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Button/Orange gradient.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Button/Orange gradient.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Button/Red gradient.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Button/Red gradient.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Button/Red outline gradient.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Button/Red outline gradient.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Circles.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Circles/Circle blue .png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Circles/Circle blue .png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Circles/Circle blue full.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Circles/Circle blue full.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Circles/Circle green full.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Circles/Circle green full.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Circles/Circle green.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Circles/Circle green.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Circles/Circle red full.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Circles/Circle red full.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Circles/Circle yellow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Circles/Circle yellow.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Circles/Gradient circle.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Circles/Gradient circle.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Documentation.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Documentation.txt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Fonts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Fonts/ProductSans-Regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Fonts/ProductSans-Regular.ttf.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Fonts/Roboto-Regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Fonts/Roboto-Regular.ttf.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Fonts/Roboto-Thin.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Fonts/Roboto-Thin.ttf.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Icons.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Icons/Bolt colored.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Icons/Bolt colored.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Icons/Healthbar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Icons/Healthbar.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Icons/Heart.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Icons/Heart.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Icons/bolt.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Icons/bolt.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Prefabs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Prefabs/Bars.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Prefabs/Bars/Blue circular bar.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Prefabs/Bars/Blue circular bar.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Prefabs/Bars/Circle Green.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Prefabs/Bars/Circle Green.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Prefabs/Bars/Energy bar.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Prefabs/Bars/Energy bar.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Prefabs/Bars/Green circular bar full.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Prefabs/Bars/Green circular bar full.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Prefabs/Bars/Health bar.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Prefabs/Bars/Health bar.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Prefabs/Bars/HealthBar.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Prefabs/Bars/HealthBar.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Prefabs/Bars/Level bar.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Prefabs/Bars/Level bar.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Prefabs/Bars/Red circular bar.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Prefabs/Bars/Red circular bar.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Prefabs/Buttons.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Prefabs/Buttons/Button Green Outline.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Prefabs/Buttons/Button Green Outline.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Prefabs/Buttons/Button Green.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Prefabs/Buttons/Button Green.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Prefabs/Buttons/Button Red.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Prefabs/Buttons/Button Red.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Prefabs/Buttons/Button blue.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Prefabs/Buttons/Button blue.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Prefabs/Buttons/Sign in button .prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Prefabs/Buttons/Sign in button .prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Prefabs/Buttons/Sign in button Facebook.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Prefabs/Buttons/Sign in button Facebook.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Prefabs/Buttons/Sign in button Google.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Prefabs/Buttons/Sign in button Google.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Prefabs/SampleScene.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Prefabs/SampleScene.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Prefabs/Sliders.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Prefabs/Sliders/Blue slider.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Prefabs/Sliders/Blue slider.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Prefabs/Sliders/Green slider.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Prefabs/Sliders/Green slider.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Prefabs/Sliders/Red slider.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Prefabs/Sliders/Red slider.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Scripts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Scripts/FillValueNumber.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI pack/Scripts/FillValueNumber.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Animation/Anim_mark.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Animation/Anim_mark.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Animation/UI/DotRed.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WingsMob/Animation/UI/DotRed.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Animation/UI/Home/ItemTabHome.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WingsMob/Animation/UI/Home/ItemTabHome.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Animation/UI/Home/ItemTabHomeSelected.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WingsMob/Animation/UI/Home/ItemTabHomeSelected.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Fonts/FontNewUI.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Fonts/FontNewUI/CookieRun Bold Border black.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Fonts/FontNewUI/CookieRun Bold Border black.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Fonts/FontNewUI/CookieRun Bold Border brown.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Fonts/FontNewUI/CookieRun Bold Border brown.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Fonts/FontNewUI/CookieRun Bold Border dark green.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Fonts/FontNewUI/CookieRun Bold Border dark green.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Fonts/FontNewUI/CookieRun Bold Clear.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Fonts/FontNewUI/CookieRun Bold Clear.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Fonts/FontNewUI/CookieRun Bold Shadow Vanilla.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Fonts/FontNewUI/CookieRun Bold Shadow Vanilla.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Fonts/FontNewUI/CookieRun Bold black.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Fonts/FontNewUI/CookieRun Bold black.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Fonts/FontNewUI/CookieRun Bold border green.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Fonts/FontNewUI/CookieRun Bold border green.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Fonts/FontNewUI/CookieRun Bold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Fonts/FontNewUI/CookieRun Bold.ttf.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Fonts/FontNewUI/LoadingScene.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Fonts/FontNewUI/LoadingScene/CookieRun Bold border greed.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Fonts/FontNewUI/LoadingScene/CookieRun Bold border greed.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Fonts/FontNewUI/PopupSummerVibes.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Fonts/FontNewUI/PopupSummerVibes/CookieRun Bold SDF  Border moss green.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Fonts/FontNewUI/PopupSummerVibes/CookieRun Bold SDF  Border moss green.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Fonts/FontNewUI/PopupSummerVibes/CookieRun Bold SDF Title Popup Summer Vibes _ Dino pass.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Fonts/FontNewUI/PopupSummerVibes/CookieRun Bold SDF Title Popup Summer Vibes _ Dino pass.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Fonts/FontNewUI/PopupUpgradeArea.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Fonts/FontNewUI/PopupUpgradeArea/CookieRun Bold Border blue.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Fonts/FontNewUI/PopupUpgradeArea/CookieRun Bold Border blue.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Fonts/FontNewUI/PopupUpgradeDecorateItem.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Fonts/FontNewUI/PopupUpgradeDecorateItem/CookieRun Bold Dark blue.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Fonts/FontNewUI/PopupUpgradeDecorateItem/CookieRun Bold Dark blue.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Fonts/FontNewUI/PopupUpgradeDecorateItem/CookieRun Bold Green border 1.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Fonts/FontNewUI/PopupUpgradeDecorateItem/CookieRun Bold Green border 1.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Fonts/FontNewUI/PopupUpgradeDecorateItem/CookieRun Bold Green border 2.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Fonts/FontNewUI/PopupUpgradeDecorateItem/CookieRun Bold Green border 2.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Fonts/FontNewUI/TabAreaHome.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Fonts/FontNewUI/TabAreaHome/CookieRun Bold Border Light brown.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Fonts/FontNewUI/TabAreaHome/CookieRun Bold Border Light brown.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Fonts/FontNewUI/TabAreaHome/CookieRun Bold Border blue.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Fonts/FontNewUI/TabAreaHome/CookieRun Bold Border blue.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Fonts/FontNewUI/TabAreaHome/CookieRun Bold Border gray.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Fonts/FontNewUI/TabAreaHome/CookieRun Bold Border gray.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Fonts/FontNewUI/UIInGame.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Fonts/FontNewUI/UIInGame/CookieRun Bold Border dark pink.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Fonts/FontNewUI/UIInGame/CookieRun Bold Border dark pink.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Fonts/FontNewUI/UIInGame/CookieRun Bold SDF dark brown.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Fonts/FontNewUI/UIInGame/CookieRun Bold SDF dark brown.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Fonts/FontNewUI/UIInGame/CookieRun Bold boderBlack 1.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Fonts/FontNewUI/UIInGame/CookieRun Bold boderBlack 1.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Fonts/FontNewUI/UIInGame/CookieRun Bold boderBlack 2.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Fonts/FontNewUI/UIInGame/CookieRun Bold boderBlack 2.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Fonts/FontNewUI/UIShopIAP.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Fonts/FontNewUI/UIShopIAP/CookieRun Bold SDF border black.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Fonts/FontNewUI/UIShopIAP/CookieRun Bold SDF border black.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Fonts/FontNewUI/UIShopIAP/CookieRun Bold SDF border dark pink.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Fonts/FontNewUI/UIShopIAP/CookieRun Bold SDF border dark pink.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/G36 VFX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/G36 VFX/Materials.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/G36 VFX/Materials/Shader_G29.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/G36 VFX/Materials/Shader_G29.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/G36 VFX/Materials/Shader_G29.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/G36 VFX/Materials/Shader_G29.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/G36 VFX/Materials/Star.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/G36 VFX/Materials/Star.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/G36 VFX/Materials/star.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/G36 VFX/Materials/star.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/G36 VFX/Prefabs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/G36 VFX/Prefabs/Bling.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/G36 VFX/Prefabs/Bling.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/G36 VFX/Prefabs/heart.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/G36 VFX/Prefabs/heart.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/G36 VFX/Prefabs/money.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/G36 VFX/Prefabs/money.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/G36 VFX/Prefabs/phao hoa.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/G36 VFX/Prefabs/phao hoa.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/G36 VFX/Prefabs/sakura.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/G36 VFX/Prefabs/sakura.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/G36 VFX/Prefabs/snow.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/G36 VFX/Prefabs/snow.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/G36 VFX/Prefabs/star.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/G36 VFX/Prefabs/star.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Scenes/Demo.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WingsMob/Scenes/Demo.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Textures/UI/Menuhome/UIHome/Button_Bot_home.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Textures/UI/Menuhome/UIHome/Button_Bot_home.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Textures/UI/Menuhome/UIHome/TabBotContent.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Textures/UI/Menuhome/UIHome/TabBotContent/bg_tab_home1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Textures/UI/Menuhome/UIHome/TabBotContent/bg_tab_home1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Textures/UI/Menuhome/UIHome/TabBotContent/bg_tab_home2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Textures/UI/Menuhome/UIHome/TabBotContent/bg_tab_home2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Textures/UI/Menuhome/UIHome/TabBotContent/bg_tab_home_selecting.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Textures/UI/Menuhome/UIHome/TabBotContent/bg_tab_home_selecting.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Textures/UI/Menuhome/UIHome/TabBotContent/icon_dinopass.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Textures/UI/Menuhome/UIHome/TabBotContent/icon_dinopass.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Textures/UI/Menuhome/UIHome/TabBotContent/icon_tab_home_area.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Textures/UI/Menuhome/UIHome/TabBotContent/icon_tab_home_area.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Textures/UI/Menuhome/UIHome/TabBotContent/icon_tab_home_hhop.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Textures/UI/Menuhome/UIHome/TabBotContent/icon_tab_home_hhop.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Textures/UI/Menuhome/UIHome/TabBotContent/icon_tab_home_home.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Textures/UI/Menuhome/UIHome/TabBotContent/icon_tab_home_home.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Textures/UI/Menuhome/UIHome/TabBotContent/icon_tab_home_ranking.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Textures/UI/Menuhome/UIHome/TabBotContent/icon_tab_home_ranking.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Textures/UI/Menuhome/UIHome/TabBotContent/icon_tab_home_theme.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Textures/UI/Menuhome/UIHome/TabBotContent/icon_tab_home_theme.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WingsMob/Textures/UI/Menuhome/UIHome/Tab_Bot_home.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WingsMob/Textures/UI/Menuhome/UIHome/Tab_Bot_home.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Utils/CameraHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Base/Base.Utils/CameraUtils.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Utils/CameraHelper.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Base/Base.Utils/CameraUtils.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Utils/FPSCounter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Base/Base.Utils/FPSCounter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Utils/TimeHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Base/Base.Utils/TimeHelper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Utils/UIHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Base/Base.Utils/UIHelper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Game/Scripts/MenuHome/DinoPass/Data/DinoPassDataSave.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Game/Scripts/MenuHome/DinoPass/Data/DinoPassDataSave.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Game/Scripts/MenuHome/DinoPass/Data/SerializableDateTime.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Game/Scripts/MenuHome/DinoPass/Data/SerializableDateTime.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Game/Scripts/MenuHome/DinoPass/Data/UnlimitedLifeDataSave.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Game/Scripts/MenuHome/DinoPass/Data/UnlimitedLifeDataSave.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Game/Scripts/MenuHome/DinoPass/Editor/GameDataEditorWindow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Game/Scripts/MenuHome/DinoPass/Editor/GameDataEditorWindow.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Resources/ES3/ES3Defaults.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Resources/ES3/ES3Defaults.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Asset/AddressableLoader.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Asset/AddressableLoader.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Asset/AssetLoader.Utils.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Asset/AssetLoader.Utils.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Asset/AssetLoader.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Asset/AssetLoader.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Asset/IAssetLoader.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Asset/IAssetLoader.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Asset/ResourceLoader.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Asset/ResourceLoader.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Core.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Core/GameConfig.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Core/GameConfig.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Core/Logger.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Core/Logger.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Core/Singleton.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Core/Singleton/LiveSingleton.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Core/Singleton/LiveSingleton.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Core/Singleton/MonoSingleton.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Core/Singleton/MonoSingleton.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Core/StateMachine.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Core/StateMachine/IState.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Core/StateMachine/IState.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Core/StateMachine/State.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Core/StateMachine/State.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Core/StateMachine/StateMachine.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Core/StateMachine/StateMachine.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Core/ValueDropdown.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Core/ValueDropdown.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Editor/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Editor/Editor/EditorTool.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Editor/Editor/EditorTool.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Editor/Editor/SceneEditorWindow.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Editor/Editor/SceneEditorWindow.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Panel.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Panel/IPanel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Panel/IPanel.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Panel/PanelManager.Utils.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Panel/PanelManager.Utils.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Panel/PanelManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Panel/PanelManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Panel/UIMessagePanel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Panel/UIMessagePanel.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Panel/UIPanel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Panel/UIPanel.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Tween.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Tween/ETweenRun.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Tween/ETweenRun.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Tween/ITween.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Tween/ITween.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Tween/Resources.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Tween/Resources/TweenBaseSettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Tween/Resources/TweenBaseSettings.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Tween/Resources/TweenFadeSettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Tween/Resources/TweenFadeSettings.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Tween/Resources/TweenMoveSettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Tween/Resources/TweenMoveSettings.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Tween/Resources/TweenScaleSettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Tween/Resources/TweenScaleSettings.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Tween/TweenPlayer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Tween/TweenPlayer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Tween/TweenSettings.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Tween/TweenSettings.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Tween/UITweenBase.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Tween/UITweenBase.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Tween/UITweenFade.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Tween/UITweenFade.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Tween/UITweenMove.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Tween/UITweenMove.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Tween/UITweenScale.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Tween/UITweenScale.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.UI.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.UI/Button.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.UI/Button/UIButtonBase.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.UI/Button/UIButtonBase.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.UI/Button/UIButtonClosePanel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.UI/Button/UIButtonClosePanel.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.UI/Button/UIButtonPlaySound.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.UI/Button/UIButtonPlaySound.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.UI/Tab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.UI/Tab/TabGroup.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.UI/Tab/TabGroup.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.UI/Tab/UITabButton.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.UI/Tab/UITabButton.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.UI/Tab/UITabControl.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.UI/Tab/UITabControl.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.UI/Tab/UITabPage.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.UI/Tab/UITabPage.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.UI/Utils.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.UI/Utils/UIScalable.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.UI/Utils/UIScalable.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Utils.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Utils/CameraUtils.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Utils/CameraUtils.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Utils/ColorInHierarchy.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Utils/ColorInHierarchy.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Utils/Extension.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Utils/Extension/FadeExtensions.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Utils/Extension/FadeExtensions.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Utils/Extension/ListExtensions.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Utils/Extension/ListExtensions.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Utils/Extension/NumberExtension.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Utils/Extension/NumberExtension.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Utils/Extension/StringExtension.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Utils/Extension/StringExtension.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Utils/FPSCounter.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Utils/FPSCounter.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Utils/TimeHelper.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Utils/TimeHelper.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Utils/UIHelper.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/Base.Utils/UIHelper.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/nhap.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/nhap/Base.LoadScene.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/nhap/Base.LoadScene/Animations.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/nhap/Base.LoadScene/Animations/LoadingAnimation.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/nhap/Base.LoadScene/Animations/LoadingAnimation.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/nhap/Base.LoadScene/Animations/LoadingScreen.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/nhap/Base.LoadScene/Animations/LoadingScreen.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/nhap/Base.LoadScene/Animations/loadingicon_open.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/nhap/Base.LoadScene/Animations/loadingicon_open.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/nhap/Base.LoadScene/Animations/loadinscreen_close.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/nhap/Base.LoadScene/Animations/loadinscreen_close.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/nhap/Base.LoadScene/Animations/loadinscreen_idle.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/nhap/Base.LoadScene/Animations/loadinscreen_idle.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/nhap/Base.LoadScene/Animations/loadinscreen_open.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/nhap/Base.LoadScene/Animations/loadinscreen_open.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/nhap/Base.LoadScene/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/nhap/Base.LoadScene/Prefabs/[LoadingScreen].prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/nhap/Base.LoadScene/Prefabs/[LoadingScreen].prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/nhap/Base.LoadScene/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/nhap/Base.LoadScene/Scripts/SceneLoader.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/nhap/Base.LoadScene/Scripts/SceneLoader.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/nhap/Base.LoadScene/Scripts/UILoadingScreen.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/nhap/Base.LoadScene/Scripts/UILoadingScreen.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/nhap/Base.LoadScene/Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/nhap/Base.LoadScene/Textures/LoadingAnimation.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/nhap/Base.LoadScene/Textures/LoadingAnimation.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/nhap/Base.Pool.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/nhap/Base.Pool/PoolManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/nhap/Base.Pool/PoolManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/nhap/Base.Sound.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/nhap/Base.Sound/SoundConst.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/nhap/Base.Sound/SoundConst.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/nhap/Base.Sound/SoundDataSO.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/nhap/Base.Sound/SoundDataSO.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/nhap/Base.Sound/SoundDataSOEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/nhap/Base.Sound/SoundDataSOEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/nhap/Base.Sound/SoundManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/nhap/Base.Sound/SoundManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/nhap/Base.Sound/SoundPrefs.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/nhap/Base.Sound/SoundPrefs.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/nhap/Service.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/nhap/Service/Architecture.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/nhap/Service/Architecture.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/nhap/Service/IArchitecture.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/nhap/Service/IArchitecture.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/nhap/Service/IService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/nhap/Service/IService.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/nhap/Service/NullService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/nhap/Service/NullService.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/nhap/Service/Service.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/nhap/Service/Service.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/nhap/_DI.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/nhap/_DI/Scenes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/nhap/_DI/Scenes/Data.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/nhap/_DI/Scenes/Data.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/nhap/_DI/Scenes/Test.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/nhap/_DI/Scenes/Test.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/nhap/_DI/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/nhap/_DI/Scripts/ILogger.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/nhap/_DI/Scripts/ILogger.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/nhap/_DI/Scripts/Logger.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/nhap/_DI/Scripts/Logger.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/nhap/_DI/Scripts/Player.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/nhap/_DI/Scripts/Player.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/nhap/_DI/Scripts/SceneInstaller.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/nhap/_DI/Scripts/SceneInstaller.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/nhap/_DI/Scripts/SoundManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Base/nhap/_DI/Scripts/SoundManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Documentation.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Documentation/Documentation.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Documentation/Documentation.pdf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Attribution.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Attribution/Attribution.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Attribution/Attribution.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Attribution/VSAttribution.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Attribution/VSAttribution.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/CLI.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/CLI/CliUtils.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/CLI/CliUtils.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/CLI/FallbackCliController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/CLI/FallbackCliController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/CLI/HotReloadCli.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/CLI/HotReloadCli.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/CLI/ICliController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/CLI/ICliController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/CLI/LinuxCliController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/CLI/LinuxCliController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/CLI/OsxCliController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/CLI/OsxCliController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/CLI/StartArgs.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/CLI/StartArgs.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/CLI/WindowsCliController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/CLI/WindowsCliController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/CompileChecker.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/CompileChecker/DefaultCompileChecker.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/CompileChecker/DefaultCompileChecker.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/CompileChecker/ICompileChecker.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/CompileChecker/ICompileChecker.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/CompileChecker/LegacyCompileChecker.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/CompileChecker/LegacyCompileChecker.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Constants.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Constants.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Demo.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Demo/EditorDemo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Demo/EditorDemo.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/EditorCodePatcher.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/EditorCodePatcher.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/EditorIndicationState.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/EditorIndicationState.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/GitUtil.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/GitUtil.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Helpers.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Helpers/AssemblyOmission.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Helpers/AssemblyOmission.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Helpers/BuildInfoHelper.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Helpers/BuildInfoHelper.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Helpers/EditorWindowHelper.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Helpers/EditorWindowHelper.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Helpers/GUIHelper.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Helpers/GUIHelper.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Helpers/HotReloadSuggestionsHelper.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Helpers/HotReloadSuggestionsHelper.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Helpers/HotReloadTimelineHelper.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Helpers/HotReloadTimelineHelper.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Helpers/Spinner.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Helpers/Spinner.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Helpers/UnitySettingsHelper.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Helpers/UnitySettingsHelper.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/HotReloadEventPopup.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/HotReloadEventPopup.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/HotReloadOverlay.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/HotReloadOverlay.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/HotReloadPrefs.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/HotReloadPrefs.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/HotReloadSettingsEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/HotReloadSettingsEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/HotReloadState.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/HotReloadState.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Icon_Player.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Icon_Player.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Installation.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Installation/DownloadUtility.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Installation/DownloadUtility.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Installation/ExponentialBackoff.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Installation/ExponentialBackoff.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Installation/InstallUtility.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Installation/InstallUtility.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Installation/ServerDownloader.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Installation/ServerDownloader.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Installation/UpdateUtility.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Installation/UpdateUtility.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/PlayerBuild.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/PlayerBuild/BuildGenerateBuildInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/PlayerBuild/BuildGenerateBuildInfo.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/PlayerBuild/HotReloadBuildHelper.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/PlayerBuild/HotReloadBuildHelper.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/PlayerBuild/PostbuildModifyAndroidManifest.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/PlayerBuild/PostbuildModifyAndroidManifest.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/PlayerBuild/PostbuildSendProjectState.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/PlayerBuild/PostbuildSendProjectState.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/PlayerBuild/PrebuildIncludeResources.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/PlayerBuild/PrebuildIncludeResources.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/ProjectGeneration.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/ProjectGeneration/FileIOProvider.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/ProjectGeneration/FileIOProvider.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/ProjectGeneration/GUIDProvider.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/ProjectGeneration/GUIDProvider.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/ProjectGeneration/IFileIO.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/ProjectGeneration/IFileIO.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/ProjectGeneration/IGUIDGenerator.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/ProjectGeneration/IGUIDGenerator.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/ProjectGeneration/IHotReloadProjectGenerationPostProcessor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/ProjectGeneration/IHotReloadProjectGenerationPostProcessor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/ProjectGeneration/ProjectGenenerationPostProcessor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/ProjectGeneration/ProjectGenenerationPostProcessor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/ProjectGeneration/ProjectGeneration.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/ProjectGeneration/ProjectGeneration.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/ProjectGeneration/ProjectGenerationFlag.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/ProjectGeneration/ProjectGenerationFlag.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/ProjectGeneration/ProjectPart.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/ProjectGeneration/ProjectPart.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/ProjectGeneration/SolutionGuidGenerator.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/ProjectGeneration/SolutionGuidGenerator.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/ProjectGeneration/Util.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/ProjectGeneration/Util/FileSystemUtil.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/ProjectGeneration/Util/FileSystemUtil.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/ProjectGeneration/Util/StringUtils.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/ProjectGeneration/Util/StringUtils.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/RequiredSettings.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/RequiredSettings/RequiredSettingChecker.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/RequiredSettings/RequiredSettingChecker.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Resources.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Resources/Icn_Stop.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Resources/Icn_Stop.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Resources/Icn_play.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Resources/Icn_play.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Resources/Logo_HotReload_DarkMode.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Resources/Logo_HotReload_DarkMode.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Resources/Logo_HotReload_LightMode.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Resources/Logo_HotReload_LightMode.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Resources/alert_info.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Resources/alert_info.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Resources/applied_patch.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Resources/applied_patch.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Resources/blue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Resources/blue.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Resources/close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Resources/close.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Resources/error.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Resources/error.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Resources/events.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Resources/events.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Resources/foldout_closed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Resources/foldout_closed.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Resources/foldout_open.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Resources/foldout_open.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Resources/green.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Resources/green.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Resources/grey.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Resources/grey.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Resources/icon_check_circle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Resources/icon_check_circle.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Resources/icon_circle_black.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Resources/icon_circle_black.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Resources/icon_circle_gray.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Resources/icon_circle_gray.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Resources/icon_loading_star_light_mode_96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Resources/icon_loading_star_light_mode_96.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Resources/icon_warning_circle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Resources/icon_warning_circle.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Resources/infos.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Resources/infos.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Resources/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Resources/logo.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Resources/red.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Resources/red.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Resources/red_dot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Resources/red_dot.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Resources/refresh.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Resources/refresh.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Resources/report_bug.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Resources/report_bug.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Resources/warning.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Resources/warning.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Resources/yellow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Resources/yellow.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/ServerHealthCheck.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/ServerHealthCheck.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/SingularityGroup.HotReload.Editor.asmdef" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/SingularityGroup.HotReload.Editor.asmdef.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/SingularityGroup.HotReload.EditorDependencies.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/SingularityGroup.HotReload.EditorDependencies.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Versioning.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Versioning/PackageUpdateChecker.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Versioning/PackageUpdateChecker.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Versioning/SemVer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Versioning/SemVer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Window.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Window/GUI.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Window/GUI/Buttons.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Window/GUI/Buttons/OpenDialogueButton.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Window/GUI/Buttons/OpenDialogueButton.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Window/GUI/Buttons/OpenURLButton.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Window/GUI/Buttons/OpenURLButton.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Window/GUI/EditorTextures.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Window/GUI/EditorTextures.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Window/GUI/IGUIComponent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Window/GUI/IGUIComponent.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Window/GUI/Options.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Window/GUI/Options/AllowAndroidAppToMakeHttpRequestsOption.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Window/GUI/Options/AllowAndroidAppToMakeHttpRequestsOption.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Window/GUI/Options/Base.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Window/GUI/Options/Base/HotReloadOptionBase.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Window/GUI/Options/Base/HotReloadOptionBase.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Window/GUI/Options/Base/OptionInterfaces.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Window/GUI/Options/Base/OptionInterfaces.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Window/GUI/Options/ExposeServerOption.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Window/GUI/Options/ExposeServerOption.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Window/GUI/Options/IncludeInBuildOption.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Window/GUI/Options/IncludeInBuildOption.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Window/GUI/Tabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Window/GUI/Tabs/Base.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Window/GUI/Tabs/Base/HotReloadTabBase.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Window/GUI/Tabs/Base/HotReloadTabBase.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Window/GUI/Tabs/Helpers.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Window/GUI/Tabs/Helpers/RedeemLicenseHelper.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Window/GUI/Tabs/Helpers/RedeemLicenseHelper.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Window/GUI/Tabs/HotReloadAboutTab.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Window/GUI/Tabs/HotReloadAboutTab.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Window/GUI/Tabs/HotReloadOptionsSection.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Window/GUI/Tabs/HotReloadOptionsSection.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Window/GUI/Tabs/HotReloadRunTab.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Window/GUI/Tabs/HotReloadRunTab.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Window/GUI/Tabs/HotReloadSettingsTab.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Window/GUI/Tabs/HotReloadSettingsTab.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Window/HotReloadWindow.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Window/HotReloadWindow.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Window/ShowOnStartupEnum.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Window/ShowOnStartupEnum.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Window/Styles.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Window/Styles/HotReloadWindowStyles.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Editor/Window/Styles/HotReloadWindowStyles.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/LICENSE.md.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/README.md.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/AppCallbackListener.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/AppCallbackListener.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/BuildInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/BuildInfo.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/Burst.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/Burst/JobHotReloadUtility.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/Burst/JobHotReloadUtility.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/BurstChecker.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/BurstChecker.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/CodePatcher.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/CodePatcher.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/Demo.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/Demo/Scenes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/Demo/Scenes/HotReloadBasicDemo.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/Demo/Scenes/HotReloadBasicDemo.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/Demo/Scenes/HotReloadBurstDemo.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/Demo/Scenes/HotReloadBurstDemo.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/Demo/Scenes/HotReloadBurstDemoSettings.lighting" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/Demo/Scenes/HotReloadBurstDemoSettings.lighting.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/Demo/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/Demo/Scripts/HotReloadBasicDemo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/Demo/Scripts/HotReloadBasicDemo.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/Demo/Scripts/HotReloadBurstJobsDemo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/Demo/Scripts/HotReloadBurstJobsDemo.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/Demo/Scripts/IDemo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/Demo/Scripts/IDemo.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/HotReloadPrompts.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/HotReloadPrompts.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/HotReloadSettingsObject.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/HotReloadSettingsObject.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/IServerHealthCheck.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/IServerHealthCheck.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/InstallQRDialog.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/InstallQRDialog.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/IpHelper.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/IpHelper.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/Libs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/Libs/EditorOnly.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/Libs/EditorOnly/SingularityGroup.HotReload.RuntimeDependencies.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/Libs/EditorOnly/SingularityGroup.HotReload.RuntimeDependencies.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/Libs/EditorOnly/SingularityGroup.HotReload.RuntimeDependencies2019.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/Libs/EditorOnly/SingularityGroup.HotReload.RuntimeDependencies2019.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/Libs/EditorOnly/SingularityGroup.HotReload.RuntimeDependencies2020.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/Libs/EditorOnly/SingularityGroup.HotReload.RuntimeDependencies2020.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/Libs/EditorOnly/SingularityGroup.HotReload.RuntimeDependencies2022.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/Libs/EditorOnly/SingularityGroup.HotReload.RuntimeDependencies2022.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/Libs/OnDevice.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/Libs/OnDevice/SingularityGroup.HotReload.RuntimeDependencies.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/Libs/OnDevice/SingularityGroup.HotReload.RuntimeDependencies.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/Libs/OnDevice/SingularityGroup.HotReload.RuntimeDependencies2019.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/Libs/OnDevice/SingularityGroup.HotReload.RuntimeDependencies2019.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/Libs/OnDevice/SingularityGroup.HotReload.RuntimeDependencies2020.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/Libs/OnDevice/SingularityGroup.HotReload.RuntimeDependencies2020.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/Libs/OnDevice/SingularityGroup.HotReload.RuntimeDependencies2022.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/Libs/OnDevice/SingularityGroup.HotReload.RuntimeDependencies2022.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/MethodCompatiblity.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/MethodCompatiblity.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/MethodPatchResponsesConverter.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/MethodPatchResponsesConverter.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/MethodUtils.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/MethodUtils.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/MonoBehaviours.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/MonoBehaviours/ConnectionDialog.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/MonoBehaviours/ConnectionDialog.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/MonoBehaviours/Prompts.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/MonoBehaviours/Prompts.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/MonoBehaviours/QuestionDialog.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/MonoBehaviours/QuestionDialog.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/MonoBehaviours/RetryDialog.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/MonoBehaviours/RetryDialog.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/MonoMethod.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/MonoMethod.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/OSX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/OSX/HotReloadNativeHelper.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/OSX/HotReloadNativeHelper.dylib.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/OnHotReloadDispatch.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/OnHotReloadDispatch.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/PackageConst.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/PackageConst.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/PatchServerInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/PatchServerInfo.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/PersistencePaths.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/PersistencePaths.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/PlayerCodePatcher.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/PlayerCodePatcher.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/PlayerEntrypoint.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/PlayerEntrypoint.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/Public.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/Public/HotReloadLogging.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/Public/HotReloadLogging.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/Public/InvokeOnHotReload.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/Public/InvokeOnHotReload.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/Public/InvokeOnHotReloadLocal.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/Public/InvokeOnHotReloadLocal.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/Public/Log.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/Public/Log.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/Public/LogLevel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/Public/LogLevel.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/Public/SingularityGroup.HotReload.Runtime.Public.asmdef" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/Public/SingularityGroup.HotReload.Runtime.Public.asmdef.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/RequestHelper.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/RequestHelper.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/ServerHandshake.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/ServerHandshake.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/ServerHealthCheck.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/ServerHealthCheck.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/SingularityGroup.HotReload.Runtime.asmdef" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/SingularityGroup.HotReload.Runtime.asmdef.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/SymbolResolver.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/SymbolResolver.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/SymbolResolvingFailedException.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/SymbolResolvingFailedException.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/TaskExtensions.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/TaskExtensions.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/ThreadUtility.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/ThreadUtility.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/UnityHelper.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Runtime/UnityHelper.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Server.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Server/hot-reload-config.graphql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Server/hot-reload-config.graphql.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Server/linux-x64.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Server/linux-x64/hotreload-start-script.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Server/linux-x64/hotreload-start-script.sh.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Server/linux-x64/terminal-run.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Server/linux-x64/terminal-run.sh.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Third Party Notices.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/Third Party Notices.md.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.singularitygroup.hotreload/package.json.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -238,8 +571,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6f7018b8b8c149e68c4a65a05ac289be175400/32/41ceee71/Debug.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_BaseSource/Base.Core/Singleton/LiveSingleton.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_BaseSource/Base.Core/Singleton/MonoSingleton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6f7018b8b8c149e68c4a65a05ac289be175400/94/6dff2f83/Component.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -323,6 +655,8 @@
       <workItem from="1721292036713" duration="2532000" />
       <workItem from="1721360482150" duration="802000" />
       <workItem from="1721958266731" duration="14034000" />
+      <workItem from="1722217836611" duration="2727000" />
+      <workItem from="1722222699534" duration="3728000" />
     </task>
     <servers />
   </component>

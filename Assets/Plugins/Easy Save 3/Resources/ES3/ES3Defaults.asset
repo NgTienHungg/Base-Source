@@ -38,10 +38,12 @@ MonoBehaviour:
     - CW.Common
     - StompyRobot.SRDebugger
     - PsdPlugin
+    - SingularityGroup.HotReload.Editor
     - LeanCommon
     - BuildReportTool
     - PrimeTween.Debug
     - UniTask.Linq
+    - SingularityGroup.HotReload.Runtime
     - DOTween.Modules
     - Tayx.Graphy.Editor
     - Wooshii.HierarchyDecorator.Editor
@@ -51,6 +53,7 @@ MonoBehaviour:
     - PrimeTween.Demo
     - StompyRobot.SRF
     - Ogxd.ProjectCurator
+    - SingularityGroup.HotReload.Runtime.Public
     - Coffee.UIParticle
     - Zenject-TestFramework
     - Wooshii.HierarchyDecorator

@@ -7,6 +7,7 @@
     "com.hungnt.buildreporttool": "https://github.com/HungNT-Packages/HungNT-BuildReportTool.git",
     "com.hungnt.enhancedscroller": "https://github.com/HungNT-Packages/HungNT-EnhancedScroller.git",
     "com.hungnt.rainbowfolder": "https://github.com/HungNT-Packages/HungNT-RainbowFolder.git",
+    "com.hungnt.hotreload": "https://github.com/HungNT-Packages/Hungnt-HotReload.git",
     "com.ogxd.project-curator": "https://github.com/ogxd/project-curator.git",
     "com.unity.2d.psdimporter": "8.0.5",
     "com.unity.2d.sprite": "1.0.0",

@@ -1,0 +1,10 @@
+{
+  "name": "com.hungnt.basesource",
+  "version": "1.0.0",
+  "displayName": "HungNT: Base Source",
+  "unity": "2021.1",
+  "author": {
+    "name": "Nguyen Tien Hung",
+    "email": "ngtienhungg.work@gmail.com"
+  }
+}
